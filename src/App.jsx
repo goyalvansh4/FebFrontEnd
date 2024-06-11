@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import { Header } from './components/Header'
 
 function App() {
   
 
   return (
     <>
-      <h1 className='text-center'>Hellow World</h1>
+      <Header />
     </>
   )
 }
