@@ -1,0 +1,7 @@
+body {
+  font-family: "Outfit", sans-serif;
+  background: linear-gradient(90deg, #ccfacb 20%,#fff 40%, #facfcf 100%) !important;
+}
+header .navbar{
+  background: linear-gradient(40deg, #ccfacb 2%,#fff 40%, #fbe1e1 100%) !important;
+}
