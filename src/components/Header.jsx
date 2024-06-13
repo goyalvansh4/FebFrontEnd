@@ -1,4 +1,5 @@
 import React from "react";
+import ScocialIcons from "./Home/SocialIcons";
 
 export const Header = () => {
   const handleOpen = () => {
@@ -8,16 +9,16 @@ export const Header = () => {
   const handleClose = () => {
     document.getElementById("collapseMenu").style.display = "none";
     document.getElementById("toggleClose").style.display = "block";
-  }
+  };
   return (
-    <header className="border-b-2 border-gray-700 tracking-wide relative z-50">
-      <nav className="navbar flex flex-wrap  items-center  gap-4 px-10  min-h-[30px]">
-        <a href="javascript:void(0)" className="border-r-2 border-gray-700 ">
-          <img src="./logo.png" alt="logo" className="w-2/4" />
+    <header className="border-b border-gray-700  tracking-wide relative z-50">
+      <nav className="navbar flex  gap-x-2 px-2  min-h-[30px]">
+        <a href="javascript:void(0)" className="border-r border-gray-700 ">
+          <img src="./logo.png" alt="logo" className="pl-4 w-2/4" />
         </a>
         <div
           id="collapseMenu"
-          className="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+          className="max-lg:hidden  lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
         >
           <button
             onClick={handleClose}
@@ -38,29 +39,25 @@ export const Header = () => {
               ></path>
             </svg>
           </button>
-
-          <ul className="lg:flex lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+           <div className="h-full flex items-center border-r border-gray-700">
+          <ul className="lg:flex items-center lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
             <li className="mb-6 hidden max-lg:block">
               <a href="javascript:void(0)">
-                <img
-                  src="./logo.png"
-                  alt="logo"
-                  className="w-2/4"
-                />
+                <img src="./logo.png" alt="logo" className="w-2/4" />
               </a>
             </li>
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="text-[#fff] bg-[#1136FF] rounded-md px-4 py-1 block font-bold text-lg"
               >
                 Home
               </a>
             </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
+            <li className="max-lg:border-b max-lg:py-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Services
               </a>
@@ -68,7 +65,7 @@ export const Header = () => {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 About Us
               </a>
@@ -76,7 +73,7 @@ export const Header = () => {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Our Clients
               </a>
@@ -84,7 +81,7 @@ export const Header = () => {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Blog
               </a>
@@ -92,7 +89,7 @@ export const Header = () => {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Careers
               </a>
@@ -100,20 +97,21 @@ export const Header = () => {
             <li className="max-lg:border-b max-lg:py-3 px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Contact Us
               </a>
             </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
+            <li className="max-lg:border-b max-lg:py-3  px-3">
               <a
                 href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#f43fe2] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
               >
                 Project
               </a>
             </li>
           </ul>
+        </div>
         </div>
 
         <div className="flex max-lg:ml-auto">
@@ -132,6 +130,7 @@ export const Header = () => {
             </svg>
           </button>
         </div>
+        <ScocialIcons />
       </nav>
     </header>
   );

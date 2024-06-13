@@ -1,7 +1,96 @@
 body {
   font-family: "Outfit", sans-serif;
-  background: linear-gradient(90deg, #ccfacb 20%,#fff 40%, #facfcf 100%) !important;
+  /* background: linear-gradient(90deg, #ccfacb 20%,#fff 40%, #facfcf 100%) !important; */
 }
 header .navbar{
   background: linear-gradient(40deg, #ccfacb 2%,#fff 40%, #fbe1e1 100%) !important;
+}
+.slider{
+  background: linear-gradient(90deg, #ccfacb 20%,#fff 40%, #facfcf 100%) !important;
+}
+.connect{
+  background: linear-gradient(20deg, #f1fff1 30%,#fff 70%, #fef1f1 100%) !important;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+.spinner:hover .spinImage svg{
+  animation: spin 2s linear infinite;
+}
+.connect .spinner:first-child:hover .spinner:first-child{
+  background-color: #e7fbe7;
+}
+
+.service_bg{
+  background: linear-gradient(120deg,#f0f2fd 30%,#e5f1fc 50%, #f5f6fe 100%) !important;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
