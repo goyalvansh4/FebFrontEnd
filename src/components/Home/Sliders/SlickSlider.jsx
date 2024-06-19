@@ -13,7 +13,7 @@ function SlickSlider() {
     autoplaySpeed: 1000,
   };
   return (
-    <Slider {...settings} className="w-[90vw] h-full my-5 flex py-4">
+    <Slider {...settings} className="w-[90vw] h-full flex">
       <Project />
       <Project />
       <Project />

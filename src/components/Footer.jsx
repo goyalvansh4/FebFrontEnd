@@ -10,7 +10,7 @@ const Footer = () => {
               <img
                 src="./logo.png"
                 alt="logo"
-                className="w-44 mb-8"
+                className="w-44 mb-2"
               />
             </a>
             <p className="w-3/4 text-gray-800 text-md">
@@ -93,7 +93,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Services
                 </a>
@@ -101,7 +101,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Our Pricing
                 </a>
@@ -109,7 +109,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Product Details
                 </a>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Our Portfolio
                 </a>
@@ -125,7 +125,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Contact Us
                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Team
                 </a>
@@ -147,7 +147,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   About Company
                 </a>
@@ -155,7 +155,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Our Contact
                 </a>
@@ -163,7 +163,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                   Blog Details
                 </a>
@@ -171,7 +171,7 @@ const Footer = () => {
               <li>
                 <a
                   href="javascript:void(0)"
-                  className="text-gray-800 hover:text-black text-sm"
+                  className="text-gray-800 hover:text-black text-lg"
                 >
                    Faqs
                 </a>
@@ -185,19 +185,19 @@ const Footer = () => {
              Supports
             </h4>
             <div className="space-y-4">
-              <div className="text-black text-sm">
+              <div className="text-black text-lg">
                 <div>
                 <p>Loction</p>
                  <p>Roorkee,India</p>
                 </div>
                 </div>
-              <div className="text-black text-sm">
+              <div className="text-black text-lg">
               <div>
                 <p>Email Us</p>
                  <p>Roorkee,India</p>
                 </div>
                 </div>
-              <div className="text-black text-sm">
+              <div className="text-black text-lg">
               <div>
                 <p>Hotline</p>
                  <p>Roorkee,India</p>
@@ -209,7 +209,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center py-5 bg-[#08355e]">
-        <p className="text-gray-300 text-sm">
+        <p className="text-gray-300 text-lg">
           © 2023
           <a
             href="https://readymadeui.com/"

@@ -4,7 +4,7 @@ import SlickSlider from "../Sliders/SlickSlider";
 
 const ProjectContainer = () => {
   return (
-    <div className="w-[90vw] mx-auto py-3  my-10 flex flex-col items-center gap-5">
+    <div className="w-[90vw] mx-auto py-3  my-8 flex flex-col items-center gap-5">
       <p className="w-1/5 text-center  rounded-xl font-semibold py-2 px-3  text-white bg-[#5C28CA] text-xl">
         Recent Project
       </p>
