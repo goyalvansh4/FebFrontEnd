@@ -1,5 +1,6 @@
 import React from "react";
 import ScocialIcons from "./Home/SocialIcons";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const handleOpen = () => {
@@ -47,68 +48,68 @@ export const Header = () => {
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
-                  href="javascript:void(0)"
+                <NavLink
+                  to="/"
                   className="text-[#fff] bg-[#1136FF] rounded-md px-4 py-1 block font-bold text-lg"
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3">
-                <a
-                  href="javascript:void(0)"
+                <NavLink
+                  to="/services"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Services
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
-                  href="javascript:void(0)"
+                <NavLink
+                  to="/about"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   About Us
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
+                <NavLink
                   href="javascript:void(0)"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Our Clients
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
+                <NavLink
                   href="javascript:void(0)"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Blog
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
+                <NavLink
                   href="javascript:void(0)"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Careers
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
-                <a
+                <NavLink
                   href="javascript:void(0)"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Contact Us
-                </a>
+                </NavLink>
               </li>
               <li className="max-lg:border-b max-lg:py-3  px-3">
-                <a
+                <NavLink
                   href="javascript:void(0)"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Project
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
