@@ -39,85 +39,85 @@ export const Header = () => {
               ></path>
             </svg>
           </button>
-           <div className="h-full flex items-center border-r border-gray-700">
-          <ul className="lg:flex items-center lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
-            <li className="mb-6 hidden max-lg:block">
-              <a href="javascript:void(0)">
-                <img src="./logo.png" alt="logo" className="w-2/4" />
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="text-[#fff] bg-[#1136FF] rounded-md px-4 py-1 block font-bold text-lg"
-              >
-                Home
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Services
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                About Us
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Our Clients
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Blog
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Careers
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3 px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li className="max-lg:border-b max-lg:py-3  px-3">
-              <a
-                href="javascript:void(0)"
-                className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-              >
-                Project
-              </a>
-            </li>
-          </ul>
-        </div>
+          <div className="h-full flex items-center border-r border-gray-700">
+            <ul className="lg:flex items-center lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+              <li className="mb-6 hidden max-lg:block">
+                <a href="javascript:void(0)">
+                  <img src="./logo.png" alt="logo" className="w-2/4" />
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="text-[#fff] bg-[#1136FF] rounded-md px-4 py-1 block font-bold text-lg"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Services
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  About Us
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Our Clients
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Blog
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Careers
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3 px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Contact Us
+                </a>
+              </li>
+              <li className="max-lg:border-b max-lg:py-3  px-3">
+                <a
+                  href="javascript:void(0)"
+                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
+                >
+                  Project
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="flex max-lg:ml-auto">
-          <button onClick={handleOpen} class="lg:hidden">
+          <button onClick={handleOpen} className="lg:hidden">
             <svg
-              class="w-7 h-7"
+              className="w-7 h-7"
               fill="#000"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"

@@ -1,22 +1,22 @@
-import React from 'react';
-import { FaFacebook, FaTwitter , FaInstagram , FaLinkedin } from "react-icons/fa";
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const ScocialIcons = () => {
-  const icons=[
+  const icons = [
     <FaFacebook />,
-    <FaTwitter />,  
+    <FaTwitter />,
     <FaInstagram />,
     <FaLinkedin />,
-  ]
+  ];
   return (
-      <ul className=" flex justify-center items-center gap-4 pl-4">
-        {icons.map((icon, index) => (
-          <li key={index} className="text-2xl text-[#000] hover:text-[#1136FF]">
-            {icon}
-          </li>
-        ))}
-      </ul>
-  )
-}
+    <ul className=" flex justify-center items-center gap-4 pl-4">
+      {icons.map((icon, index) => (
+        <li key={index} className="text-2xl text-[#000] hover:text-[#1136FF]">
+          {icon}
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 export default ScocialIcons;

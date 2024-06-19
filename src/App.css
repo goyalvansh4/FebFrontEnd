@@ -89,8 +89,56 @@ header .navbar{
   color: #fff;
   background: #007aff;
 }
-
+.strategy .left_part{
+  background: rgb(212,245,212);
+  background: linear-gradient(355deg, rgba(212,245,212,1) 20%, rgba(244,244,244,1) 100%);
+}
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+.inner_img{
+  background-color: #fff;
+}
+.wk_process{
+  clip-path: polygon(36% 0, 63% 0, 85% 3%, 100% 0, 100% 100%, 0 99%, 0 0, 16% 3%);
+  background-color: #007aff;
+}
+
+.cta.btn-3 {
+  padding: 12px 38px 12px 40px;
+  box-shadow: unset;
+  background: #F43FE2;
+}
+.cta {
+  padding: 12px 28px 12px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: #8B54FF;
+  transition: 1s;
+  box-shadow: 5px 5px 0 black;
+}
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: unset;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.partBg{
+  background: linear-gradient(90deg, #ccfacb 20%,#fff 40%, #facfcf 100%) !important;
+}
+.footerBg{
+  background: linear-gradient(90deg, #f8e8b9 20%,#fff 40%, #c4f6c1 100%) !important;
 }
