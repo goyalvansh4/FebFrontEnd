@@ -41,8 +41,8 @@ const Strategy = () => {
   ];
 
   return (
-    <div className="strategy relative lg:flex w-[96%] mx-auto h-screen my-5  gap-2">
-      <div className="sleft_part flex flex-col gap-8  w-1/2 px-3 py-8 z-20">
+    <div className="hstrategy relative lg:flex w-[96%] mx-auto h-screen my-5  gap-2">
+      <div className="hstrategyleft_part flex flex-col gap-8  w-1/2 px-3 py-8 z-20">
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-2/5">
           Working Process
         </p>
@@ -65,17 +65,17 @@ const Strategy = () => {
           </div>
         </div>
         <div className="flex gap-5 relative top-0">
-          <div className="w-[30%] flex flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
+          <div className="w-[30%] wk_process flex flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
             <p>step 01</p>
             <p>Perform a Complete SEO and Content Audit</p>
             <p>Sit amet consect adipiscing nec tortor nec aenean</p>
           </div>
-          <div className="w-[30%] flex flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
+          <div className="w-[30%] flex wk_process flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
             <p>step 02</p>
             <p>Perform a Complete SEO and Content Audit</p>
             <p>Sit amet consect adipiscing nec tortor nec aenean</p>
           </div>
-          <div className="w-[30%] flex flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
+          <div className="w-[30%] flex wk_process flex-col items-center bg-white rounded-xl overflow-hidden py-4 px-1">
             <p>step 03</p>
             <p>Perform a Complete SEO and Content Audit</p>
             <p>Sit amet consect adipiscing nec tortor nec aenean</p>

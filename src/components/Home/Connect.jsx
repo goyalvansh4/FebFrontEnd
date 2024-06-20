@@ -17,11 +17,11 @@ const Connect = () => {
   ];
 
   return (
-    <div className="connect flex justify-around gap-2 my-14 border-b border-gray-700">
+    <div className="hconnect flex justify-around gap-2 my-14 border-b border-gray-700">
       {connectData.map((item, index) => {
         return (
-          <div className="w-1/3 spinner flex justify-center py-16 gap-3 border-r border-gray-700">
-            <div className="spinImage">
+          <div className="w-1/3 hspinner flex justify-center py-16 gap-3 border-r border-gray-700">
+            <div className="hspinImage">
               <svg
                 width="49"
                 height="51"

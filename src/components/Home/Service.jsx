@@ -4,7 +4,7 @@ import ServicesCard from "./ServicesCard";
 const Service = () => {
   return (
     <>
-      <div className="py-10 service_bg">
+      <div className="py-10 hservice_bg">
         <div className="flex flex-col  justify-center items-center gap-4">
           <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-1/8">
             Our Services
