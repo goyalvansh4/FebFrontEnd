@@ -42,11 +42,11 @@ const Strategy = () => {
 
   return (
     <div className="hstrategy relative lg:flex w-[96%] mx-auto h-screen my-5  gap-2">
-      <div className="hstrategyleft_part flex flex-col gap-8  w-1/2 px-3 py-8 z-20">
+      <div className="hstrategyleft_part flex flex-col gap-10 w-1/2 px-8 py-8 z-20">
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-2/5">
           Working Process
         </p>
-        <p className="text-[42px] w-3/4 text-gray-950 font-semibold leading-relaxed">
+        <p className="text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
           We are committed to providing the best strategic guidance available
         </p>
         <div className="arrow mt w-full relative z-0">

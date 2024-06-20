@@ -13,7 +13,7 @@ const ProjectContainer = () => {
         Take a Looks Work Gallery
       </p>
       <div className=" h-[400px] ">
-        <SlickSlider />
+        <SlickSlider project={true} />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import ProjectContainer from './Projects/ProjectContainer'
 import Business from './Business'
 import Partner from './Partner'
 import './Home.css'
+import TestimonialContainer from './Testimonial/TestimonialContainer'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
     <ProjectContainer/>
     <Partner/>
     <Business/>
+    <TestimonialContainer/>
     </>
   )
 }
