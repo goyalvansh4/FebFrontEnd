@@ -4,8 +4,8 @@ const Testimonial = () => {
   return (
     <div class="w-full lg:w-[90%] mx-auto lg:flex justify-around">
     <div class="border-2 border-red-500">
-      <div class="">
-        <div class="text-right">
+      <div class="text-right">
+        <div class="">
           
         </div>
         <div>

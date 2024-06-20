@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSlider = ({ data }) => {
   return (
-    <div className="slider w-full h-[100%] py-5 lg:flex lg:justify-center lg:items-center lg:gap-2">
+    <div className="hero w-full h-[100%] py-5 lg:flex lg:justify-center lg:items-center lg:gap-2">
       <div className="content lg:w-2/5 w-[100%] lg:flex pl-10 lg:flex-col gap-5">
         <p className="text-white text-xl w-[80%] bg-[#1136FF] py-2 rounded-lg px-0 text-center">
           {data.title}

@@ -1,4 +1,4 @@
-.slider{
+.hero{
   background-image: url('./headerBg.png');
   background-position: center;
   background-size: cover;
@@ -7,28 +7,12 @@
 .connect{
   background: linear-gradient(20deg, #f1fff1 30%,#fff 70%, #fef1f1 100%) !important;
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
+.hero img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} 
 
 .autoplay-progress {
   position: absolute;
