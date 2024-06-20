@@ -66,34 +66,34 @@ const Partner = () => {
       </div>
       <div className="pright w-1/2 flex flex-col justify-around">
         <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white  py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners1.png" alt="partner1" />
           </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners2.png" alt="partner2" />
           </div>
         </div>
         <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners3.png" alt="partner3" />
           </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners4.png" alt="partner4" />
           </div>
         </div>
         <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners5.png" alt="partner5" />
           </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners6.png" alt="partner6" />
           </div>
         </div>
         <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners7.png" alt="partner7" />
           </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl">
+          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
             <img src="./partners8.png" alt="partner8" />
           </div>
         </div>

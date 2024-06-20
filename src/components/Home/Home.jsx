@@ -5,9 +5,9 @@ import Service from './Service'
 import Strategy from './Strategy'
 import Growing from './Growing'
 import ProjectContainer from './Projects/ProjectContainer'
-import SlickSlider from './Sliders/SlickSlider'
 import Business from './Business'
 import Partner from './Partner'
+import './Home.css'
 
 const Home = () => {
   return (
