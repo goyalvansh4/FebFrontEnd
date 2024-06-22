@@ -7,7 +7,7 @@ const HeroSlider = ({ data }) => {
       background: `url(headerBg.png) no-repeat center center/cover`,
     }}>
       <div className="content lg:w-2/5 w-[100%] lg:flex pl-10 lg:flex-col gap-8">
-        <p className="text-white text-xl w-[80%] bg-[#1136FF] py-2 rounded-lg px-0 mt-3 text-center">
+        <p className="text-white text-xl w-[90%] bg-[#1136FF] py-2 rounded-lg px-3 mt-3 text-center">
           {data.title}
         </p>
         <h1 className="text-[#00234B] text-7xl font-bold uppercase text-left">
@@ -17,7 +17,7 @@ const HeroSlider = ({ data }) => {
           {data.subMain ? data.subMain : ""}
         </h4>
         <p className="text-[#00234B] text-xl text-left">{data.para}</p>
-        <button className="lg:w-[40%] py-4 px-2 bg-[#1136FF] rounded-xl text-white text-base font-medium">
+        <button className="lg:w-[40%] bg-[#1136ff] py-4 px-2 myBtn text-white text-lg font-medium">
           Discover More &gt;&gt;
         </button>
       </div>

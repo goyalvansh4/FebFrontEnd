@@ -33,7 +33,7 @@ const Partner = () => {
       background: `url(partnersBg.jpg) no-repeat center center/cover`,
     }}
     >
-      <div className="pleft w-full lg:w-2/5 flex flex-col gap-5">
+      <div className="pleft w-full lg:w-2/5 flex flex-col gap-8">
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Global Partners
         </a>
@@ -49,8 +49,7 @@ const Partner = () => {
         <div className="w-full max-lg:flex justify-center">
           <a
             href="/"
-            className="bg-transparent border-2 border-gray-400 text-[#000] text-lg bg-[#1136ff] px-8 py-3
-          hover:bg-slate-900 hover:shadow-2xl hover:shadow-[#1136ff] hover:text-white"
+            className="bg-transparent border-2 border-blue-300 text-[#000] text-lg myBtn px-8 py-3"
           >
             Become a Partners &gt;&gt;
           </a>

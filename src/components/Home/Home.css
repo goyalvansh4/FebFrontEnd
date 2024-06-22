@@ -144,3 +144,10 @@
 .hrotate_img:hover {
   transform: rotateY(180deg);
 }
+
+.myBtn:hover{
+ box-shadow: 3px 3px 1px 0px #1136ff;
+ color:#fff;
+ background: #000;
+ border:none;
+}
