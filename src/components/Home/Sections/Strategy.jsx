@@ -74,15 +74,15 @@ const Strategy = () => {
   ];
 
   return (
-    <div className="hstrategy relative flex flex-col lg:flex-row w-[95%] mx-auto h-screen my-5  gap-2">
+    <div className="hstrategy lg:relative flex flex-col lg:flex-row w-[95%] mx-auto lg:h-screen my-5  gap-2">
       <div className="hstrategyleft_part flex flex-col gap-10 w-full lg:w-3/5 px-8 py-8 z-20">
-        <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-2/5">
+        <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  lg:w-2/5">
           Working Process
         </p>
         <p className="text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
           We are committed to providing the best strategic guidance available
         </p>
-        <div className="arrow mt w-full lg:relative z-0">
+        <div className="arrow mt w-full max-lg:hidden lg:relative z-0">
           <img src="./markr.png" alt="mark" />
         </div>
         <div className="flex flex-col gap-3 lg:flex-row">
@@ -101,7 +101,7 @@ const Strategy = () => {
                 top: `${data.imgTop}`,
               }}
               >
-                <img src={data.src} alt="" />
+                <img src={data.src} alt="" className="hrotate_img" />
               </div>
               <div className="w-full lg:w-1/3 wk_process flex flex-col gap-2 items-center bg-white rounded-xl overflow-hidden py-4 px-1">
                 <p className="text-base font-light text-[#1136ff]">
@@ -124,11 +124,11 @@ const Strategy = () => {
         <p className="text-2xl font-semibold">
           We Have Thousands Of Global Clients
         </p>
-        <div className="clients lg:flex lg:relative ">
+        <div className="clients flex gap-1 lg:relative ">
           {client.map((item, index) => {
             return (
               <div
-                className={`clientlogo w-[90px] h-[90px]  rounded-full lg:absolute`}
+                className={`clientlogo w-[60px] h-[60px]  lg:w-[90px] lg:h-[90px]  rounded-full lg:absolute`}
                 style={{
                   backgroundImage: `url(${item.src})`,
                   backgroundSize: "cover",
@@ -142,7 +142,7 @@ const Strategy = () => {
             );
           })}
         </div>
-        <div className="processBg lg:absolute top-[40%] z-0 left-[29%]   w-[60%] h-[450px] ">
+        <div className="processBg lg:absolute lg:top-[40%] z-0 lg:left-[29%]  w-full lg:w-[60%] lg:h-[450px] ">
           <img src="./processsBg.jpg" className="w-full h-full" alt="" />
         </div>
       </div>

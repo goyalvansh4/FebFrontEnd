@@ -2,7 +2,7 @@ import React from "react";
 
 const News = ({ data }) => {
   return (
-    <div key={data.id} className="hblog_card hover:bg-white  rounded-3xl w-[29%]">
+    <div key={data.id} className="w-[98%] mx-auto hblog_card hover:bg-white  rounded-3xl lg:w-[29%]">
       <div className="hblogcard_img w-full">
         <img src={data.src} alt="" />
       </div>

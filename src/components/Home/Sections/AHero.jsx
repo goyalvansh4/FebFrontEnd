@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import HeroSlider from "./HeroSlider";
 
-const Hero = () => {
+const AHero = () => {
   const data = [
     {
       title: "EXPERIENCE THE POWER OF TECH WITH",
@@ -48,7 +48,7 @@ const Hero = () => {
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
+        className="mySwiper lg:relative  lg:h-screen w-full"
       >
         {data.map((item, index) => (
           <SwiperSlide key={index}>
@@ -66,4 +66,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AHero;

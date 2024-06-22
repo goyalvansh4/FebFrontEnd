@@ -1,10 +1,10 @@
-import { Hero, Connect, Service, Strategy, Growing, ProjectContainer, Partner, Business, TestimonialContainer, NewsContainer ,NewsLetter} from "./index";
+import { AHero, Connect, Service, Strategy, Growing, ProjectContainer, Partner, Business, TestimonialContainer, NewsContainer ,NewsLetter} from "./index";
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <Hero />
+      <AHero />
       <Connect />
       <Service />
       <Strategy />

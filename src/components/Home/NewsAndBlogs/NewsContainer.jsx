@@ -23,12 +23,12 @@ const NewsContainer = () => {
     }
   ]
   return (
-    <div className='hnewsBg w-[90%] mx-auto my-16 py-16 flex flex-col gap-8'>
+    <div className='hnewsBg lg:w-[90%] mx-auto my-16 lg:py-16 flex flex-col gap-8'>
     <div className='hnews_content flex flex-col gap-5 items-center'>
-       <p className='w-[20%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl'>News & Blogs</p>
-       <p className='w-[50%] text-center font-bold text-[#000] text-5xl leading-normal  '>Get Every Single Updates Articles Recent News & Blogs</p>
+       <p className='lg:w-[20%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl'>News & Blogs</p>
+       <p className='lg:w-[50%] text-center font-bold text-[#000] max-lg:text-3xl lg:text-5xl leading-normal  '>Get Every Single Updates Articles Recent News & Blogs</p>
     </div>
-    <div className='flex justify-around'>
+    <div className='flex flex-col lg:flex-row justify-around items-center'>
     {newsData.map((data) => {
         return <News data={data} />
     })}

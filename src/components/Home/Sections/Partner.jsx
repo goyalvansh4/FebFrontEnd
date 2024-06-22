@@ -1,22 +1,48 @@
 import React from "react";
 
 const Partner = () => {
+  const partnerData =[
+    {
+      src:"./partners1.png",
+    },
+    {
+      src:"./partners2.png",
+    },
+    {
+      src:"./partners3.png",
+    },
+    {
+      src:"./partners4.png",
+    },
+    {
+      src:"./partners5.png",
+    },
+    {
+      src:"./partners6.png",
+    },
+    {
+      src:"./partners7.png",
+    },
+    {
+      src:"./partners8.png",
+    },
+  ]
   return (
-    <div className="hpartBg w-full flex gap-5 py-10 justify-around px-4 my-16">
-      <div className="pleft w-2/5 flex flex-col gap-5">
-        <a className="w-2/5 text-center rounded-xl font-semibold py-2  text-white bg-[#5C28CA] text-xl">
+    <div className="hpartBg w-full flex flex-col lg:flex-row gap-5 py-10 justify-around px-4 my-16">
+      <div className="pleft w-full lg:w-2/5 flex flex-col gap-5">
+        <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Global Partners
         </a>
-        <p className="w-4/5 font-semibold py-2   text-[#000] text-4xl ">
-          We’ve <span className="text-[#1136ff]">5362+</span> Global Clients
+        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] text-4xl ">
+          We’ve <span className="text-[#1136ff]">200+</span> Global Clients
           Meet With Our Clients
         </p>
-        <p className="w-3/4 text-small text-[#414141]">
+        <p className="lg:w-3/4 max-lg:text-center text-small text-[#414141]">
           Drive more leads, sales, and revenue for your business with digital
           marketing services from WebFX full-service digital marketing agency
           that’s helped small-to-midsized businesses generate
         </p>
-        <div className="w-full">
+        <div className="w-full max-lg:flex justify-center">
           <a
             href="/"
             className="bg-transparent border-2 border-gray-400 text-[#000] text-lg bg-[#1136ff] px-8 py-3
@@ -25,7 +51,7 @@ const Partner = () => {
             Become a Partners &gt;&gt;
           </a>
         </div>
-        <div className="w-[65%] stats  bg-white py-4 px-6 rounded-xl flex gap-5">
+        <div className="w-full lg:w-[65%] stats  bg-white py-4 px-6 rounded-xl flex gap-5">
           <div className="stat flex flex-col gap-2">
           <div className="flex gap-2 items-center">
               <svg
@@ -64,38 +90,13 @@ const Partner = () => {
           </div>
         </div>
       </div>
-      <div className="pright w-1/2 flex flex-col justify-around">
-        <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners1.png" alt="partner1" />
-          </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners2.png" alt="partner2" />
-          </div>
+      <div className="pright lg:w-1/2 flex flex-col lg:flex-row justify-around">
+        <div className="partners  flex flex-col lg:flex-row flex-wrap  justify-center gap-5 lg:justify-around">
+         { partnerData.map((partner,index)=>{
+          return  <div key={index} className="w-full lg:w-2/5 flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
+          <img src={partner.src}  alt="partner1" />
         </div>
-        <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners3.png" alt="partner3" />
-          </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners4.png" alt="partner4" />
-          </div>
-        </div>
-        <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners5.png" alt="partner5" />
-          </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners6.png" alt="partner6" />
-          </div>
-        </div>
-        <div className="partners  flex justify-around">
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners7.png" alt="partner7" />
-          </div>
-          <div className="w-2/5 flex justify-center items-center bg-white py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-            <img src="./partners8.png" alt="partner8" />
-          </div>
+         })}
         </div>
       </div>
     </div>

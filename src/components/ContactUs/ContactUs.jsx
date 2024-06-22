@@ -1,15 +1,12 @@
 import React from 'react'
-import Chero from './Chero'
 import CbelowHero from './CbelowHero'
 import NewsLetter from '../Project/NewsLetter'
-import MapComponent from './MapComponent'
-import './ContactUs.css'
-import GetInTouch from './GetInTouch'
+import Hero from '../Hero/Hero'
 
 const ContactUs = () => {
   return (
     <>
-      <Chero />
+      <Hero title={"Contact Us"} subtitle={"Contact Us"}/>
       <CbelowHero />
       <MapComponent />
       <GetInTouch />

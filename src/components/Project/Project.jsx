@@ -1,14 +1,14 @@
 import React from 'react'
-import Phero from './Phero'
 import LatestProject from './LatestProject'
 import './Project.css'
 import NewsLetter from './NewsLetter'
+import Hero from '../Hero/Hero'
 
 
 const Project = () => {
   return (
     <>
-      <Phero />
+       <Hero title={"Latest Project"} subtitle={"Project"}/>
       <LatestProject />
       <NewsLetter />
     </>

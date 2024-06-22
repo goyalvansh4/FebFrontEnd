@@ -36,18 +36,18 @@ const Footer = () => {
   return (
     <footer className="footerBg py-5 tracking-wide">
       <div className="py-14 px-6 sm:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-          <div className="lg:col-span-2">
+        <div className="grid max-lg:place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="lg:col-span-2 max-lg:flex flex-col justify-center items-center">
             <a href="javascript:void(0)">
               <img src="./logo.png" alt="logo" className="w-44 mb-2" />
             </a>
-            <p className="w-3/4 text-gray-800 text-md">
+            <p className="lg:w-3/4 max-lg:text-center text-gray-800 text-md">
               We are passionate about providing innovative IT solutions to
               businesses of all sizes. Our team of experienced professionals
               works tirelessly to create custom solutions tailored to meet the
               unique needs of our clients.
             </p>
-            <ul className="flex gap-4 mt-4">
+            <ul className="flex max-lg:justify-center gap-4 mt-4">
               {socialLinks.map((link) => (
               <li className="h-[40px] w-[40px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
                <a
@@ -159,7 +159,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-8 text-[#000]">Supports</h4>
+            <h4 className="text-lg max-lg:text-center font-semibold mb-8 text-[#000]">Supports</h4>
             <div className="space-y-4">
               <div className="text-black text-lg flex gap-2">
               <li className="h-[50px] w-[50px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
@@ -209,7 +209,7 @@ const Footer = () => {
             </li>
                 <div>
                   <p className="text-lg font-semibold text-[#000]">Hotline</p>
-                  <p className="text-base font-light text-[#000]" >Roorkee,India</p>
+                  <p className="text-base font-light text-[#000]" >+91 8868864441</p>
                 </div>
               </div>
             </div>
@@ -217,11 +217,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="pt-10 pb-3 px-5 border-t-2 flex justify-between">
-        <p className="text-gray-800 text-lg">
+      <div className="pt-5 pb-3 px-5 border-t-2 flex  justify-between">
+        <p className="text-gray-800 max-lg:py-5 max-lg:text-center text-lg">
           © 2024 Feb Tech IT Solutions. All Rights Reserved.
         </p>
-        <ul className="text-black text-lg flex gap-5">
+        <ul className="text-black max-lg:hidden text-lg flex gap-5">
           <li>About</li>
           <li>Setting & privacy</li>
           <li>Faqs</li>

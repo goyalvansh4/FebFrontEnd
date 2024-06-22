@@ -1,4 +1,4 @@
-import Hero from "./Sections/Hero";
+import AHero from "./Sections/AHero";
 import Connect from "./Sections/Connect";
 import Service from "./Sections/Service";
 import Strategy from "./Sections/Strategy";
@@ -13,7 +13,7 @@ import NewsLetter from "./NewsAndBlogs/NewsLetter";
 
 
 export {
-  Hero,
+  AHero,
   Connect,
   Service,
   Strategy,
