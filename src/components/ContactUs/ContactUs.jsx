@@ -8,6 +8,8 @@ const ContactUs = () => {
     <>
       <Hero title={"Contact Us"} subtitle={"Contact Us"}/>
       <CbelowHero />
+      <MapComponent />
+      <GetInTouch />
       <NewsLetter />
     </>
   )

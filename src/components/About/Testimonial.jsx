@@ -69,15 +69,15 @@ const Testimonial = () => {
                    return <SwiperSlide>
                     <div className='relative'>
                         <div className='bg-white p-4 rounded-2xl'>
-                            <p className='text-justify'>
+                            <p className='md:text-base text-xs text-justify'>
                                 {item.review}
                             </p>
                         </div>
 
-                        <div className='absolute left-14 '>
-                            <div className='triangle mb-5'></div>
+                        <div className='absolute left-14'>
+                            <div className='triangle mb-5 '></div>
 
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 mt-5'>
                             <div >
                                 <img className='rounded-full' src={item.profile} alt="testimonial-img" />
                             </div>
