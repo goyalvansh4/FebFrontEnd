@@ -129,7 +129,7 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
           return <Project key={index} src={item.src} title={item.title} />})}
       </Slider>
     }
-      {(test) && <Slider {...tests} className="w-[80vw] lg:w-[40vw] bg-transparent h-full my-5 flex">
+      {(test) && <Slider {...tests} className="w-[80vw] mx-auto lg:w-[40vw] bg-transparent h-full gap-2 my-5 flex">
         <Testimonial />
         <Testimonial />
         <Testimonial />

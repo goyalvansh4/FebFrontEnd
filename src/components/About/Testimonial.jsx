@@ -72,11 +72,10 @@ const Testimonial = () => {
                             <p className='md:text-base text-xs text-justify'>
                                 {item.review}
                             </p>
+                            <div className='border-4 border-green-400 triangle mb-5 '></div>
                         </div>
-
-                        <div className='absolute left-14'>
-                            <div className='triangle mb-5 '></div>
-
+                   
+                <div className='border-2 border-red-300 left-14'>
                         <div className='flex gap-4 mt-5'>
                             <div >
                                 <img className='rounded-full' src={item.profile} alt="testimonial-img" />
