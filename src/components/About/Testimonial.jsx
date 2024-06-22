@@ -67,16 +67,15 @@ const Testimonial = () => {
                 
                  {data.map((item) => {
                    return <SwiperSlide>
-                    <div className='relative'>
-                        <div className='bg-white p-4 rounded-2xl'>
-                            <p className='md:text-base text-xs text-justify'>
+                    <div className=''>
+                        <div className='bg-white relative p-4 rounded-2xl'>
+                            <p className='md:text-base Atestbox text-xs text-justify'>
                                 {item.review}
                             </p>
-                            <div className='border-4 border-green-400 triangle mb-5 '></div>
                         </div>
                    
-                <div className='border-2 border-red-300 left-14'>
-                        <div className='flex gap-4 mt-5'>
+                <div className=' mt-9  left-14'>
+                        <div className='flex px-6 lg:px-8 items-center gap-4 mt-5'>
                             <div >
                                 <img className='rounded-full' src={item.profile} alt="testimonial-img" />
                             </div>
