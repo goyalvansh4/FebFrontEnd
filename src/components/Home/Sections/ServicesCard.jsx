@@ -6,8 +6,6 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "../../App.css";
-
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -26,7 +24,7 @@ const ServicesCard = () => {
     {
       icon: "./service3.png",
       title: "E-commerce Website",
-      para: "Our e-commerce website services help you create an engaging online shopping experience.",
+      para: "Our e-commerce website help you create an engaging online shopping experience.",
     },
     {
       icon: "./service4.png",
@@ -36,7 +34,7 @@ const ServicesCard = () => {
     {
       icon: "./service1.png",
       title: "SEO",
-      para: "Our SEO services help you achieve higher search engine rankings.",
+      para: "Our SEO services help you achieve higher search engine rankings drive more traffic.",
     },
     {
       icon: "./service2.png",
@@ -58,8 +56,6 @@ const ServicesCard = () => {
   return (
     <>
       <Swiper
-        slidesPerView={4}
-        spaceBetween={50}
         loop={true}
         centeredSlides={false}
         autoplay={{
@@ -70,16 +66,16 @@ const ServicesCard = () => {
         }}
         breakpoints={{
           640: {
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 2,
+            spaceBetween: 30,
           },
           1024: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 40,
           },
         }}
         modules={[Autoplay, Pagination]}
@@ -88,8 +84,8 @@ const ServicesCard = () => {
         {/* Loop through the serviceData array and display the data */}
         {serviceData.map((data, index) => {
           return (
-            <SwiperSlide key={index} className="bg-[#fdfdfd] rounded-xl my-4">
-              <div className="serviceCard lg:flex lg:flex-col p-4 mb-4 gap-10">
+            <SwiperSlide key={index} className="bg-[#fdfdfd] lg:w-1/4 rounded-xl my-4">
+              <div className="serviceCard  lg:flex lg:flex-col p-4 mb-4 gap-10">
                 <div className="tech_icon w-[70px]">
                   <img
                     src={data.icon}

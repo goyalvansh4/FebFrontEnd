@@ -8,5 +8,8 @@ header .navbar{
   background-repeat: no-repeat;
 }
 .footerBg{
-  background: linear-gradient(90deg, #f8e8b9 20%,#fff 40%, #c4f6c1 100%) !important;
+  background-image: url('./footerBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

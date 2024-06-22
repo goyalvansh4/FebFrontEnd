@@ -14,7 +14,7 @@ const Service = () => {
             expectations
           </p>
         </div>
-        <div className="w-[85%]  mx-auto flex flex-col lg:flex-row gap-5 px-2  justify-center items-center">
+        <div className="lg:w-[85%]  mx-auto flex lg:flex-row gap-5 px-2  justify-center items-center">
           <ServicesCard />
         </div>
       </div>

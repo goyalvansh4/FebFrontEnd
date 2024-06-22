@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -18,7 +17,7 @@ const Hero = () => {
     {
       title: "WE UNDERSTAND THAT EVERY BUSINESS IS",
       main: "UNIQUE",
-      para: "we are committed to providing you with the best digital solutions to help grow your business online.",
+      para: "We are committed to providing you with the best digital solutions to help grow your business online.",
     },
     {
       title: "EMPOWERING YOUR DIGITAL DREAMS WITH",

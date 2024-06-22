@@ -1,5 +1,5 @@
 import React from "react";
-import ScocialIcons from "./Home/SocialIcons";
+import ScocialIcons from "./Home/Sections/SocialIcons";
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {

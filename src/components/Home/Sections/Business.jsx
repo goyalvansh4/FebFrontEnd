@@ -11,7 +11,7 @@ const Business = () => {
           alt="Awesome hero page image"
         />
       </div>
-      <div className="w-1/2 flex flex-col gap-5 px-5 justify-center">
+      <div className="w-1/2 flex flex-col gap-10 px-10 justify-center">
         <a className="w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#5C28CA] text-xl">
           Business Analytics
         </a>
