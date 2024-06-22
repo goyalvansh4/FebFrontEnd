@@ -11,8 +11,7 @@ const AHero = () => {
     {
       title: "EXPERIENCE THE POWER OF TECH WITH",
       main: "Feb Tech IT",
-      subMain: "Solutions Pvt. Ltd.",
-      para: "FebTech is a leading software development company that offers top-rated Software Development Services due to our vast experience, team of skilled professionals, key business insights, and a dedicated working process.",
+      para: "FebTech is a leading software development company that offers top-rated Software Development Services.",
     },
     {
       title: "WE UNDERSTAND THAT EVERY BUSINESS IS",

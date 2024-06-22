@@ -11,7 +11,7 @@ const Growing = () => {
           alt="Awesome hero page image"
         />
       </div>
-      <div className="w-full lg:w-1/2 flex flex-col gap-5 px-5 justify-center">
+      <div className="w-full lg:w-1/2 flex flex-col gap-8 px-5 justify-center">
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
           Quality Service
         </a>
@@ -26,8 +26,8 @@ const Growing = () => {
         <div className="w-full max-lg:flex max-lg:justify-center">
           <a
             href=""
-            className="text-white text-lg bg-[#1136ff] px-8 py-3
-          hover:bg-slate-900 hover:shadow-2xl hover:shadow-[#1136ff]"
+            className="text-black border-2 border-blue-200 text-lg bg-transparent px-8 py-3
+        myBtn"
           >
             Learn More &gt;&gt;
           </a>

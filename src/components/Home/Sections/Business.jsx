@@ -11,7 +11,7 @@ const Business = () => {
           alt="Awesome hero page image"
         />
       </div>
-      <div className="lg:w-1/2 flex flex-col gap-6 px-10 justify-center">
+      <div className="lg:w-1/2 flex flex-col gap-8 px-10 justify-center">
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#5C28CA] text-xl">
          Knowledge and Numbers
         </a>
@@ -30,8 +30,7 @@ const Business = () => {
         <div className="w-full max-lg:flex justify-center">
           <a
             href="/"
-            className="bg-transparent border-2 text-[#000] text-lg bg-[#1136ff] px-8 py-3
-          hover:bg-slate-900 hover:shadow-2xl hover:shadow-[#1136ff] hover:text-white"
+            className="myBtn bg-transparent  border-2 border-blue-200 text-[#000] text-lg bg-[#1136ff] px-8 py-3"
           >
             Learn More &gt;&gt;
           </a>
