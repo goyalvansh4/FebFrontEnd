@@ -13,3 +13,12 @@
     left: 0;
     top: 0;
 }
+
+.cclick:focus {
+    background-color: black;
+    color: white;
+    box-shadow: 6px 6px 0 0 #1136FF;
+    border: none;
+    outline: none;
+
+}
