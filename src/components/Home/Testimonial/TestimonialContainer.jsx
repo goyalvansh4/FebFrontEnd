@@ -4,7 +4,11 @@ import SlickSlider from '../Sliders/SlickSlider';
 const TestimonialContainer = () => {
   return (
   <div class="w-full lg:h-screen  my-10  mx-auto lg:flex justify-between">
-    <div class="htest_left lg:w-1/2 flex items-center py-16 pl-10">
+    <div class="htest_left lg:w-1/2 flex items-center py-16 pl-10"
+     style={{
+      background: `url(testimonialBg.png) no-repeat center center/cover`,
+     }}
+    >
        <div className='flex flex-col gap-10  '>
        <div class="lg:w-full flex flex-col items-center gap-8">
            <p className='lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl'>Our Testimonial</p>
@@ -14,7 +18,10 @@ const TestimonialContainer = () => {
         <SlickSlider test={true}/>
         </div>
       </div>
-        <div className='htest_right  bg-indigo-100 lg:w-1/2 flex flex-col lg:gap-8 lg:px-10 py-16'>
+        <div className='htest_right  bg-indigo-100 lg:w-1/2 flex flex-col lg:gap-8 lg:px-10 py-16'
+        style={{
+          background: `url(testimonialBg2.png) no-repeat center center/cover`,
+         }}>
           <div className='lg:relative lg:w-[50%] mx-auto py-5'>
              <div className='flex lg:gap-8'>
                   <img src="htestimonial1.png" className='' alt="" />

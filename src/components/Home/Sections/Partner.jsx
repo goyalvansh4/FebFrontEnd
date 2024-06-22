@@ -28,7 +28,11 @@ const Partner = () => {
     },
   ]
   return (
-    <div className="hpartBg w-full flex flex-col lg:flex-row gap-5 py-10 justify-around px-4 my-16">
+    <div className="w-full flex flex-col lg:flex-row gap-5 py-10 justify-around px-4 my-16"
+    style={{
+      background: `url(partnersBg.jpg) no-repeat center center/cover`,
+    }}
+    >
       <div className="pleft w-full lg:w-2/5 flex flex-col gap-5">
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Global Partners

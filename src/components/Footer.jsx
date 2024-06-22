@@ -34,7 +34,10 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="footerBg py-5 tracking-wide">
+    <footer className="py-5 tracking-wide"
+    style={{
+      background: `url(footerBg.jpg) no-repeat center center/cover`,
+    }}>
       <div className="py-14 px-6 sm:px-10">
         <div className="grid max-lg:place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 max-lg:flex flex-col justify-center items-center">

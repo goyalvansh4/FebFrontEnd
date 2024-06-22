@@ -2,7 +2,10 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <div className="hnews_ltBg relative top-8 lg:w-[80%] mx-auto px-10 py-16  flex flex-col lg:flex-row justify-center gap-5 rounded-lg ">
+    <div className="relative top-8 lg:w-[80%] mx-auto px-10 py-16  flex flex-col lg:flex-row justify-center gap-5 rounded-lg "
+    style={{
+      background: `url(newsletterBg.jpg) no-repeat center center/cover`,
+    }}>
       <div className="hnewslt flex flex-col gap-2 lg:w-1/2">
         <p className="lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Our NewsLetter

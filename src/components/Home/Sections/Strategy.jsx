@@ -75,7 +75,11 @@ const Strategy = () => {
 
   return (
     <div className="hstrategy lg:relative flex flex-col lg:flex-row w-[95%] mx-auto lg:h-screen my-5  gap-2">
-      <div className="hstrategyleft_part flex flex-col gap-10 w-full lg:w-3/5 px-8 py-8 z-20">
+      <div className="flex flex-col gap-10 w-full lg:w-3/5 px-8 py-8 z-20" 
+      style={{
+        background: `url(processBg.jpg) no-repeat center center/cover`,
+      }}
+      >
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  lg:w-2/5">
           Working Process
         </p>

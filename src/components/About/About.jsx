@@ -11,7 +11,7 @@ import Hero from '../Hero/Hero'
 const About = () => {
   return (
     <>
-       <Hero title={"About Us"} subtitle={"About Us"}/>
+      <Hero title={"About Us"} subtitle={"About Us"}/>
       <Acompany/>
       <Aprogress/>
       <Achivement />

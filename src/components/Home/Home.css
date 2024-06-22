@@ -1,9 +1,9 @@
-.hero{
+/* .hero{
   background-image: url('headerBg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 .hconnect{
   background: linear-gradient(20deg, #f1fff1 30%,#fff 70%, #fef1f1 100%) !important;
 }
@@ -59,12 +59,6 @@
   height: 8px;
   background-color: #000;
 }
-.hstrategyleft_part{
-  background-image: url('processBg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
 
 .swiper-pagination-bullet-active {
   background: transparent;
@@ -98,18 +92,6 @@
   transition: 1s;
   box-shadow: 5px 5px 0 black;
 }
-.hpartBg{
-  width: 100%;
-  height: 100%;
-  background-image: url('partnersBg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.htest_left{
-  background-image: url('testimonialBg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .htestBox {
   position:relative;
   background-color:#ffffff;
@@ -129,13 +111,6 @@
   border-left: solid 30px transparent;
   border-right: solid 30px transparent;
 }
-
-.htest_right{
-  background-image: url('testimonialBg2.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .htest_img{
   border-radius: 60px;
   border: 5px solid transparent;
@@ -145,21 +120,9 @@
   border-color:#fffefe;
 }
 
-.hnewsBg{
-  background-image: url('newsBg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 .hblog_card:hover{
   background-color: #fff;
   box-shadow: 0 0 10px 0 #00000020;
-}
-.hnews_ltBg{
-  background-image: url('newsletterBg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .hletter::before{
   content: '';
