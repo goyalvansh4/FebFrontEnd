@@ -10,21 +10,31 @@ import {
 } from "react-router-dom";
 import About from './components/About/About.jsx';
 import Home from './components/Home/Home.jsx';
+import Project from './components/Project/Project.jsx';
+import ContactUs from './components/ContactUs/ContactUs.jsx';
 
 const router= createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
-    children:[
+    element: <App />,
+    children: [
       {
-        path:"/",
-        element:<Home/>
-       },
-    {
-     path:"/about",
-     element:<About/>
-    }
-  ]
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/about",
+        element: <About />
+      },
+      {
+        path: "/project",
+        element: <Project />
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs />
+      }
+    ]
 },
 ])
 

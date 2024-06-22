@@ -93,7 +93,7 @@ export default function Slider() {
 
                  </div>
                 </div>
-                <p className='font-bold text-xl pt-4 tname'>{item.name}</p>
+                <p className='font-bold text-xl pt-4 tmname'>{item.name}</p>
                 <p>{item.profile}</p>
               </div>
             </div>

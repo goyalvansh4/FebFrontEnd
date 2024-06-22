@@ -5,6 +5,7 @@ import Aprogress from './Aprogress'
 import Achivement from './Achivement'
 import TestimonialParent from './TestimonialParent'
 import Ateam from './Ateam'
+import './About.css'
 
 const About = () => {
   return (
