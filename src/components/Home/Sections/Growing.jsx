@@ -7,7 +7,7 @@ const Growing = () => {
         <img
           id="heroImg1"
           className="w-full lg:w-[90%]"
-          src="./growing1.png"
+          src="growing1.png"
           alt="Awesome hero page image"
         />
       </div>

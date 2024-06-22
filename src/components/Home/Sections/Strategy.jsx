@@ -48,7 +48,7 @@ const Strategy = () => {
       description:
         "We take the time to understand your business goals and objectives.",
       top: "60%",
-      src:"./process1.png",
+      src:"process1.png",
       imgTop:"-45%"
     },
     {
@@ -58,7 +58,7 @@ const Strategy = () => {
       description:
         "Our team of experts uses the latest technologies and best practices.",
       top: "65%",
-      src:"./process2.png",
+      src:"process2.png",
       imgTop:"-42%"
     },
     {
@@ -68,7 +68,7 @@ const Strategy = () => {
       description:
         "We are committed to delivering exceptional results for our clients within the budget.",
       top: "60%",
-      src:"./process3.png",
+      src:"process3.png",
       imgTop:"-45%"
     },
   ];

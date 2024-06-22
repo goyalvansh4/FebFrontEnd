@@ -5,19 +5,19 @@ const NewsContainer = () => {
   const newsData = [
     {
       id: 1,
-      src:"./blog1.jpg",
+      src:"blog1.jpg",
       title: 'Ultimate Free Solo Blog Setup With Ghost And Gatsby',
       date: 'September 20, 2023'
     },
     {
       id: 2,
-      src:"./blog2.jpg",
+      src:"blog2.jpg",
       title: 'Rethinking Server-Timing As Seen Critical Monitoring Tool',
       date: 'September 25, 2023'
     },
     {
       id: 3,
-      src:"./blog3.jpg",
+      src:"blog3.jpg",
       title: 'Tasks Focus On What Matters Must Focus On What Doesn’t',
       date: 'September 25, 2023'
     }

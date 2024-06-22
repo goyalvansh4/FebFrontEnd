@@ -11,7 +11,7 @@ const Testimonial = () => {
         </div>
            <div className='mt-6 px-3 flex lg:w-2/4 mx-auto  gap-5 py-4'>
                <div className='w-[50px] h-[50px]  rounded-full border-2  border-gray-500'>
-                <img src="./client1.jpg" className='h-full w-full rounded-full' alt="" />
+                <img src="client1.jpg" className='h-full w-full rounded-full' alt="" />
                 </div>
                 <div className='flex flex-col'>
                 <p className='text-lg font-bold text-black'>John Doe</p>

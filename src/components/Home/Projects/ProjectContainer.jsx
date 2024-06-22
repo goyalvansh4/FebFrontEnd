@@ -5,27 +5,27 @@ import SlickSlider from "../Sliders/SlickSlider";
 const ProjectContainer = () => {
    const projectData=[
     {
-      src:"./project-img1.jpg",
+      src:"project-img1.jpg",
       title:"Ecommerce Website",
     },
     {
-      src:"./project-img2.jpg",
+      src:"project-img2.jpg",
       title:"Office Management",
     },
     {
-      src:"./project-img3.jpg",
+      src:"project-img3.jpg",
       title:"Digital Marketing",
     },
     {
-      src:"./project-img4.jpg",
+      src:"project-img4.jpg",
       title:"SEO Optimization",
     },
     {
-      src:"./project-img5.jpg",
+      src:"project-img5.jpg",
       title:"Web Development",
     },
     {
-      src:"./project-img6.jpg",
+      src:"project-img6.jpg",
       title:"App Development",
     },
    ]

@@ -7,7 +7,7 @@ const Business = () => {
         <img
           id="heroImg1"
           className="w-[90%]"
-          src="./business.png"
+          src="business.png"
           alt="Awesome hero page image"
         />
       </div>

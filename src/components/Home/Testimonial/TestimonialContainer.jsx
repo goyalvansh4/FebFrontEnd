@@ -17,18 +17,18 @@ const TestimonialContainer = () => {
         <div className='htest_right  bg-indigo-100 lg:w-1/2 flex flex-col lg:gap-8 lg:px-10 py-16'>
           <div className='lg:relative lg:w-[50%] mx-auto py-5'>
              <div className='flex lg:gap-8'>
-                  <img src="./htestimonial1.png" className='' alt="" />
-                  <img src="./htestimonials2.png" className='lg:absolute left-40 top-[-40px] htest_img' alt="" />
-                  <img src="./htestimonial3.png" className='lg:absolute left-80 htest_img' alt="" />
+                  <img src="htestimonial1.png" className='' alt="" />
+                  <img src="htestimonials2.png" className='lg:absolute left-40 top-[-40px] htest_img' alt="" />
+                  <img src="htestimonial3.png" className='lg:absolute left-80 htest_img' alt="" />
                 
              </div>
              <div className='flex lg:gap-8 mt-5'>
-                 <img src="./htestimonials4.png" className='htest_img' alt="" />
-                 <img src="./htestimonials5.png" className='lg:absolute lg:top-[40%] lg:left-40 htest_img' alt="" />
-                 <img src="./htestimonials6.png" className='lg:absolute left-80 htest_img' alt="" />
+                 <img src="htestimonials4.png" className='htest_img' alt="" />
+                 <img src="htestimonials5.png" className='lg:absolute lg:top-[40%] lg:left-40 htest_img' alt="" />
+                 <img src="htestimonials6.png" className='lg:absolute left-80 htest_img' alt="" />
              </div>
              <div className='flex justify-center '>
-          <img src="./htestimonials7.png" className='lg:absolute left-40' alt="" />
+          <img src="htestimonials7.png" className='lg:absolute left-40' alt="" />
           </div>
           </div>
         </div>

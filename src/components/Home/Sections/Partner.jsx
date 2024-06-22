@@ -3,28 +3,28 @@ import React from "react";
 const Partner = () => {
   const partnerData =[
     {
-      src:"./partners1.png",
+      src:"partners1.png",
     },
     {
-      src:"./partners2.png",
+      src:"partners2.png",
     },
     {
-      src:"./partners3.png",
+      src:"partners3.png",
     },
     {
-      src:"./partners4.png",
+      src:"partners4.png",
     },
     {
-      src:"./partners5.png",
+      src:"partners5.png",
     },
     {
-      src:"./partners6.png",
+      src:"partners6.png",
     },
     {
-      src:"./partners7.png",
+      src:"partners7.png",
     },
     {
-      src:"./partners8.png",
+      src:"partners8.png",
     },
   ]
   return (

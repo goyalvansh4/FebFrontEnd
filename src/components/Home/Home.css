@@ -1,5 +1,5 @@
 .hero{
-  background-image: url('./headerBg.png');
+  background-image: url('headerBg.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -60,7 +60,7 @@
   background-color: #000;
 }
 .hstrategyleft_part{
-  background-image: url('./processBg.jpg');
+  background-image: url('processBg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -101,12 +101,12 @@
 .hpartBg{
   width: 100%;
   height: 100%;
-  background-image: url('./partnersBg.jpg');
+  background-image: url('partnersBg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 .htest_left{
-  background-image: url('./testimonialBg.png');
+  background-image: url('testimonialBg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -131,7 +131,7 @@
 }
 
 .htest_right{
-  background-image: url('./testimonialBg2.png');
+  background-image: url('testimonialBg2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,7 +146,7 @@
 }
 
 .hnewsBg{
-  background-image: url('./newsBg.png');
+  background-image: url('newsBg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,7 +156,7 @@
   box-shadow: 0 0 10px 0 #00000020;
 }
 .hnews_ltBg{
-  background-image: url('./newsletterBg.jpg');
+  background-image: url('newsletterBg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -12,42 +12,42 @@ import { Autoplay, Pagination } from "swiper/modules";
 const ServicesCard = () => {
   const serviceData = [
     {
-      icon: "./service1.png",
+      icon: "service1.png",
       title: "Website Development",
       para: "Our website development services help you create a powerful online presence.",
     },
     {
-      icon: "./service2.png",
+      icon: "service2.png",
       title: "Software Development",
       para: "From ideation to deployment, we work closely with you to create innovative software.",
     },
     {
-      icon: "./service3.png",
+      icon: "service3.png",
       title: "E-commerce Website",
       para: "Our e-commerce website help you create an engaging online shopping experience.",
     },
     {
-      icon: "./service4.png",
+      icon: "service4.png",
       title: "Payment Gateway",
       para: "Payment gateway integration services ensure secure and seamless transactions.",
     },
     {
-      icon: "./service1.png",
+      icon: "service1.png",
       title: "SEO",
       para: "Our SEO services help you achieve higher search engine rankings drive more traffic.",
     },
     {
-      icon: "./service2.png",
+      icon: "service2.png",
       title: "Graphic Design",
       para: "Our graphic design services are tailored to your unique needs, with customised visuals.",
     },
     {
-      icon: "./service3.png",
+      icon: "service3.png",
       title: "SMM",
       para: "Our social media marketing services help you connect with your audience and interact.",
     },
     {
-      icon: "./service4.png",
+      icon: "service4.png",
       title: "Trademark Service",
       para: "Our trademark service helps you protect your intellectual property by registering your trademark.",
     },

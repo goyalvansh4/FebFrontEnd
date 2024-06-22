@@ -19,7 +19,7 @@ const HeroSlider = ({ data }) => {
         </button>
       </div>
       <div className="imageContainer lg:w-2/5 w-[100%]">
-        <img className="w-1/4 h-full" src="./slider1.png" alt="slider" />
+        <img className="w-1/4 h-full" src="slider1.png" alt="slider" />
       </div>
     </div>
   );
