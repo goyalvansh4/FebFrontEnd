@@ -1,12 +1,12 @@
 import React from 'react'
-import Chero from './Chero'
 import CbelowHero from './CbelowHero'
 import NewsLetter from '../Project/NewsLetter'
+import Hero from '../Hero/Hero'
 
 const ContactUs = () => {
   return (
     <>
-      <Chero />
+      <Hero title={"Contact Us"} subtitle={"Contact Us"}/>
       <CbelowHero />
       <NewsLetter />
     </>

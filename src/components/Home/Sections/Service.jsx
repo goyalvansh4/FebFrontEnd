@@ -4,7 +4,7 @@ import ServicesCard from "./ServicesCard";
 const Service = () => {
   return (
     <>
-      <div className="py-10 hservice_bg">
+      <div className="pt-10 pb-2 hservice_bg">
         <div className="flex flex-col  justify-center items-center gap-4">
           <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-1/8">
             Our Services
@@ -14,7 +14,7 @@ const Service = () => {
             expectations
           </p>
         </div>
-        <div className="lg:w-[85%]  mx-auto flex lg:flex-row gap-5 px-2  justify-center items-center">
+        <div className="lg:w-[85%]  mx-auto  flex lg:flex-row gap-5 px-2  justify-center items-center">
           <ServicesCard />
         </div>
       </div>

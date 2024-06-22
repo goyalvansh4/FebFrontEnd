@@ -3,7 +3,7 @@ import React from 'react'
 const Testimonial = () => {
   return (
     <div class="w-full flex flex-col items-center  justify-between">
-           <div className='htestBox w-3/5 p-4 rounded-xl shadow-2xl'>
+           <div className='htestBox lg:w-3/5 p-4 rounded-xl shadow-2xl'>
             <p className='text-base font-semibold text-[#000]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et magnam accusamus consectetur voluptatum laborum debitis.</p>
             <p className='text-base font-light text-[#494949]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, ipsum.</p>
            </div>

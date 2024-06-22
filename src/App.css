@@ -2,10 +2,11 @@ body {
   font-family: "Outfit", sans-serif;
 }
 header .navbar{
-  background-image: url('./headerBg.png');
+  /* background-image: url('./headerBg.png');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background-color: transparent;
 }
 .footerBg{
   background-image: url('./footerBg.jpg');
