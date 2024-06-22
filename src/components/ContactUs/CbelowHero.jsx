@@ -2,20 +2,22 @@ import React from 'react'
 import { MdOutlineMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
+
+
 const CbelowHero = () => {
 
 
     return (
         <>
-            <div className='bg-[#ffffff] lg:flex w-[85%] mx-auto'>
+            <div className='bg-[#ffffff] lg:flex w-[85%] mx-auto my-8'>
 
                 {/* section-2 left part */}
-                <div className='lg:w-1/2  w-[98%]  lg:h-screen flex lg:flex-row flex-col justify-center items-center my-5 '>
+                <div className='lg:w-1/2  w-[98%]  lg:h-screen flex lg:flex-row flex-col justify-center items-center  relative'>
                     <div className='lg:w-[80%] w-[90%] z-10'>
                         <img src="contact-img1.png" alt="contact img-1" />
                         
                     </div>
-                    <div className='pulse animate-custom-pulse2 border rounded-full absolute left-0 right-0 top-0 bottom-0 w-[320px] h-[320px] '></div>
+                    <div className='pulse animate-custom-pulse2 rounded-full absolute w-[500px] h-[500px] '></div>
                     
                 </div>
 
@@ -32,7 +34,7 @@ const CbelowHero = () => {
                             Feel Free to Contact With Us. We’re Ready to Help you</p>
                         </div>
 
-                        <div>
+                        <div className='flex flex-col gap-8'>
                             <div className='flex gap-4'>
                                 <div >
                                    <MdOutlineMail className='border rounded-full p-2 text-6xl text-white bg-[#1136FF]'/>
@@ -47,8 +49,8 @@ const CbelowHero = () => {
                                    <FaPhoneAlt  className='border rounded-full p-2 text-6xl text-white bg-[#1136FF]'/>
                                 </div>
                                 <div>
-                                    <p>Email Address</p>
-                                    <a className='text-3xl' href="support@febtech.in">support@febtech.in </a>
+                                    <p>Phone</p>
+                                    <a className='text-3xl' href="support@febtech.in">+91 8868864441</a>
                                 </div>
                             </div>
                             <div className='flex gap-4'>
@@ -56,8 +58,10 @@ const CbelowHero = () => {
                                    <IoLocationOutline className='border rounded-full p-2 text-6xl text-white bg-[#1136FF]'/>
                                 </div>
                                 <div>
-                                    <p>Email Address</p>
-                                    <a className='text-3xl' href="support@febtech.in">support@febtech.in </a>
+                                    <p>Address</p>
+                                    <a className='text-3xl' href="https://g.co/kgs/Eg5aXuk" target='blank'>
+                                    Second Floor, Dehradun Road, near Hotel Raj Mahal, Rampur, Roorkee, Uttarakhand 247667
+                                    </a>
                                 </div>
                             </div>
                         </div>

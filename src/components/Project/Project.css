@@ -65,7 +65,7 @@
 .animate-custom-pulse2 {
   animation-name: pulse;
   animation-duration: 4s; /* Custom animation duration */
-  background-color: bisque;
+  background-color: #FFF4E8;
   animation-iteration-count: infinite;
 }
 
