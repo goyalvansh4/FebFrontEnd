@@ -84,7 +84,7 @@ const ServicesCard = () => {
         {/* Loop through the serviceData array and display the data */}
         {serviceData.map((data, index) => {
           return (
-            <SwiperSlide key={index} className="bg-[#fdfdfd] lg:w-1/4 rounded-xl my-16">
+            <SwiperSlide key={index} className="bg-[#fdfdfd] lg:w-1/4 rounded-xl shadow-xl my-16">
               <div className="serviceCard  lg:flex lg:flex-col p-4 mb-4 gap-10">
                 <div className="tech_icon w-[70px]">
                   <img

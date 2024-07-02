@@ -54,7 +54,7 @@ const Partner = () => {
             Become a Partners &gt;&gt;
           </a>
         </div>
-        <div className="w-full lg:w-[65%] stats  bg-white py-4 px-6 rounded-xl flex gap-5">
+        <div className="w-full lg:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex gap-5">
           <div className="stat flex flex-col gap-2">
           <div className="flex gap-2 items-center">
               <svg
