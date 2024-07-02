@@ -37,9 +37,9 @@ const NewsLetter = () => {
           <div className='trianglet'>
                 <img src="triangle.png" alt="triangle-icon"/>
               </div>
-            <div className='w-[65%] h-[70%] sliding'>
+            <div className='md:w-[65%] md:h-[70%] sliding p-10 md:p-0'>
               <img src="./projectn-img.png" alt="newsletter image" className=''/>
-              <div class="w-[320px] h-[320px] border rounded-full animate-pulse animate-custom-pulse absolute right-10 bottom-0 top-0"></div>
+              <div className="w-[320px] h-[320px] md:border rounded-full md:animate-pulse md:animate-custom-pulse absolute right-10 bottom-0 top-0"></div>
             </div>
 
            <div className='flex absolute right-20 bottom-20 '>

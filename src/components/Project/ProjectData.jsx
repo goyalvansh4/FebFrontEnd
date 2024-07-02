@@ -38,13 +38,13 @@ const ProjectData = () => {
     <>
       <div className='w-[75%] flex flex-wrap justify-between items-center gap-10 my-10 mx-auto'>
         {data.map((item) => {
-          return <div className='bg-black relative w-[35vw] h-[60vh] my-10'>
+          return <div className='bg-black relative sm:w-[50vw] lg:w-[35vw] w-[380px] md:h-[60vh] h-[380px] my-10 mx-auto'>
           <div className='absolute h-[75%] w-full p-card'>
               <img src={item.image} alt="project-img" className='w-full h-full '/>
           </div>
           <div className='flex justify-between items-center absolute bottom-0 left-0 right-0 h-[25%] px-10'>
               <div className='text-white '>
-                 <p className='text-2xl font-semibold'>{item.type}</p>
+                 <p className='md:text-2xl text-base font-semibold'>{item.type}</p>
                  <p>{item.strategy}</p>
               </div>
               <div className='flex justify-center items-center border rounded-full bg-white w-12 h-12 p-shadow'>

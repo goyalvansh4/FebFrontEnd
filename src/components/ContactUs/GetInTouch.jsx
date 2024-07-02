@@ -11,11 +11,11 @@ const GetInTouch = () => {
          <form action="#">
             <div className='w-[90%] mx-auto flex flex-col gap-10'>
             <div className='w-full flex gap-10 '>
-                <input type="text" className='p-4 border border-black w-[360px]' placeholder='Full Name'/>
-                <input type="tel" className='p-4 border border-black w-[360px]' placeholder='Phone Number'/>
-                <input type="email" className='p-4 border border-black w-[360px]' placeholder='E-mail'/>
+                <input type="text" id='text' required className='cclick p-4 border border-black text-black w-[360px]' placeholder='Full Name'/>
+                <input type="tel" id='tel' required className='cclick p-4 border border-black w-[360px]' placeholder='Phone Number'/>
+                <input type="email" id='email' required className='cclick p-4 border border-black w-[360px]' placeholder='E-mail'/>
             </div>
-            <textarea name="message" id="message" className='w-[100%] h-[150px] border border-black'></textarea>
+            <textarea name="message" id="message" placeholder='Write Message' className='cclick w-[100%] h-[150px] border border-black p-4'></textarea>
             </div>
 
             <div className='flex justify-center items-center w-full my-10'>
