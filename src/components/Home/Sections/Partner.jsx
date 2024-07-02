@@ -4,27 +4,35 @@ const Partner = () => {
   const partnerData =[
     {
       src:"partners1.png",
+      left: "0%",
     },
     {
       src:"partners2.png",
+      left: "0%",
     },
     {
       src:"partners3.png",
+      left: "-18%",
     },
     {
       src:"partners4.png",
+      left: "-17%",
     },
     {
       src:"partners5.png",
+      left: "0%",
     },
     {
       src:"partners6.png",
+      left: "0%",
     },
     {
       src:"partners7.png",
+      left: "-18%",
     },
     {
       src:"partners8.png",
+      left: "-17%",
     },
   ]
   return (
@@ -37,7 +45,7 @@ const Partner = () => {
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Global Partners
         </a>
-        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] text-4xl ">
+        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl text-4xl ">
           We’ve <span className="text-[#1136ff]">200+</span> Global Clients
           Meet With Our Clients
         </p>
@@ -94,10 +102,15 @@ const Partner = () => {
         </div>
       </div>
       <div className="pright lg:w-1/2 flex flex-col lg:flex-row justify-around">
-        <div className="partners  flex flex-col lg:flex-row flex-wrap  justify-center gap-5 lg:justify-around">
+        <div className="partners  flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
          { partnerData.map((partner,index)=>{
-          return  <div key={index} className="w-full lg:w-2/5 flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff]">
-          <img src={partner.src}  alt="partner1" />
+          return  <div key={index}
+          style={{
+            left: `${partner.left}`,
+            // top: `${index + 20}%`,
+          }}
+           className="w-full lg:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative">
+          <img src={partner.src}   alt="partner1"  />
         </div>
          })}
         </div>

@@ -15,7 +15,7 @@ const Growing = () => {
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
           Quality Service
         </a>
-        <p className="lg:w-4/5 max-lg:text-center text-5xl font-semibold text-[#000] leading-normal">
+        <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl text-5xl font-semibold text-[#000] leading-normal">
           Feb Tech is incredibly For Your Business.
         </p>
         <p className="lg:w-3/4 max-lg:text-center">
@@ -23,7 +23,7 @@ const Growing = () => {
           have the expertise and experience to help you achieve your business
           objectives and reach your full potential in the digital landscape.
         </p>
-        <div className="w-full max-lg:flex max-lg:justify-center">
+        <div className="w-full max-sm:py-4 max-lg:flex max-lg:justify-center">
           <a
             href=""
             className="text-black border-2 border-blue-200 text-lg bg-transparent px-8 py-3

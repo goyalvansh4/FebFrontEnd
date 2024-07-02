@@ -6,10 +6,10 @@ const Service = () => {
     <>
       <div className="pt-10 pb-2 hservice_bg">
         <div className="flex flex-col  justify-center items-center gap-4">
-          <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-1/8">
+          <p className="text-center text-2xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-1/8">
             Our Services
           </p>
-          <p className="text-center text-4xl w-2/4 leading-relaxed font-semibold text-[#000]">
+          <p className="text-center max-sm:text-xl text-4xl w-2/4 leading-relaxed font-semibold text-[#000]">
             We believe in delivering quality services that exceed our clients'
             expectations
           </p>

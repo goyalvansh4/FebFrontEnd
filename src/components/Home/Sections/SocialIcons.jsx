@@ -9,7 +9,7 @@ const ScocialIcons = () => {
     <FaLinkedin />,
   ];
   return (
-    <ul className=" flex justify-center items-center gap-4 pl-4">
+    <ul className=" flex max-sm:hidden justify-center items-center gap-4 pl-4">
       {icons.map((icon, index) => (
         <li key={index} className="text-2xl text-[#000] hover:text-[#1136FF]">
           {icon}

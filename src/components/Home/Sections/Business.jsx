@@ -15,7 +15,7 @@ const Business = () => {
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#5C28CA] text-xl">
          Knowledge and Numbers
         </a>
-        <p className="lg:w-4/5  max-lg:text-center text-3xl font-semibold text-[#000] leading-normal">
+        <p className="lg:w-4/5  max-lg:text-center text-3xl font-semibold text-[#000] max-sm:text-2xl leading-normal">
         There are several reasons to choose Feb tech for your business needs.
         </p>
         <p className="lg:w-3/4">
@@ -25,9 +25,8 @@ const Business = () => {
           <li><span className="mr-1 lg:mr-5  bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span>Experience</li>
           <li><span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span>Timely Delivery </li>
           <li><span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span> Affordable Pricing</li>
-          <li><span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span> Expert Team</li>
         </ul>
-        <div className="w-full max-lg:flex justify-center">
+        <div className="w-full max-lg:flex max-sm:py-4 justify-center">
           <a
             href="/"
             className="myBtn bg-transparent  border-2 border-blue-200 text-[#000] text-lg bg-[#1136ff] px-8 py-3"

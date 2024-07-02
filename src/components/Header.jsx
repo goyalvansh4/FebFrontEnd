@@ -12,14 +12,14 @@ export const Header = () => {
     document.getElementById("toggleClose").style.display = "block";
   };
   return (
-    <header className="border-b border-gray-700  lg:w-[98.8vw] mx-auto tracking-wide  lg:absolute z-50">
-      <nav className="navbar flex  gap-x-2   min-h-[30px]">
+    <header className="border-b border-gray-700 max-w-[98.8vw]  lg:w-[98.8vw] mx-auto tracking-wide  lg:absolute z-50">
+      <nav className="navbar flex  gap-x-2 min-h-[30px] max-sm:px-4">
         <a href="javascript:void(0)" className="border-r border-gray-700 ">
           <img src="./logo.png" alt="logo" className="pl-4 w-2/4" />
         </a>
         <div
           id="collapseMenu"
-          className="max-lg:hidden  lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+          className="max-lg:hidden  lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 max-sm:px-4"
         >
           <button
             onClick={handleClose}
@@ -443,7 +443,7 @@ export const Header = () => {
             </svg>
           </button>
         </div>
-        <ScocialIcons />
+        <ScocialIcons className="max-sm:hidden" />
       </nav>
     </header>
   );

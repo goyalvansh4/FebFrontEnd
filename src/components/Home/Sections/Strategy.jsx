@@ -83,7 +83,7 @@ const Strategy = () => {
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  lg:w-2/5">
           Working Process
         </p>
-        <p className="text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
+        <p className="max-sm:text-2xl text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
           We are committed to providing the best strategic guidance available
         </p>
         <div className="arrow mt w-full max-lg:hidden lg:relative z-0">
@@ -107,7 +107,7 @@ const Strategy = () => {
               >
                 <img src={data.src} alt="" className="hrotate_img" />
               </div>
-              <div className="w-full lg:w-1/3 wk_process flex flex-col gap-2 items-center bg-white rounded-xl overflow-hidden py-4 px-1">
+              <div className="w-full lg:w-1/3 wk_process flex flex-col gap-2 items-center bg-white rounded-xl drop-shadow-2xl overflow-hidden py-4 px-1">
                 <p className="text-base font-light text-[#1136ff]">
                   {data.title}
                 </p>

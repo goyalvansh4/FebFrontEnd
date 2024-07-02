@@ -12,7 +12,7 @@ const TestimonialContainer = () => {
        <div className='flex flex-col gap-10  '>
        <div class="lg:w-full flex flex-col items-center gap-8">
            <p className='lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl'>Our Testimonial</p>
-           <p className='lg:w-[80%] text-center font-bold text-[#000] text-5xl leading-normal  '>What Our Clients Say About Solutions</p>
+           <p className='lg:w-[80%] text-center font-bold text-[#000] text-5xl max-sm:text-2xl leading-normal  '>What Our Clients Say About Solutions</p>
         </div>
         {/* <Testimonial/> */}
         <SlickSlider test={true}/>
