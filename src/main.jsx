@@ -13,6 +13,7 @@ import Home from './components/Home/Home.jsx';
 import Project from './components/Project/Project.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
 import { Client } from './components/Client/Client.jsx';
+import Career from './components/Careers/Career.jsx';
 
 const router= createBrowserRouter([
   {
@@ -38,7 +39,12 @@ const router= createBrowserRouter([
       {
         path: "/client",
         element: <Client />
+      },
+      {
+        path: "/careers",
+        element: <Career />
       }
+
     ]
 },
 ])

@@ -401,7 +401,7 @@ export const Header = () => {
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
                 <NavLink
-                  href="javascript:void(0)"
+                  to= "/careers"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Careers
