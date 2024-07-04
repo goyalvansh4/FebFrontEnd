@@ -14,6 +14,8 @@ import Project from './components/Project/Project.jsx';
 import ContactUs from './components/ContactUs/ContactUs.jsx';
 import { Client } from './components/Client/Client.jsx';
 import Career from './components/Careers/Career.jsx';
+import Services from './components/Services/Services.jsx';
+import Blog from './components/Blog/Blog.jsx';
 
 const router= createBrowserRouter([
   {
@@ -27,6 +29,10 @@ const router= createBrowserRouter([
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/services",
+        element: <Services />
       },
       {
         path: "/project",
@@ -43,6 +49,10 @@ const router= createBrowserRouter([
       {
         path: "/careers",
         element: <Career />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
       }
 
     ]

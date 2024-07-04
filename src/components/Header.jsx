@@ -58,7 +58,6 @@ export const Header = () => {
               <li class="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
                 <NavLink
                   to="/services"
-                  href="javascript:void(0)"
                   className="text-[#000] rounded-md px-4 py-1 block font-bold text-lg"
                 >
                   Services
@@ -393,7 +392,7 @@ export const Header = () => {
               </li>
               <li className="max-lg:border-b max-lg:py-3 px-3">
                 <NavLink
-                  href="javascript:void(0)"
+                   to={"/blog"}
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Blog
