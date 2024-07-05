@@ -87,7 +87,7 @@ const PopularService = () => {
             <p className='text-center px-6 text-justify z-10'>{items.para}</p>
 
             <button type="button" className='capitalize underline underline-offset-4 mb-4 z-10 '>read more</button>
-            <div className='overlay'></div>
+            <div className='overlay2'></div>
          </div>
 
          

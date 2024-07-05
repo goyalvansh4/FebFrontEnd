@@ -2,7 +2,7 @@ import React from "react";
 
 const Business = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full mx-auto gap-4 lg:h-[80vh] border-b-2 justify-between my-16 ">
+    <div className="flex flex-col lg:flex-row w-full mx-auto gap-4 border-b-2 justify-between my-16 ">
       <div className="flex w-full lg:w-1/2 items-center border-r-2 px-2">
         <img
           id="heroImg1"
@@ -11,7 +11,7 @@ const Business = () => {
           alt="Awesome hero page image"
         />
       </div>
-      <div className="lg:w-1/2 flex flex-col gap-8 px-10 justify-center">
+      <div className="lg:w-1/2 flex flex-col gap-8 px-10 py-4 justify-center">
         <a className="lg:w-2/5 text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#5C28CA] text-xl">
          Knowledge and Numbers
         </a>

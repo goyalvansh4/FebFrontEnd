@@ -14,12 +14,12 @@ export const Header = () => {
   return (
     <header className="border-b border-gray-700 max-w-[98.8vw]  lg:w-[98.8vw] mx-auto tracking-wide  lg:absolute z-50">
       <nav className="navbar flex  gap-x-2 min-h-[30px] max-sm:px-4">
-        <a href="javascript:void(0)" className="border-r border-gray-700 ">
+        <a href="javascript:void(0)" className=" border-r border-gray-700">
           <img src="./logo.png" alt="logo" className="pl-4 w-2/4" />
         </a>
         <div
           id="collapseMenu"
-          className="max-lg:hidden  lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 max-sm:px-4"
+          className="max-lg:hidden flex justify-around w-[80%] lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 max-sm:px-4"
         >
           <button
             onClick={handleClose}
@@ -41,24 +41,24 @@ export const Header = () => {
             </svg>
           </button>
           <div className="h-full flex items-center border-r border-gray-700">
-            <ul className="lg:flex items-center lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            <ul className="lg:flex items-center w-full justify-between lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
               <li className="mb-6 hidden max-lg:block">
                 <a href="javascript:void(0)">
                   <img src="./logo.png" alt="logo" className="w-2/4" />
                 </a>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                   to="/"
-                  className="text-[#000] rounded-md px-4 py-1 block font-bold text-lg"
+                  className="text-[#000] rounded-md py-1 block font-bold text-lg"
                 >
                   Home
                 </NavLink>
               </li>
-              <li class="group text-[14px] max-lg:border-b max-lg:px-3 max-lg:py-2 relative">
+              <li class="group text-[14px] max-lg:border-b max-lg: max-lg:py-2 relative">
                 <NavLink
                   to="/services"
-                  className="text-[#000] rounded-md px-4 py-1 block font-bold text-lg"
+                  className="text-[#000] rounded-md  py-1 block font-bold text-lg"
                 >
                   Services
                   <svg
@@ -374,7 +374,7 @@ export const Header = () => {
                   </div>
                 </div>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                   to="/about"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -382,7 +382,7 @@ export const Header = () => {
                   About Us
                 </NavLink>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                   to={"/client"}
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -390,7 +390,7 @@ export const Header = () => {
                   Our Clients
                 </NavLink>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                    to={"/blog"}
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -398,7 +398,7 @@ export const Header = () => {
                   Blog
                 </NavLink>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                   to= "/careers"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -406,7 +406,7 @@ export const Header = () => {
                   Careers
                 </NavLink>
               </li>
-              <li className="max-lg:border-b max-lg:py-3 px-3">
+              <li className="max-lg:border-b max-lg:py-3 ">
                 <NavLink
                   to="/contactUs"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -414,7 +414,7 @@ export const Header = () => {
                   Contact Us
                 </NavLink>
               </li>
-              <li className="max-lg:border-b max-lg:py-3  px-3">
+              <li className="max-lg:border-b max-lg:py-3  ">
                 <NavLink
                   to="/project"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
@@ -442,7 +442,7 @@ export const Header = () => {
             </svg>
           </button>
         </div>
-        <ScocialIcons className="max-sm:hidden" />
+        <ScocialIcons className="sm:hidden" />
       </nav>
     </header>
   );

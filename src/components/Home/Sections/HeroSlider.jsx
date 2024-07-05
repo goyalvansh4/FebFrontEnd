@@ -8,11 +8,11 @@ const HeroSlider = ({ data }) => {
         background: `url(headerBg.png) no-repeat center center/cover`,
       }}
     >
-      <div className="content  lg:w-2/5 w-[100%] px-3 flex lg:pl-10 gap-4 flex-col justify-center items-center lg:gap-12">
+      <div className="content  lg:w-2/5 w-[100%] px-3 flex lg:pl-10 gap-2 flex-col justify-center items-center lg:gap-4">
         <p className="text-white max-sm:text-sm sm:text-lg lg:text-xl lg:w-[90%] bg-[#1136FF] py-2 rounded-lg px-3 mt-3 text-center">
           {data.title}
         </p>
-        <h1 className="text-[#00234B] max-sm:text-2xl text-7xl font-bold uppercase text-left">
+        <h1 className="text-[#00234B] max-sm:text-2xl text-7xl  font-bold uppercase text-left">
           {data.main}
         </h1>
         <h4 className="text-[#00234B]  max-sm:text-xl text-5xl  lg:text-left">
@@ -22,7 +22,7 @@ const HeroSlider = ({ data }) => {
           {data.para}
         </p>
         <button className="lg:w-[40%] bg-[#1136ff] py-4 px-4 myBtn text-white max-sm:text-sm text-lg font-medium rounded-xl">
-          Discover More &gt;&gt;
+          <span className="flex">Discover More &gt;&gt;</span>
         </button>
       </div>
       <div className="imageContainer lg:w-2/5 w-[100%] max-sm:py-5">

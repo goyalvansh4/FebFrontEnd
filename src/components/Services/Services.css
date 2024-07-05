@@ -22,7 +22,7 @@
     overflow: hidden;
   }
 
-  .overlay {
+  .overlay2 {
     position: absolute ;
     top: 0;
     right: 0; 
@@ -37,7 +37,7 @@
     z-index: 1; /* Adjust as needed */
   }
 
-  .card:hover .overlay{
+  .card:hover .overlay2{
     opacity: 1;
 
   }

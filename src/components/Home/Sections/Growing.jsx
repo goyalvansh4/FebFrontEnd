@@ -2,7 +2,7 @@ import React from "react";
 
 const Growing = () => {
   return (
-    <div className="flex flex-col lg:flex-row  w-full mx-auto gap-5 lg:h-[80vh] border-b-2 justify-between my-16 ">
+    <div className="flex flex-col lg:flex-row w-full mx-auto gap-5 lg:h-screen border-b-2 justify-between my-20 ">
       <div className="flex w-full lg:w-1/2 items-center border-r-2 px-2">
         <img
           id="heroImg1"
