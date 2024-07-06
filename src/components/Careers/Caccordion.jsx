@@ -69,7 +69,7 @@ const Caccordion = () => {
                     <p><span className='font-semibold uppercase'>Experience:</span> {item.exp}</p>
                     <div className='flex items-center w-full my-10'>
             <div className='capitalize bg-yellow-400 flex items-center justify-between px-6 py-3 gap-2 pb-shadow'>
-              <span>Apply Now</span>
+              <a href='#cform'> Apply Now</a>
               
             </div>
           </div>

@@ -57,7 +57,7 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -66,7 +66,7 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       },
@@ -121,15 +121,12 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
   return (
     <>
       {(project) && <Slider {...projects} className="w-[90vw] h-full flex">
-      {/* <Project />
-      <Project />
-      <Project /> */}
       {
         projectData.map((item,index)=>{
           return <Project key={index} src={item.src} title={item.title} />})}
       </Slider>
     }
-      {(test) && <Slider {...tests} className="w-[80vw] mx-auto lg:w-[40vw] bg-transparent h-full gap-2 my-5 flex">
+      {(test) && <Slider {...tests} className="w-[80vw] mx-auto flex lg:w-[40vw] bg-transparent h-full gap-5 my-5">
         <Testimonial />
         <Testimonial />
         <Testimonial />

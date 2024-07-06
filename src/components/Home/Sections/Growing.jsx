@@ -23,10 +23,10 @@ const Growing = () => {
           have the expertise and experience to help you achieve your business
           objectives and reach your full potential in the digital landscape.
         </p>
-        <div className="w-full max-sm:py-4 max-lg:flex max-lg:justify-center">
+        <div className="w-full max-sm:py-4 py-3 max-lg:flex max-lg:justify-center">
           <a
             href=""
-            className="text-black border-2 border-blue-200 text-lg bg-transparent px-8 py-3
+            className="text-black border-2 border-blue-200 text-lg bg-transparent px-8  py-3
         myBtn"
           >
             Learn More &gt;&gt;

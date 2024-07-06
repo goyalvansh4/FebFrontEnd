@@ -3,20 +3,20 @@ import React from 'react'
 const Acompany = () => {
   return (
     <>
-          <div className='bg-[#ffffff] lg:flex '>
+          <div className='bg-[#ffffff] lg:flex'>
 
               {/* section-2 left part */}
-              <div className='lg:w-1/2  w-[98%]  lg:h-screen flex lg:flex-row flex-col justify-center items-center my-5'>
-                  <div className='lg:w-5/6 w-[90%] border'>
+              <div className='lg:w-1/2 w-[98%] flex justify-center items-center'>
+                  <div className='lg:w-5/6 w-[90%] mx-auto py-4 lg:py-0'>
                       <img src="about-img2.png" alt="about image-2" />
                   </div>
               </div>
 
               {/* section-2 right part */}
 
-              <div className='lg:w-1/2 w-full lg:h-screen flex  flex-col justify-center items-center px-10 gap-6'>
+              <div className='lg:w-1/2 w-full flex flex-col justify-center items-center px-10 gap-4'>
 
-                  <div className='flex flex-col justify-around gap-4 h-5/6'>
+                  <div className='flex flex-col justify-around gap-4 h-5/6 lg:h-auto '>
                       <div >
                           <span className='text-xl capitalize text-white font-bold bg-[#1136FF] text-center px-2 py-2 a-shadow-sm rounded '>about company</span>
                       </div>
@@ -53,10 +53,10 @@ const Acompany = () => {
                       <div className='md:flex gap-4 w-full'>
                       </div>
                       <p className='font-semibold text-3xl'>Who We Are</p>
-                      <p className='text-justify'>
+                      <p className='text-justify lg:text-sm xl:text-base'>
                           <span className='text-[#1136FF]'>Feb Tech </span>
                           is a leading technology and digital marketing agency with a focus on providing innovative solutions to businesses across the globe. Established in 2020, our mission is to help businesses succeed in the digital era by leveraging cutting-edge technologies and the latest digital marketing trends.</p>
-                      <p className='text-justify'>
+                      <p className='text-justify lg:text-sm xl:text-base'>
                           At Feb Tech, we pride ourselves on delivering exceptional results that exceed our clients’ expectations. Our approach is centered on understanding our clients’ unique needs and developing customized solutions to help them achieve their business goals. We strive to build long-lasting relationships with our clients by providing personalized services and exceptional customer support.
                       </p>
 

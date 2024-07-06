@@ -2,7 +2,7 @@ import React from 'react'
 
 const CareerForm = () => {
   return (
-    <div className='w-[85%] my-10 border border-black mx-auto bg-white flex flex-col        items-center gap-10'>
+    <div id='cform' className='w-[85%]  my-10 border border-black mx-auto bg-white flex flex-col        items-center gap-10'>
         <div className='mt-16'>
           <span className='text-xl capitalize text-white font-bold bg-[#1136FF] text-center px-2 py-2 a-shadow-sm rounded'>Opportunity</span>
         </div>

@@ -4,12 +4,12 @@ import ProgressBar from './ProgressBar'
 const Aprogress = () => {
   return (
     <>
-          <div className='bg-[#ffffff] lg:flex my-10'>
+          <div className='bg-[#ffffff] lg:flex my-10 lg:my-0 '>
 
               {/* section-3 left part */}
-              <div className='lg:w-1/2 md:h-screen flex  justify-center items-center px-10 gap-6 my-10'>
+              <div className='lg:w-1/2 flex  justify-center items-center px-10 gap-6 my-10 xl:my-0'>
 
-                  <div className='flex flex-col justify-around gap-4 h-5/6'>
+                  <div className='flex flex-col justify-around gap-4'>
                       <div >
                           <span className='text-xl capitalize text-white font-bold bg-[#1136FF] text-center  a-shadow-sm rounded px-2 py-2'>Our Best Skills</span>
                       </div>

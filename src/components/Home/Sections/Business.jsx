@@ -26,7 +26,7 @@ const Business = () => {
           <li><span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span>Timely Delivery </li>
           <li><span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">&#10003;</span> Affordable Pricing</li>
         </ul>
-        <div className="w-full max-lg:flex max-sm:py-4 justify-center">
+        <div className="w-full py-2 max-lg:flex max-sm:py-4 justify-center">
           <a
             href="/"
             className="myBtn bg-transparent  border-2 border-blue-200 text-[#000] text-lg bg-[#1136ff] px-8 py-3"
