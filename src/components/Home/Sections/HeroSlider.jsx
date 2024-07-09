@@ -22,7 +22,7 @@ const HeroSlider = ({ data }) => {
           {data.para}
         </p>
         <button className="lg:w-[40%] bg-[#1136ff] py-4 px-4 myBtn text-white max-sm:text-sm text-lg font-medium rounded-xl">
-          <span className="flex">Discover More &gt;&gt;</span>
+          <span className="flex items-center justify-center">Discover More &gt;&gt;</span>
         </button>
       </div>
       <div className="imageContainer lg:w-2/5 w-[100%] max-sm:py-5">

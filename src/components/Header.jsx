@@ -48,18 +48,25 @@ export const Header = () => {
                 </a>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to="/"
-                  className="text-[#000] rounded-md py-1 block font-bold text-lg"
+                  className="text-[#000] rounded-md py-1 px-4 block font-bold text-lg"
                 >
                   Home
                 </NavLink>
+                </button>
+
               </li>
               <li class="group text-[14px] max-lg:border-b max-lg: max-lg:py-2 relative">
+                <button 
+                onClick={handleClose}>
                 <NavLink
                   to="/services"
-                  className="text-[#000] rounded-md  py-1 block font-bold text-lg"
+                  className="text-[#000] rounded-md  py-1 px-4 block font-bold text-lg"
                 >
+                  <span className="items-center flex">
                   Services
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -67,15 +74,19 @@ export const Header = () => {
                     height="16px"
                     class="ml-1 inline-block"
                     viewBox="0 0 24 24"
+                    className="max-xl:hidden"
                   >
                     <path
                       d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
                       data-name="16"
                       data-original="#000000"
                     />
+                    
                   </svg>
+                  </span>
                 </NavLink>
-                <div class="lg:absolute lg:top-[60px] max-lg:top-8 -left-6 z-50 flex justify-around lg:w-[65vw] shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
+                </button>
+                <div class="lg:absolute lg:top-[60px] max-xl:hidden max-lg:top-8 -left-6 z-50 flex justify-around lg:w-[65vw] shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
                   <div class="">
                     <h6 class="text-base text-[#007bff] font-bold">Web Development</h6>
                     <ul class="mt-3 pt-3 border-t border-1 space-y-3">
@@ -375,52 +386,70 @@ export const Header = () => {
                 </div>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to="/about"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   About Us
                 </NavLink>
+                </button>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to={"/client"}
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Our Clients
                 </NavLink>
+                </button>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                    to={"/blog"}
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Blog
                 </NavLink>
+                </button>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to= "/careers"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Careers
                 </NavLink>
+                </button>
               </li>
               <li className="max-lg:border-b max-lg:py-3 ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to="/contactUs"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Contact Us
                 </NavLink>
+                </button>
               </li>
               <li className="max-lg:border-b max-lg:py-3  ">
+                <button
+                onClick={handleClose}>
                 <NavLink
                   to="/project"
                   className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
                 >
                   Project
                 </NavLink>
+                </button>
               </li>
             </ul>
           </div>
