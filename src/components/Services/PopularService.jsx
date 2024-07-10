@@ -68,7 +68,7 @@ const PopularService = () => {
               <span className='text-xl capitalize text-white font-bold bg-[#1136FF] text-center px-2 py-2 a-shadow-sm rounded '>popular service</span>
           </div>
             <p className='text-4xl font-semibold text-center'>
-            Outsmart the competition with best-in-class <br /> Digital Services
+            Outsmart the competition with best-in-className <br /> Digital Services
             </p>
         </div>
         <div>

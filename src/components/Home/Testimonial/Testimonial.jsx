@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = () => {
   return (
-    <div class="w-full flex flex-col justify-between">
+    <div className="w-full flex flex-col justify-between">
       <div className='flex justify-center'>
            <div className='htestBox lg:w-3/5 py-4 px-2 rounded-xl shadow-2xl'>
             <p className='text-base text-center font-semibold text-[#000]'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et magnam accusamus consectetur voluptatum laborum debitis.</p>

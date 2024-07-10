@@ -47,8 +47,8 @@ const Scrolling = ({ end, duration,title,progress }) => {
     <>
     { (progress) ?  <div ref={ref} className="flex flex-col gap-2 number">
     <div className='flex justify-between'>
-    <p class="text-xl text-black font-semibold flex-1">{title}</p>
-    <p class="text-xl text-black-500 font-semibold">{count}%</p>
+    <p className="text-xl text-black font-semibold flex-1">{title}</p>
+    <p className="text-xl text-black-500 font-semibold">{count}%</p>
     </div>
     <input type="range" readOnly name="" id="" value={count} className='custom-range' />
   </div> : <p ref={ref} className='text-4xl font-bold'>{count}</p>

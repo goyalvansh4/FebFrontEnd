@@ -41,7 +41,7 @@ const Footer = () => {
       <div className="py-14 px-6 sm:px-10">
         <div className="grid max-lg:place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 max-lg:flex flex-col justify-center items-center">
-            <a href="javascript:void(0)">
+            <a href="">
               <img src="./logo.png" alt="logo" className="w-44 mb-2" />
             </a>
             <p className="lg:w-3/4 max-lg:text-center text-gray-800 text-md">
@@ -51,8 +51,8 @@ const Footer = () => {
               unique needs of our clients.
             </p>
             <ul className="flex max-lg:justify-center gap-4 mt-4">
-              {socialLinks.map((link) => (
-              <li className="h-[40px] w-[40px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
+              {socialLinks.map((link,index) => (
+              <li key={index} className="h-[40px] w-[40px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
                <a
                 href={link.url}
                 target="__blank"
@@ -74,7 +74,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Services
@@ -82,7 +82,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Pricing
@@ -90,7 +90,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Product Details
@@ -98,7 +98,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Portfolio
@@ -106,7 +106,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Contact Us
@@ -114,7 +114,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Team
@@ -128,7 +128,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   About Company
@@ -136,7 +136,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Contact
@@ -144,7 +144,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Blog Details
@@ -152,7 +152,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="javascript:void(0)"
+                  href=""
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Faqs

@@ -49,8 +49,8 @@ const CaccordionPerks = () => {
                                     <div className="overflow-hidden">
                                         <p className="pb-3">{item.para}</p>
                                         <ol className='listyle mx-4'>
-                                            {item.res.map((listItem) => {
-                                                return <li className='listyle'>
+                                            {item.res.map((listItem,index) => {
+                                                return <li key={index} className='listyle'>
                                                     {listItem}
                                                 </li>
                                             })}
@@ -103,7 +103,7 @@ const febItems = [
     },
     {
         perks: "join our team",
-        para: "As a part of our team, you will have access to world-class training and development programs, competitive compensation and benefits, and a dynamic and challenging work environment. You will work with some of the best minds in the industry, collaborate on innovative projects, and make a meaningful impact on our clients and society.",
+        para: "As a part of our team, you will have access to world-className training and development programs, competitive compensation and benefits, and a dynamic and challenging work environment. You will work with some of the best minds in the industry, collaborate on innovative projects, and make a meaningful impact on our clients and society.",
         res: [],
         qres: [],
 

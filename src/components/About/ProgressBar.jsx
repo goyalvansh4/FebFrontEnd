@@ -23,8 +23,8 @@ const ProgressBar = () => {
     return (
         <>
             <div>
-                <div class="max-w-4xl mx-auto mt-6">
-                    <div class="flex flex-col gap-5 mb-6">                      
+                <div className="max-w-4xl mx-auto mt-6">
+                    <div className="flex flex-col gap-5 mb-6">                      
                         {data.map((item)=>{
                             return <Scrolling end={item.end} duration={item.dur} title={item.title} progress={true}/>
                         })}

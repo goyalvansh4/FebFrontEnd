@@ -50,16 +50,16 @@ const Caccordion = () => {
                     <p className="pb-3">{item.para}</p>
                     <p className='py-2 font-semibold'>Key Responsibilities:</p>
                     <ul className='listyle mx-4'>
-                        {item.res.map((listItem)=>{
-                            return <li className='listyle'>
+                        {item.res.map((listItem,index)=>{
+                            return <li key={index} className='listyle'>
                                 {listItem}
                             </li>
                         })}
                     </ul>
                     <p className='py-2 font-semibold'>Requirements:</p>
                     <ul className='listyle mx-4'>
-                        {item.qres.map((listItem)=>{
-                            return <li className='listyle'>
+                        {item.qres.map((listItem,index)=>{
+                            return <li key={index} className='listyle'>
                                 {listItem}
                             </li>
                         })}

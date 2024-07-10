@@ -24,7 +24,7 @@
   
 }
 
-.pb-shadow:hover {
+.pb-shadow:active {
   background-color: #1136FF;
   box-shadow: 10px 10px 0px 0px #facc15;
   color: white;
@@ -36,7 +36,7 @@
 
 .pn-shadow {
   box-shadow: 4px 4px 0px 0px #facc15;
-  transition: box-shadow 0.3s ease
+  transition: box-shadow 0.4s ease
 }
 .pn-shadow:hover {
   box-shadow: 4px 4px 0px 0px black;
