@@ -12,7 +12,7 @@ export const Header = () => {
     document.getElementById("toggleClose").style.display = "block";
   };
   return (
-    <header className="border-b border-gray-700 max-w-[98.8vw]  lg:w-[98.8vw] mx-auto tracking-wide  lg:absolute z-50">
+    <header className="border-b border-gray-700 max-w-[98vw]  lg:w-[98vw] mx-auto tracking-wide  lg:absolute z-50">
       <nav className="navbar flex  gap-x-2 min-h-[30px] max-sm:px-4">
         <a href="" className=" border-r border-gray-700">
           <img src="./logo.png" alt="logo" className="pl-4 w-2/4" />
