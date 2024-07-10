@@ -3,7 +3,7 @@ import React from "react";
 const HeroSlider = ({ data }) => {
   return (
     <div
-      className="hero  w-full h-[100%] py-5 flex flex-col lg:flex-row lg:justify-center lg:items-center gap-5 lg:gap-2"
+      className="hero  max-w-[99.3vw] h-[100%] py-5 flex flex-col lg:flex-row lg:justify-center lg:items-center mx-auto gap-5 lg:gap-2"
       style={{
         background: `url(headerBg.png) no-repeat center center/cover`,
       }}
