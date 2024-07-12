@@ -24,7 +24,7 @@ const CareerForm = () => {
     $formData.append('applyFor', formData.applyFor);
     $formData.append('file', formData.file);
 
-      let url = 'http://192.168.35.21:3000/api/career/create';
+      let url = 'http://127.0.0.1:3000/api/career/create';
       let response = await axios.post(url, $formData, {
         headers: {
           'Content-Type': 'multipart/form-data'

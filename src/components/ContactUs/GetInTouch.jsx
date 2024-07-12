@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import {toast,ToastContainer} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
@@ -16,24 +16,22 @@ const GetInTouch = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-   toast.success('Thank You For Contacting Us!');
-
-    // try {
-    //   let url = 'http://192.168.182.21:3000/api/users/sendMail';
-    //   let response = await axios.post(url, formData);
-    //   console.log(response.data);
-    //   alert('Message sent successfully!');
-    //   // Clear form fields after successful submission
-    //   setFormData({
-    //     name: '',
-    //     email: '',
-    //     mobile: '',
-    //     message: ''
-    //   });
-    // } catch (error) {
-    //   console.error('Error sending message:', error);
-    //   alert('Failed to send message. Please try again later.');
-    // }
+    try {
+      let url = 'http://127.0.0.1:3000/api/users/sendMail';
+      let response = await axios.post(url, formData);
+      console.log(response.data);
+      toast.success('Thank You For Contacting Us!');
+      // Clear form fields after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        mobile: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error sending message:', error);
+      toast.error('Failed to send message. Please try again.');
+    }
 
 
   };
