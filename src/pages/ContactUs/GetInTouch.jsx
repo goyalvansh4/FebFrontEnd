@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import {toast,ToastContainer} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
-import GlobalAxios from '../../GlobalAxios/GlobalAxios';
+import GlobalAxios from '../../../GlobalAxios/GlobalAxios';
 
 const GetInTouch = () => {
 
