@@ -10,11 +10,11 @@ const HeroSlider = ({ data }) => {
         background: `url(headerBg.png) no-repeat center center/cover`,
       }}
     >
-      <div className="content  lg:w-2/5 w-[100%] flex lg:pl-10 gap-2 flex-col justify-center lg:gap-4">
+      <div className="content py-10 lg:w-2/5 w-[100%] flex lg:pl-10 gap-2 flex-col justify-center lg:gap-4">
         <p className="text-white max-sm:text-sm sm:text-lg lg:text-xl lg:w-[90%] bg-[#1136FF] py-2 rounded-lg  mt-3 text-center">
           {data.title}
         </p>
-        <h1 className="text-[#00234B] max-sm:text-2xl text-5xl  font-bold uppercase max-sm:text-center leading-relaxed">
+        <h1 className="text-[#00234B] text-lg sm:text-2xl xl:text-5xl  font-bold uppercase max-sm:text-center leading-relaxed">
           {data.main}
         </h1>
         <p className="text-[#00234B] max-sm:w-[90%] max-sm:text-center max-sm:text-lg text-xl max-sm:mx-auto">

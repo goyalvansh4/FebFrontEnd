@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Growing = () => {
   return (
-    <div className="flex flex-col lg:flex-row w-full mx-auto gap-5 lg:h-screen border-b-2 justify-between my-20 ">
+    <div className="max-w-[99.9%] flex flex-col lg:flex-row w-full mx-auto gap-5 lg:h-screen border-b-2  justify-between mt-[8rem] ">
       <motion.div
         className="flex w-full lg:w-1/2 items-center border-r-2 px-2"
         initial={{ x: -1000 }}
@@ -19,7 +19,7 @@ const Growing = () => {
         />
       </motion.div>
       <motion.div
-        className="w-full lg:w-1/2 flex flex-col gap-8 px-5 justify-center"
+        className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-8 px-5 justify-center"
         initial={{ x: 1000 }}
         animate={{ x: 0 }}
         transition={{ type: "spring", stiffness: 50 }}
@@ -28,7 +28,7 @@ const Growing = () => {
           Quality Service
         </h3>
         <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl text-5xl font-semibold text-[#000] leading-normal">
-          Feb Tech is incredibly For Your Business.
+          Feb Tech is incredibly htmlFor Your Business.
         </p>
         <p className="lg:w-3/4 max-lg:text-center">
           Whether you're a startup, small business, or a large corporation, we

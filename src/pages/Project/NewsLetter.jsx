@@ -14,10 +14,10 @@ const NewsLetter = () => {
 
             <div className='w-full border border-black flex '>
               <form action="" className='w-full flex'>
-              <input type="email" name="email" id='email' required placeholder='Enter E-mail Address' className='p-4 w-full outline-none w-[75%]'/>
+              <input type="email" name="email" id='email' required placeholder='Enter E-mail Address' className='p-4 lg:w-full outline-none w-[75%]'/>
               
               <div className='w-[25%] bg-white flex justify-center items-center'>
-              <button type="submit" for="email" className='text-sm bg-black text-white py-2 px-4 pn-shadow'>Sign Up</button>
+              <button type="submit" htmlFor="email" className='text-sm bg-black text-white py-2 px-4 pn-shadow'>Sign Up</button>
               </div>
 
               </form>

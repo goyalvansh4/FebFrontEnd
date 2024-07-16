@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Pricing = () => {
-  const [billPlan, setBillPlan] = useState('monthly');
+  const [billPlan, setBillPlan] = useState("monthly");
   const plans = [
     {
-      name: 'Basic',
+      name: "Basic",
       price: { monthly: 399, annually: 2999 },
-      discretion: 'Perfect for those just starting out or looking for a simple online presence. With affordable pricing and essential features.',
+      discretion:
+        "Perfect htmlFor those just starting out or looking htmlFor a simple online presence. With afhtmlFordable pricing and essential features.",
       features: [
         "Free Domain*",
         "Free Hosting",
@@ -17,18 +18,19 @@ const Pricing = () => {
         "Additional page 1,000/page",
         "Social Media Account",
         "All Devices Responsive",
-        "Enquiry Form",
+        "Enquiry htmlForm",
         "Free SSL",
-        "Platform php, HTML, WordPress",
+        "PlathtmlForm php, HTML, WordPress",
         "A.M.C 20% After one year",
         "Google Map",
-        "80% payment advance"
+        "80% payment advance",
       ],
     },
     {
-      name: 'Professional',
+      name: "Professional",
       price: { monthly: 699, annually: 5999 },
-      discretion: 'Offers a comprehensive website solution for businesses looking to expand their online presence. With advanced features such as SEO optimization',
+      discretion:
+        "Offers a comprehensive website solution htmlFor businesses looking to expand their online presence. With advanced features such as SEO optimization",
       features: [
         "Free Domain*",
         "Free Hosting",
@@ -39,18 +41,19 @@ const Pricing = () => {
         "Additional page 1,000/page",
         "Social Media Account",
         "All Devices Responsive",
-        "Enquiry Form",
+        "Enquiry htmlForm",
         "Free SSL",
-        "Platform php, HTML, WordPress",
+        "PlathtmlForm php, HTML, WordPress",
         "A.M.C 20% After one year",
         "Google Map",
-        "60% payment advance"
+        "60% payment advance",
       ],
     },
     {
-      name: 'Enterprise',
+      name: "Enterprise",
       price: { monthly: 1299, annually: 11999 },
-      discretion: 'Designed for businesses that require a comprehensive and custom-built solution for their online presence.',
+      discretion:
+        "Designed htmlFor businesses that require a comprehensive and custom-built solution htmlFor their online presence.",
       features: [
         "Free Domain*",
         "Free Hosting",
@@ -61,24 +64,26 @@ const Pricing = () => {
         "Additional page 2,000/page",
         "Social Media Account",
         "All Devices Responsive",
-        "Enquiry Form",
+        "Enquiry htmlForm",
         "Free SSL",
-        "Platform php, HTML, WordPress",
+        "PlathtmlForm php, HTML, WordPress",
         "A.M.C 20% After one year",
         "Google Map",
-        "60% payment advance"
+        "60% payment advance",
       ],
     },
   ];
 
   return (
-    <main className="mx-4 my-16" id='pricing'>
+    <main className="mx-4 my-16" id="pricing">
       <div className="text-center">
         <h1 className="mb-4 text-2xl font-normal md:text-3xl lg:text-4xl">
-          Our <span className="font-semibold">plans</span> for your <span className="font-semibold">strategies</span>
+          Our <span className="font-semibold">plans</span> htmlFor your{" "}
+          <span className="font-semibold">strategies</span>
         </h1>
         <p className="text-sm font-normal text-gray-400">
-          See below our main three plans for your business, for your startup, and agency.
+          See below our main three plans htmlFor your business, htmlFor your
+          startup, and agency.
         </p>
         <p className="text-sm font-normal text-gray-400">
           It starts from here! You can teach yourself what you really like.
@@ -90,12 +95,14 @@ const Pricing = () => {
         <span className="text-base font-medium">Bill Monthly</span>
         <button
           className="relative rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-          onClick={() => setBillPlan(billPlan === 'monthly' ? 'annually' : 'monthly')}
+          onClick={() =>
+            setBillPlan(billPlan === "monthly" ? "annually" : "monthly")
+          }
         >
           <div className="w-16 h-8 transition bg-indigo-500 rounded-full shadow-md outline-none"></div>
           <div
-            className={`absolute inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transform bg-white rounded-full shadow-sm top-1 left-1 ${
-              billPlan === 'monthly' ? 'translate-x-0' : 'translate-x-8'
+            className={`absolute inline-flex items-center justify-center w-6 h-6 transition-all duration-200 ease-in-out transhtmlForm bg-white rounded-full shadow-sm top-1 left-1 ${
+              billPlan === "monthly" ? "translate-x-0" : "translate-x-8"
             }`}
           ></div>
         </button>
@@ -107,12 +114,12 @@ const Pricing = () => {
         {plans.map((plan, index) => (
           <section
             key={index}
-            className={`flex flex-col w-full max-w-sm p-12 space-y-6 bg-white rounded-lg shadow-md transition-transform transform hover:-translate-y-2 ${
-              plan.name === 'Professional' ? 'relative' : ''
+            className={`flex flex-col w-full max-w-sm p-12 space-y-6 bg-white rounded-lg shadow-md transition-transhtmlForm transhtmlForm hover:-translate-y-2 ${
+              plan.name === "Professional" ? "relative" : ""
             }`}
           >
             {/* Popular Badge */}
-            {plan.name === 'Professional' && (
+            {plan.name === "Professional" && (
               <div className="absolute top-0 right-0 px-4 py-1 text-sm font-semibold text-white bg-red-500 rounded-bl-lg animate-bounce">
                 Popular
               </div>
@@ -120,10 +127,19 @@ const Pricing = () => {
 
             {/* Price */}
             <div className="flex-shrink-0">
-              <span className={`text-4xl font-medium tracking-tight ${plan.name === 'Basic' ? 'text-green-500' : ''}`}>
-                ₹{billPlan === 'monthly' ? plan.price.monthly : plan.price.annually}
+              <span
+                className={`text-4xl font-medium tracking-tight ${
+                  plan.name === "Basic" ? "text-green-500" : ""
+                }`}
+              >
+                ₹
+                {billPlan === "monthly"
+                  ? plan.price.monthly
+                  : plan.price.annually}
               </span>
-              <span className="text-gray-400">{billPlan === 'monthly' ? '/month' : '/year'}</span>
+              <span className="text-gray-400">
+                {billPlan === "monthly" ? "/month" : "/year"}
+              </span>
             </div>
 
             {/* Description */}
@@ -156,7 +172,9 @@ const Pricing = () => {
             <div className="flex-shrink-0 pt-4">
               <button
                 className={`inline-flex items-center justify-center w-full max-w-xs px-4 py-2 transition-colors border rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
-                  plan.name === 'Basic' ? 'bg-indigo-500 text-white hover:bg-indigo-700' : 'hover:bg-indigo-500 hover:text-white'
+                  plan.name === "Basic"
+                    ? "bg-indigo-500 text-white hover:bg-indigo-700"
+                    : "hover:bg-indigo-500 hover:text-white"
                 }`}
               >
                 Get {plan.name}

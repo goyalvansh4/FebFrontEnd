@@ -1,95 +1,80 @@
-import React from "react";
-import ScocialIcons from "./Home/Sections/SocialIcons";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import SocialIcons from "./Home/Sections/SocialIcons";
+import NavItem from "./NavBar/NavItem";
+import MenuButton from "./NavBar/MenuButton";
 
 export const Header = () => {
-  const handleOpen = () => {
-    document.getElementById("collapseMenu").style.display = "block";
-    document.getElementById("toggleClose").style.display = "none";
-  };
-  const handleClose = () => {
-    document.getElementById("collapseMenu").style.display = "none";
-    document.getElementById("toggleClose").style.display = "block";
-  };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+
+  const handleOpen = () => setIsMenuOpen(true);
+  const handleClose = () => setIsMenuOpen(false);
+
   return (
-    <header className="border-b border-gray-700 max-w-[98vw]  lg:w-[98vw] mx-auto tracking-wide  lg:absolute z-50">
-      <nav className="navbar flex  gap-x-2 min-h-[30px] max-sm:px-4">
-        <a href="" className=" border-r border-gray-700">
-          <img src="./logo.png" alt="logo" className="pl-4 w-2/4" />
+    <header className="border-b border-gray-700 max-w-[98.8vw] lg:w-[98vw] mx-auto tracking-wide lg:absolute z-50">
+      <nav className="flex items-center justify-around min-h-[30px] px-4">
+        <a href="/" className={`${isMenuOpen ? "hidden" : "block"} w-[10%]`}>
+          <img src="./logo.png" alt="logo" className="max-w-[80px]" />
         </a>
         <div
-          id="collapseMenu"
-          className="max-lg:hidden flex justify-around w-[80%] lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50 max-sm:px-4"
+          className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 lg:hidden ${
+            isMenuOpen ? "block" : "hidden"
+          }`}
+          onClick={handleClose}
+        ></div>
+        <div
+          className={`fixed top-0 left-0 w-3/4 h-full bg-white z-50 p-6 transition-transform transform ${
+            isMenuOpen ? "translate-x-0" : "-translate-x-full"
+          } lg:static lg:translate-x-0 lg:flex lg:items-center lg:w-auto lg:bg-transparent lg:p-0`}
         >
-          <button
-            onClick={handleClose}
-            className="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
-          >
+          <button onClick={handleClose} className="lg:hidden mb-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 fill-black"
-              viewBox="0 0 320.591 320.591"
+              className="w-6 h-6"
+              viewBox="0 0 20 20"
+              fill="currentColor"
             >
               <path
-                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                data-original="#000000"
-              ></path>
-              <path
-                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                data-original="#000000"
-              ></path>
+                fillRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
             </svg>
           </button>
-          <div className="h-full flex items-center border-r border-gray-700">
-            <ul className="lg:flex items-center w-full justify-between lg:gap-2 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[200px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
-              <li className="mb-6 hidden max-lg:block">
-                <a href="">
-                  <img src="./logo.png" alt="logo" className="w-2/4" />
-                </a>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to="/"
-                  className="text-[#000] rounded-md py-1 px-4 block font-bold text-lg"
-                >
-                  Home
-                </NavLink>
-                </button>
-
-              </li>
-              <li className="group text-[14px] max-lg:border-b max-lg: max-lg:py-2 relative">
-                <button 
-                onClick={handleClose}>
-                <NavLink
-                  to="/services"
-                  className="text-[#000] rounded-md  py-1 px-4 block font-bold text-lg"
-                >
-                  <span className="items-center flex">
-                  Services
+          <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-2 space-y-4 lg:space-y-0">
+            <NavItem to="/" label="Home" handleClose={handleClose} />
+            <div
+              className="relative group"
+              onMouseEnter={() => setIsServicesDropdownOpen(true)}
+              onMouseLeave={() => setIsServicesDropdownOpen(false)}
+            >
+              <NavItem
+                to="/services"
+                label="Services"
+                handleClose={handleClose}
+                icon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="16px"
-                    height="16px"
-                    className="ml-1 inline-block max-xl:hidden"
-                    viewBox="0 0 24 24"
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
                   >
                     <path
-                      d="M12 16a1 1 0 0 1-.71-.29l-6-6a1 1 0 0 1 1.42-1.42l5.29 5.3 5.29-5.29a1 1 0 0 1 1.41 1.41l-6 6a1 1 0 0 1-.7.29z"
-                      data-name="16"
-                      data-original="#000000"
+                      fillRule="evenodd"
+                      d="M10 12a1 1 0 01-.707-.293l-3-3a1 1 0 011.414-1.414L10 9.586l2.293-2.293a1 1 0 011.414 1.414l-3 3A1 1 0 0110 12z"
+                      clipRule="evenodd"
                     />
-                    
                   </svg>
-                  </span>
-                </NavLink>
-                </button>
-                <div className="lg:absolute lg:top-[60px] max-xl:hidden max-lg:top-8 -left-6 z-50 flex justify-around lg:w-[65vw] shadow-lg bg-white max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-8 group-hover:pb-8 group-hover:pt-6 transition-all duration-500">
-                  <div className="">
-                    <h6 className="text-base text-[#007bff] font-bold">Web Development</h6>
+                }
+              />
+              {isServicesDropdownOpen && (
+                <div className="absolute hidden lg:flex gap-5 top-full left-0 w-[700px] bg-white shadow-lg rounded mt-2 p-4 z-50">
+                  <div>
+                    <h6 className="text-base text-[#007bff] font-bold">
+                      Web Development
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -97,7 +82,7 @@ export const Header = () => {
                           Domain Registration
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -105,7 +90,7 @@ export const Header = () => {
                           Website Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -113,7 +98,7 @@ export const Header = () => {
                           Website Development
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -121,7 +106,7 @@ export const Header = () => {
                           Software Development
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -129,7 +114,7 @@ export const Header = () => {
                           E-commerce Website
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -137,7 +122,7 @@ export const Header = () => {
                           Payment Gateway
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -145,7 +130,7 @@ export const Header = () => {
                           Web Hosting
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -153,7 +138,7 @@ export const Header = () => {
                           Professional Emails
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -163,10 +148,12 @@ export const Header = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="lg:min-w-[180px] max-lg:min-w-[140px]">
-                    <h6 className="text-base text-[#007bff] font-bold">Digital Marketing</h6>
+                  <div>
+                    <h6 className="text-base text-[#007bff] font-bold">
+                      Digital Marketing
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -174,39 +161,31 @@ export const Header = () => {
                           SEO Services
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          SMM Services
+                          Social Media Optimization
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          Content Writing
+                          Pay Per Click
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          Graphic Design
+                          Social Media Marketing
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href=""
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Company Profile
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -214,36 +193,30 @@ export const Header = () => {
                           Email Marketing
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          Logo Design
+                          Whatsapp Marketing
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          Google Map Reviews
-                        </a>
-                      </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href=""
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          Brand Building
+                          SMS Marketing
                         </a>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    <h6 className="text-base text-[#007bff] font-bold">Graphic  Design</h6>
+                    <h6 className="text-base text-[#007bff] font-bold">
+                      Graphic Design
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -251,7 +224,7 @@ export const Header = () => {
                           Business Card Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -259,7 +232,7 @@ export const Header = () => {
                           Social Media Post Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -267,7 +240,7 @@ export const Header = () => {
                           Pamphlet Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -275,15 +248,15 @@ export const Header = () => {
                           Brochure Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                         Social Media Ads Design
+                          Social Media Ads Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -291,7 +264,7 @@ export const Header = () => {
                           Flyer Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -299,7 +272,7 @@ export const Header = () => {
                           Letter Head Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -307,28 +280,22 @@ export const Header = () => {
                           Product Catalogue Design
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
-                        <a
-                          href=""
-                          className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
-                        >
-                          More
-                        </a>
-                      </li>
                     </ul>
                   </div>
-                  <div>
-                    <h6 className="text-base text-[#007bff] font-bold">Social Media Marketing</h6>
+                  <div className=" flex flex-col gap-8">
+                    <h6 className="text-base text-[#007bff] font-bold">
+                      Social Media Marketing
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          FaceBook Marketing
+                          Facebook Marketing
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -336,7 +303,7 @@ export const Header = () => {
                           Facebook Ads
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -344,27 +311,28 @@ export const Header = () => {
                           WhatsApp Ads
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                          Instrgram Ads
+                          Instagram Ads
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
-                         Google Ads
+                          Google Ads
                         </a>
                       </li>
                     </ul>
-                    <h6 className="text-base mt-10 text-[#007bff] font-bold">Legal Services</h6>
+                    <h6 className="text-base text-[#007bff] font-bold">
+                      Legal Services
+                    </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
-
-                    <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -372,7 +340,7 @@ export const Header = () => {
                           Domestic Trademark
                         </a>
                       </li>
-                      <li className="max-lg:border-b py-1 rounded">
+                      <li>
                         <a
                           href=""
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
@@ -383,95 +351,24 @@ export const Header = () => {
                     </ul>
                   </div>
                 </div>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to="/about"
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  About
-                </NavLink>
-                </button>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to={"/client"}
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  Clients
-                </NavLink>
-                </button>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                   to={"/blog"}
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  Blog
-                </NavLink>
-                </button>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to= "/careers"
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  Careers
-                </NavLink>
-                </button>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3 ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to="/contactUs"
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  Contact
-                </NavLink>
-                </button>
-              </li>
-              <li className="max-lg:border-b max-lg:py-3  ">
-                <button
-                onClick={handleClose}>
-                <NavLink
-                  to="/project"
-                  className="hover:text-[#fff] hover:bg-[#1136FF] hover:rounded-md px-4 py-1 text-[#000] block font-bold text-lg"
-                >
-                  Project
-                </NavLink>
-                </button>
-              </li>
-            </ul>
-          </div>
+              )}
+            </div>
+            <NavItem to="/about" label="About" handleClose={handleClose} />
+            <NavItem to="/client" label="Clients" handleClose={handleClose} />
+            <NavItem to="/blog" label="Blog" handleClose={handleClose} />
+            <NavItem to="/careers" label="Careers" handleClose={handleClose} />
+            <NavItem
+              to="/contactUs"
+              label="Contact"
+              handleClose={handleClose}
+            />
+            <NavItem to="/project" label="Project" handleClose={handleClose} />
+          </ul>
         </div>
-
-        <div className="flex max-lg:ml-auto">
-          <button onClick={handleOpen} className="lg:hidden">
-            <svg
-              className="w-7 h-7"
-              fill="#000"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <ScocialIcons className="sm:hidden" />
+        <MenuButton isMenuOpen={isMenuOpen} handleOpen={handleOpen} />
       </nav>
     </header>
   );
 };
+
+export default Header;

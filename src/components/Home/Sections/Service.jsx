@@ -4,7 +4,7 @@ import ServicesCard from "./ServicesCard";
 const Service = () => {
   return (
     <>
-      <div className="pt-10 pb-2 hservice_bg">
+      <div className="max-w-[99.9%] pt-10 pb-2 hservice_bg mx-auto">
         <div className="flex flex-col  justify-center items-center gap-4">
           <p className="text-center text-2xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-[190px]">
             Our Services

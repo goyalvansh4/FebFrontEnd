@@ -1,58 +1,59 @@
 import React from "react";
 
 const Partner = () => {
-  const partnerData =[
+  const partnerData = [
     {
-      src:"partners1.png",
+      src: "partners1.png",
       left: "0%",
     },
     {
-      src:"partners2.png",
+      src: "partners2.png",
       left: "0%",
     },
     {
-      src:"partners3.png",
+      src: "partners3.png",
       left: "-18%",
     },
     {
-      src:"partners4.png",
+      src: "partners4.png",
       left: "-17%",
     },
     {
-      src:"partners5.png",
+      src: "partners5.png",
       left: "0%",
     },
     {
-      src:"partners6.png",
+      src: "partners6.png",
       left: "0%",
     },
     {
-      src:"partners7.png",
+      src: "partners7.png",
       left: "-18%",
     },
     {
-      src:"partners8.png",
+      src: "partners8.png",
       left: "-17%",
     },
-  ]
+  ];
   return (
-    <div className="w-full flex flex-col lg:flex-row gap-5 py-10 justify-around px-4 my-16"
-    style={{
-      background: `url(partnersBg.jpg) no-repeat center center/cover`,
-    }}
+    <div
+      className="w-full flex flex-col lg:flex-row gap-5 py-10 justify-around px-4 my-16"
+      style={{
+        background: `url(partnersBg.jpg) no-repeat center center/cover`,
+      }}
     >
-      <div className="pleft w-full lg:w-2/5 flex flex-col gap-8">
+      <div className="pleft w-full lg:w-2/5 flex flex-col items-center lg:items-start gap-8">
         <a className="w-[200px] text-center rounded-xl font-semibold py-2  text-white bg-[#1136ff] text-xl">
           Global Partners
         </a>
         <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl text-4xl ">
-          We’ve <span className="text-[#1136ff]">200+</span> Global Clients
-          Meet With Our Clients
+          We’ve <span className="text-[#1136ff]">200+</span> Global Clients Meet
+          With Our Clients
         </p>
         <p className="lg:w-3/4 max-lg:text-center text-small text-[#414141]">
-          Drive more leads, sales, and revenue for your business with digital
-          marketing services from WebFX full-service digital marketing agency
-          that’s helped small-to-midsized businesses generate
+          Drive more leads, sales, and revenue htmlFor your business with
+          digital marketing services from WebFX full-service digital marketing
+          agency that’s helped small-to-midsized businesses generate
         </p>
         <div className="w-full max-lg:flex justify-center">
           <a
@@ -64,7 +65,7 @@ const Partner = () => {
         </div>
         <div className="w-full lg:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex gap-5">
           <div className="stat flex flex-col gap-2">
-          <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-center">
               <svg
                 width="30"
                 height="30"
@@ -77,7 +78,9 @@ const Partner = () => {
                   fill="#1136ff"
                 ></path>
               </svg>
-              <p className="text-3xl font-semibold">58<span className="text-lg text-[#1136ff]">%</span></p>
+              <p className="text-3xl font-semibold">
+                58<span className="text-lg text-[#1136ff]">%</span>
+              </p>
             </div>
             <p className="text-lg">Statisfied Client</p>
           </div>
@@ -95,7 +98,9 @@ const Partner = () => {
                   fill="#1136ff"
                 ></path>
               </svg>
-              <p className="text-3xl font-semibold">83<span className="text-lg text-[#1136ff]">%</span></p>
+              <p className="text-3xl font-semibold">
+                83<span className="text-lg text-[#1136ff]">%</span>
+              </p>
             </div>
             <p className="text-lg">Projects Complete</p>
           </div>
@@ -103,16 +108,20 @@ const Partner = () => {
       </div>
       <div className="pright lg:w-1/2 flex flex-col lg:flex-row justify-around">
         <div className="partners  flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
-         { partnerData.map((partner,index)=>{
-          return  <div key={index}
-          style={{
-            left: `${partner.left}`,
-            // top: `${index + 20}%`,
-          }}
-           className="w-full lg:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative">
-          <img src={partner.src}   alt="partner1"  />
-        </div>
-         })}
+          {partnerData.map((partner, index) => {
+            return (
+              <div
+                key={index}
+                style={{
+                  left: `${partner.left}`,
+                  // top: `${index + 20}%`,
+                }}
+                className="w-full lg:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
+              >
+                <img src={partner.src} alt="partner1" />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

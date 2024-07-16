@@ -9,7 +9,7 @@ const ScocialIcons = () => {
     { id: 5, icon: <FaInstagram />, url: "https://www.instagram.com/febtech.in/" },
   ];
   return (
-    <ul className=" flex max-sm:hidden justify-center items-center gap-4 pl-4">
+    <ul className="sm:hidden border-2 border-blue-700 xl:flex justify-center items-center gap-4 pl-4">
       {icons.map((item, index) => (
         <li key={index} className="text-2xl text-[#000] hover:text-[#1136FF]">
           <a href={item.url} target="_blank" rel="noopener noreferrer">{item.icon}</a>

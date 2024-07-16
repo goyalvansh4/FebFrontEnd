@@ -1,22 +1,18 @@
-import React from 'react'
-import Hero from '../../components/Hero/Hero'
-import CareerForm from './CareerForm'
-import Opportunity from './Opportunity'
-import CurrentOpenings from './CurrentOpenings'
-
-
-
-
+import React from "react";
+import Hero from "../../components/Hero/Hero";
+import CareerForm from "./CareerForm";
+import Opportunity from "./Opportunity";
+import CurrentOpenings from "./CurrentOpenings";
 
 const Career = () => {
   return (
     <>
-     <Hero title={"Careers"} subtitle={"Careers"}/>
-     <Opportunity />
-     <CareerForm />
-     <CurrentOpenings />
+      <Hero title={"Careers"} subtitle={"Careers"} />
+      <Opportunity />
+      <CareerForm />
+      <CurrentOpenings />
     </>
-  )
-}
+  );
+};
 
-export default Career
+export default Career;

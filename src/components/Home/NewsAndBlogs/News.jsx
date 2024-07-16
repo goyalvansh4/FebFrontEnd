@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const News = ({ data }) => {
   return (
-    <div key={data.id} className="w-[98%] mx-auto hblog_card hover:bg-white  rounded-3xl hover:shadow-xl lg:w-[29%]">
+    <div key={data.id} className="lg:w-[1/3] md:w-[400px] sm:w-full mx-auto hblog_card hover:bg-white  rounded-3xl hover:shadow-xl  overflow-hidden flex flex-col flex-wrap md:justify-center">
       <div className="hblogcard_img w-full">
         <img src={data.src} alt="" />
       </div>

@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import GlobalAxios from "../../../GlobalAxios/GlobalAxios";
 
 const Blogdata = () => {
-  const [formData, setFormData] = useState({
+  const [htmlFormData, sethtmlFormData] = useState({
     title: "",
     subtitle: "",
     description: "",
@@ -37,7 +37,7 @@ const Blogdata = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    sethtmlFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
@@ -45,7 +45,7 @@ const Blogdata = () => {
 
   const handleDescriptionChange = (event, editor) => {
     const data = editor.getData();
-    setFormData((prevData) => ({
+    sethtmlFormData((prevData) => ({
       ...prevData,
       description: data,
     }));
@@ -53,7 +53,7 @@ const Blogdata = () => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    setFormData((prevData) => ({
+    sethtmlFormData((prevData) => ({
       ...prevData,
       image: file,
     }));
@@ -61,22 +61,18 @@ const Blogdata = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new FormData();
-    data.append("title", formData.title);
-    data.append("subtitle", formData.subtitle);
-    data.append("description", formData.description);
-    data.append("image", formData.image);
+    const data = new htmlFormData();
+    data.append("title", htmlFormData.title);
+    data.append("subtitle", htmlFormData.subtitle);
+    data.append("description", htmlFormData.description);
+    data.append("image", htmlFormData.image);
 
     try {
-      const response = await GlobalAxios.post(
-        "/blogs/create",
-        data,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
-      );
+      const response = await GlobalAxios.post("/blogs/create", data, {
+        headers: {
+          "Content-Type": "multipart/htmlForm-data",
+        },
+      });
       if (response.data.message === "success") {
         toast.success("Blog submitted successfully!");
         window.location.reload();
@@ -88,7 +84,7 @@ const Blogdata = () => {
       );
     }
 
-    setFormData({
+    sethtmlFormData({
       title: "",
       subtitle: "",
       description: "",
@@ -128,21 +124,21 @@ const Blogdata = () => {
           ))}
         </div>
         <div className="container mx-auto p-6">
-          <form
+          <htmlForm
             onSubmit={handleSubmit}
             className="max-w-xl mx-auto bg-white shadow-md rounded overflow-hidden"
           >
-            {formData.image && (
+            {htmlFormData.image && (
               <img
-                src={URL.createObjectURL(formData.image)}
+                src={URL.createObjectURL(htmlFormData.image)}
                 alt="Uploaded"
                 className="w-full h-48 object-cover"
               />
             )}
-            {!formData.image && (
+            {!htmlFormData.image && (
               <div className="bg-gray-200 w-full h-48 flex items-center justify-center">
                 <label
-                  htmlFor="image"
+                  htmlhtmlFor="image"
                   className="cursor-pointer text-gray-500 hover:text-gray-700"
                 >
                   <span className="flex items-center">
@@ -177,7 +173,7 @@ const Blogdata = () => {
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="title"
+                  htmlhtmlFor="title"
                 >
                   Title
                 </label>
@@ -187,7 +183,7 @@ const Blogdata = () => {
                   type="text"
                   placeholder="Enter title"
                   name="title"
-                  value={formData.title}
+                  value={htmlFormData.title}
                   onChange={handleChange}
                   required
                 />
@@ -195,7 +191,7 @@ const Blogdata = () => {
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="subtitle"
+                  htmlhtmlFor="subtitle"
                 >
                   Subtitle
                 </label>
@@ -205,7 +201,7 @@ const Blogdata = () => {
                   type="text"
                   placeholder="Enter subtitle"
                   name="subtitle"
-                  value={formData.subtitle}
+                  value={htmlFormData.subtitle}
                   onChange={handleChange}
                   required
                 />
@@ -213,13 +209,13 @@ const Blogdata = () => {
               <div className="mb-4">
                 <label
                   className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlFor="description"
+                  htmlhtmlFor="description"
                 >
                   Description
                 </label>
                 <CKEditor
                   editor={ClassicEditor}
-                  data={formData.description}
+                  data={htmlFormData.description}
                   onChange={handleDescriptionChange}
                 />
               </div>
@@ -232,7 +228,7 @@ const Blogdata = () => {
                 </button>
               </div>
             </div>
-          </form>
+          </htmlForm>
         </div>
       </div>
     </>

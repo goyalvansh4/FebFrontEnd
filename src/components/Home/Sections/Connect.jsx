@@ -20,10 +20,10 @@ const Connect = () => {
   ];
 
   return (
-    <div className="hconnect flex flex-col lg:flex-row  justify-around gap-2 my-14 border-b border-gray-700">
+    <div className="max-w-[99.9%] hconnect flex flex-col lg:flex-row  justify-around gap-2 my-14 border-b border-gray-700">
       {connectData.map((item, index) => {
         return (
-          <div className="w-[100%] lg:w-1/3 hspinner flex justify-center py-16 gap-3 border-r border-gray-700">
+          <div key={index} className="w-[99%] lg:w-1/3 hspinner flex justify-center py-16 gap-3 border-r border-gray-700 mx-auto">
             <div className="hspinImage">
               <svg
                 width="49"

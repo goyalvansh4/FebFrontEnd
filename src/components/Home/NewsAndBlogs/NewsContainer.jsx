@@ -23,15 +23,15 @@ const NewsContainer = () => {
     }
   ]
   return (
-    <div className='hnewsBg lg:w-[90%] mx-auto my-16 lg:py-16 flex flex-col gap-8'
+    <div className='hnewsBg w-[99.9%] lg:w-[90%] mx-auto my-16 lg:py-16 flex flex-col gap-5 lg:gap-10'
     style={{
-      background: `url(newsBg.png) no-repeat center center/cover`,
+      background: `url(newsBg.png) no-repeat center cover/center`,
     }}>
     <div className='hnews_content flex flex-col gap-12 items-center'>
        <p className='lg:w-[20%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#1136ff] text-xl'>News & Blogs</p>
-       <p className='lg:w-[50%] text-center font-bold text-[#000]  max-sm:text-2xl lg:text-5xl leading-normal  '>Get Every Single Updates Articles Recent News & Blogs</p>
+       <p className='w-[50%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl lg:text-5xl leading-normal  '>Get Every Single Updates Articles Recent News & Blogs</p>
     </div>
-    <div className='flex flex-col lg:flex-row justify-around items-center'>
+    <div className='w-full flex flex-col gap-2 lg:flex-row justify-around items-center'>
     {newsData.map((data) => {
         return <News data={data} />
     })}
