@@ -1,20 +1,21 @@
 import React from "react";
 import Slider from "react-slick";
-import Project from "../Projects/Project";
-import Testimonial from "../Testimonial/Testimonial";
-import ClientCard from "../../Client/ClientCard";
+import Project from "../Home/Projects/Project";
+import Testimonial from "../Home/Testimonial/Testimonial";
+import ClientCard from "../../pages/Client/ClientCard";
 
 function SlickSlider({project,projectData,test,client,clientsData}) {
 
   const projects = {
     dots: true,
-    speed: 1500,
+    speed: 2500,
     slidesToShow: 3,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
+    rtl: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -22,7 +23,7 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true
+          dots: true,
         }
       },
       {
@@ -82,12 +83,12 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
 
   const clients = {
     dots: true,
-    speed: 2500,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     nextArrow: <></>,
     prevArrow: <></>,

@@ -81,7 +81,7 @@ const Strategy = () => {
             background: `url(processBg.jpg) no-repeat center center/cover`,
           }}
         >
-          <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  lg:w-2/5">
+          <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
             Working Process
           </p>
           <p className="max-sm:text-2xl text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
@@ -145,7 +145,7 @@ const Strategy = () => {
             })}
           </div>
           <div className="processBg lg:absolute z-0 lg:right-[0] lg:bottom-[-70px] w-full lg:w-[63vw] lg:h-[70vh] ">
-            <img src="./processsBg.jpg" className="w-full h-full" alt="" />
+            <img src="https://febtech.in/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-18-at-23.08.19.jpeg.webp" className="w-full h-full" alt="" />
           </div>
         </div>
       </div>

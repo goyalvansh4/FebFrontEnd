@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const News = ({ data }) => {
   return (
@@ -13,7 +14,7 @@ const News = ({ data }) => {
         <p className="hb_title w-[90%] text-2xl font-semibold text-[#000] hover:text-[#1136ff]">
           {data.title}
         </p>
-        <a href="" className="text-lg flex gap-4 items-center font-medium underline">
+        <NavLink to="/blog" className="text-lg flex gap-4 items-center font-medium underline">
           Read More
           <svg
             width="31"
@@ -27,7 +28,7 @@ const News = ({ data }) => {
               fill="#120A21"
             ></path>
           </svg>
-        </a>
+        </NavLink>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../Hero/Hero'
+import Hero from '../../components/Hero/Hero'
 import CareerForm from './CareerForm'
 import Opportunity from './Opportunity'
 import CurrentOpenings from './CurrentOpenings'

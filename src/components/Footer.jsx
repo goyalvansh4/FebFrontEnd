@@ -8,6 +8,7 @@ import {
   FiMail,
   FiNavigation2,
 } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   
@@ -15,7 +16,7 @@ const Footer = () => {
     {
       id: 1,
       icon: <FiFacebook />,
-      url: "https://www.stoman.me/",
+      url: "https://www.facebook.com/febtech.in",
     },
     {
       id: 3,
@@ -25,12 +26,12 @@ const Footer = () => {
     {
       id: 4,
       icon: <FiLinkedin />,
-      url: "https://www.linkedin.com/in/",
+      url: "https://www.linkedin.com/company/febtech-it-solutions/posts/?feedView=all",
     },
     {
       id: 5,
       icon: <FiInstagram />,
-      url: "https://www.youtube.com/c/",
+      url: "https://www.instagram.com/febtech.in/",
     },
   ];
   return (
@@ -41,9 +42,9 @@ const Footer = () => {
       <div className="py-14 px-6 sm:px-10">
         <div className="grid max-lg:place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           <div className="lg:col-span-2 max-lg:flex flex-col justify-center items-center">
-            <a href="">
+            <NavLink to="/">
               <img src="./logo.png" alt="logo" className="w-44 mb-2" />
-            </a>
+            </NavLink>
             <p className="lg:w-3/4 max-lg:text-center text-gray-800 text-md">
               We are passionate about providing innovative IT solutions to
               businesses of all sizes. Our team of experienced professionals
@@ -73,52 +74,45 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4">
               <li>
-                <a
-                  href=""
+                <NavLink to="/services"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Services
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
-                  className="text-gray-800 hover:text-[#1136ff] text-lg"
+                <NavLink to="/services"                  className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Pricing
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/services"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Product Details
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/project"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Portfolio
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/contactUs"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Contact Us
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/about"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Team
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -127,36 +121,32 @@ const Footer = () => {
             <h4></h4>
             <ul className="space-y-4">
               <li>
-                <a
-                  href=""
+                <NavLink to="/about"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   About Company
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/contactUs"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Our Contact
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/blog"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Blog Details
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  href=""
+                <NavLink to="/careers"
                   className="text-gray-800 hover:text-[#1136ff] text-lg"
                 >
                   Faqs
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -167,7 +157,6 @@ const Footer = () => {
               <div className="text-black text-lg flex gap-2">
               <li className="h-[50px] w-[50px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
                <a
-                href=""
                 target="__blank"
                 className="cursor-pointer rounded-lg shadow-sm  duration-300"
               >
@@ -184,7 +173,6 @@ const Footer = () => {
               <div className="text-black text-lg flex gap-2">
               <li className="h-[50px] w-[50px] flex justify-center items-center bg-[#5c28ca] text-[#fff] rounded-full hover:bg-[#1133ff]">
                <a
-                href=""
                 target="__blank"
                 className="cursor-pointer rounded-lg shadow-sm  duration-300"
               >
@@ -195,7 +183,7 @@ const Footer = () => {
             </li>
                 <div>
                   <p className="text-lg font-semibold text-[#000]">Email Us</p>
-                  <p className="text-base font-light text-[#000]" >support@febtech.in</p>
+                  <a href="mailto:support@febtech.in" className="text-base font-light text-[#000]" >support@febtech.in</a>
                 </div>
               </div>
               <div className="flex gap-2">

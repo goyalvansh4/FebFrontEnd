@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaGlobe } from "react-icons/fa";
-import { FaLongArrowAltRight } from "react-icons/fa";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { NavLink } from "react-router-dom";
 
 // import required modules
 import { Autoplay, Pagination } from "swiper/modules";
@@ -101,7 +100,7 @@ const ServicesCard = () => {
                     {data.para}
                   </p>
                   <div className="btn w-full flex justify-center">
-                    <button className="flex gap-2 items-center">
+                    <NavLink to="/services" className="flex gap-2 items-center">
                       Read More
                       <svg
                         width="31"
@@ -115,7 +114,7 @@ const ServicesCard = () => {
                           fill="#120A21"
                         ></path>
                       </svg>
-                    </button>
+                    </NavLink>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import SlickSlider from "../Sliders/SlickSlider";
+import SlickSlider from "../../Sliders/SlickSlider";
 
 const ProjectContainer = () => {
    const projectData=[

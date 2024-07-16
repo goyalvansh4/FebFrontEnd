@@ -10,18 +10,21 @@ const AHero = () => {
   const data = [
     {
       title: "EXPERIENCE THE POWER OF TECH WITH",
-      main: "Feb Tech IT",
+      main: "Feb Tech IT Solutions Pvt. Ltd.",
       para: "FebTech is a leading software development company that offers top-rated Software Development Services.",
+      src: "slider1.png",
     },
     {
       title: "WE UNDERSTAND THAT EVERY BUSINESS IS",
       main: "UNIQUE",
       para: "We are committed to providing you with the best digital solutions to help grow your business online.",
+      src: "slider2.png",
     },
     {
       title: "EMPOWERING YOUR DIGITAL DREAMS WITH",
-      main: "FEB TECH IT",
+      main: "FEB TECH IT Solutions Pvt. Ltd.",
       para: "Contact us today to learn more about our services and how we can help you grow your business online.",
+      src: "slider3.png",
     },
   ];
 

@@ -1,6 +1,5 @@
 import React from 'react'
-import ClientCard from './ClientCard';
-import SlickSlider from '../Home/Sliders/SlickSlider';
+import SlickSlider from '../../components/Sliders/SlickSlider';
 
 const OurClients = () => {
   const clientsData =[

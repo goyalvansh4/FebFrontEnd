@@ -4,15 +4,18 @@ const Connect = () => {
   const connectData = [
     {
       title: "Need Any Consultations",
-      info: "+91 8868864441",
+      info: "+918868864441",
+      desc: "phone",
     },
     {
       title: "Email Address",
       info: "support@febtech.in",
+      desc: "mail",
     },
     {
       title: "Office Locations",
       info: "Roorkee, Uttarakhand",
+      desc: "location",
     },
   ];
 
@@ -38,8 +41,26 @@ const Connect = () => {
               </svg>
             </div>
             <div className="content">
-              <p className="text-lg  text-gray-700">{item.title}</p>
-              <p className="text-2xl medium text-gray-900">{item.info}</p>
+              <p className="text-lg text-gray-700">{item.title}</p>
+              {item.desc === "phone" ? (
+                <a
+                  href={`tel:${item.info}`}
+                  className="text-2xl medium text-gray-900"
+                >
+                  {item.info}
+                </a>
+              ) : item.desc === "mail" ? (
+                <a
+                  href={`mailto:rajat@febtech.in`}
+                  className="text-2xl medium text-gray-900"
+                >
+                  {item.info}
+                </a>
+              ) : (
+                <a href="https://www.google.com/maps/place/FEBTECH+IT+SOLUTIONS+Pvt.+Ltd/@29.8845467,77.8633216,15z/data=!4m6!3m5!1s0x390eb51d58bca643:0x35e3e1db1d8a7707!8m2!3d29.8917664!4d77.8681671!16s%2Fg%2F11ppzl_txm?entry=ttu" 
+                target="_blank"
+                className="text-2xl medium text-gray-900">{item.info}</a>
+              )}
             </div>
           </div>
         );

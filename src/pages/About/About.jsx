@@ -6,7 +6,7 @@ import Achivement from './Achivement'
 import TestimonialParent from './TestimonialParent'
 import Ateam from './Ateam'
 import './About.css'
-import Hero from '../Hero/Hero'
+import Hero from '../../components/Hero/Hero'
 
 const About = () => {
   return (
