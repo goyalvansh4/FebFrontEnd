@@ -1,15 +1,16 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import GlobalAxios from "../../../GlobalAxios/GlobalAxios";
 
 const Blogdata = () => {
   const [formData, setFormData] = useState({
-    title: '',
-    subtitle: '',
-    description: '',
+    title: "",
+    subtitle: "",
+    description: "",
     image: null,
   });
 
@@ -18,14 +19,17 @@ const Blogdata = () => {
   useEffect(() => {
     const fetchBlog = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:3000/api/blogs");
+        const response = await GlobalAxios.get("/blogs");
         if (response.data.message === "success") {
           setBlogData(response.data.data);
-          let newDescription = response.data.data.description.substring(0,20);
+          let newDescription = response.data.data.description.substring(0, 20);
           console.log(response.data.data);
         }
       } catch (error) {
-        console.log("Error fetching blog:", error.response ? error.response.data : error.message);
+        console.log(
+          "Error fetching blog:",
+          error.response ? error.response.data : error.message
+        );
       }
     };
     fetchBlog();
@@ -58,29 +62,36 @@ const Blogdata = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData();
-    data.append('title', formData.title);
-    data.append('subtitle', formData.subtitle);
-    data.append('description', formData.description);
-    data.append('image', formData.image);
+    data.append("title", formData.title);
+    data.append("subtitle", formData.subtitle);
+    data.append("description", formData.description);
+    data.append("image", formData.image);
 
     try {
-      const response = await axios.post("http://127.0.0.1:3000/api/blogs/create", data, {
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-      });
+      const response = await GlobalAxios.post(
+        "/blogs/create",
+        data,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
       if (response.data.message === "success") {
-        toast.success('Blog submitted successfully!');
+        toast.success("Blog submitted successfully!");
         window.location.reload();
       }
     } catch (error) {
-      console.error("Error submitting blog:", error.response ? error.response.data : error.message);
+      console.error(
+        "Error submitting blog:",
+        error.response ? error.response.data : error.message
+      );
     }
 
     setFormData({
-      title: '',
-      subtitle: '',
-      description: '',
+      title: "",
+      subtitle: "",
+      description: "",
       image: null,
     });
   };
@@ -88,24 +99,39 @@ const Blogdata = () => {
   return (
     <>
       <ToastContainer />
-      <div className='py-16'>
-        <div className='blog flex flex-wrap justify-center items-center gap-4 rounded-xl mx-2'>
+      <div className="py-16">
+        <div className="blog flex flex-wrap justify-center items-center gap-4 rounded-xl mx-2">
           {blogdata.map((blog) => (
-            <div key={blog._id} className='w-[48%] h-[500px]'>
-              <div className='w-full h-[70%]'>
-                <img src={`http://127.0.0.1:3000/${blog.image}`} className='w-full h-full' alt="Blog" />
+            <div key={blog._id} className="w-[48%] h-[500px]">
+              <div className="w-full h-[70%]">
+                <img
+                  src={`https://febtech-backend.onrender.com/${blog.image}`}
+                  className="w-full h-full"
+                  alt="Blog"
+                />
               </div>
-              <div className='w-full flex flex-col gap-4 p-5'>
-                <p className='text-2xl font-semibold text-black'>{blog.title}</p>
-                <p className='text-xl font-medium text-black'>{blog.subtitle}</p>
-              
-                <div dangerouslySetInnerHTML={{ __html: blog.description.substring(0,40) + '...' }} />
+              <div className="w-full flex flex-col gap-4 p-5">
+                <p className="text-2xl font-semibold text-black">
+                  {blog.title}
+                </p>
+                <p className="text-xl font-medium text-black">
+                  {blog.subtitle}
+                </p>
+
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: blog.description.substring(0, 40) + "...",
+                  }}
+                />
               </div>
             </div>
           ))}
         </div>
         <div className="container mx-auto p-6">
-          <form onSubmit={handleSubmit} className="max-w-xl mx-auto bg-white shadow-md rounded overflow-hidden">
+          <form
+            onSubmit={handleSubmit}
+            className="max-w-xl mx-auto bg-white shadow-md rounded overflow-hidden"
+          >
             {formData.image && (
               <img
                 src={URL.createObjectURL(formData.image)}

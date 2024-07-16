@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import {toast,ToastContainer} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import GlobalAxios from '../../GlobalAxios/GlobalAxios';
 
 const GetInTouch = () => {
 
@@ -17,8 +18,7 @@ const GetInTouch = () => {
     e.preventDefault();
 
     try {
-      let url = 'http://127.0.0.1:3000/api/users/sendMail';
-      let response = await axios.post(url, formData);
+      let response = await GlobalAxios.post("/users/sendMail", formData);
       console.log(response.data);
       toast.success('Thank You For Contacting Us!');
       // Clear form fields after successful submission

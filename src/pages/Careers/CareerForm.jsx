@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import GlobalAxios from '../../../GlobalAxios/GlobalAxios';
 
 const CareerForm = () => {
   const [formData, setFormData] = useState({
@@ -24,8 +25,8 @@ const CareerForm = () => {
     $formData.append('applyFor', formData.applyFor);
     $formData.append('file', formData.file);
 
-      let url = 'http://127.0.0.1:3000/api/career/create';
-      let response = await axios.post(url, $formData, {
+      // let url = 'http://127.0.0.1:3000/api/career/create';
+      let response = await GlobalAxios.post("/career/create'", $formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
