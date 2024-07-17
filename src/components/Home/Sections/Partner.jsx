@@ -46,12 +46,12 @@ const Partner = () => {
         <a className="w-[200px] text-center rounded-xl font-semibold py-2  text-white bg-[#1136ff] text-xl">
           Global Partners
         </a>
-        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl  xl:text-4xl ">
+        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl leading-loose  xl:text-4xl ">
           We’ve <span className="text-[#1136ff]">200+</span> Global Clients Meet
           With Our Clients
         </p>
         <p className="lg:w-3/4 max-lg:text-center text-small text-[#414141]">
-          Drive more leads, sales, and revenue htmlFor your business with
+          Drive more leads, sales, and revenue for your business with
           digital marketing services from WebFX full-service digital marketing
           agency that’s helped small-to-midsized businesses generate
         </p>
@@ -63,7 +63,7 @@ const Partner = () => {
             Become a Partners &gt;&gt;
           </a>
         </div>
-        <div className="w-full lg:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex gap-5">
+        <div className="w-full xl:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex gap-5">
           <div className="stat flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <svg
@@ -107,7 +107,7 @@ const Partner = () => {
         </div>
       </div>
       <div className="pright lg:w-1/2 flex flex-col lg:flex-row justify-around">
-        <div className="partners  flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
+        <div className="partners flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
           {partnerData.map((partner, index) => {
             return (
               <div
@@ -116,7 +116,7 @@ const Partner = () => {
                   left: `${partner.left}`,
                   // top: `${index + 20}%`,
                 }}
-                className="w-full lg:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white  py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
+                className="w-full lg:w-[50%] xl:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white py-4  xl:py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
               >
                 <img src={partner.src} alt="partner1" />
               </div>

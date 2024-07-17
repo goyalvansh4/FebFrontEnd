@@ -34,7 +34,7 @@ const ProjectContainer = () => {
       <p className="lg:w-1/5 text-center  rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
         Recent Project
       </p>
-      <p className="lg:w-2/4 text-center font-semibold py-2 px-3  text-[#000] max-sm:text-2xl sm:text-2xl xl:text-4xl ">
+      <p className="lg:w-2/4 text-center font-semibold py-2 px-3  text-[#000] max-sm:text-2xl sm:text-3xl xl:text-4xl ">
         We’ve Done <span className="text-[#1136ff]">2560+</span> Global Projects
         Take a Looks Work Gallery
       </p>

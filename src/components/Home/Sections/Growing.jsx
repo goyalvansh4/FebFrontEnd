@@ -28,7 +28,7 @@ const Growing = () => {
           Quality Service
         </h3>
         <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl sm:text-2xl xl:text-5xl font-semibold text-[#000] leading-normal">
-          Feb Tech is incredibly htmlFor Your Business.
+          Feb Tech is incredibly for Your Business.
         </p>
         <p className="lg:w-3/4 max-lg:text-center">
           Whether you're a startup, small business, or a large corporation, we

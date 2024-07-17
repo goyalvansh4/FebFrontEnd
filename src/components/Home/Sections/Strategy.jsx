@@ -85,7 +85,7 @@ const Strategy = () => {
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
           Working Process
         </p>
-        <p className="max-sm:text-2xl sm:text-2xl xl:text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
+        <p className="max-sm:text-2xl sm:text-2xl xl:text-[40px] w-4/5 text-gray-950 font-semibold leading-loose">
           We are committed to providing the best strategic guidance available
         </p>
         <div className="arrow mt w-full flex flex-col gap-5 lg:relative z-0">

@@ -17,7 +17,7 @@ const Business = () => {
           Knowledge and Numbers
         </h3>
         <p className="lg:w-4/5  max-lg:text-center text-3xl font-semibold text-[#000] max-sm:text-2xl leading-normal">
-          There are several reasons to choose Feb tech htmlFor your business
+          There are several reasons to choose Feb tech for your business
           needs.
         </p>
         <p className="lg:w-3/4">
