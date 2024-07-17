@@ -16,7 +16,7 @@ const Business = () => {
         <h3 className="w-[290px] text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
           Knowledge and Numbers
         </h3>
-        <p className="lg:w-4/5  max-lg:text-center text-3xl font-semibold text-[#000] max-sm:text-2xl leading-normal">
+        <p className="lg:w-4/5  max-lg:text-center lg:text-3xl font-semibold text-[#000] max-sm:text-2xl leading-normal">
           There are several reasons to choose Feb tech for your business
           needs.
         </p>

@@ -11,7 +11,7 @@ const News = ({ data }) => {
         <p className="hb_date  text-base text-[#1136ff] font-normal">
           {data.date}
         </p>
-        <p className="hb_title w-[90%] text-2xl font-semibold text-[#000] hover:text-[#1136ff]">
+        <p className="hb_title w-[90%] text-xl xl:text-2xl font-semibold text-[#000] hover:text-[#1136ff]">
           {data.title}
         </p>
         <NavLink to="/blog" className="text-lg flex gap-4 items-center font-medium underline">

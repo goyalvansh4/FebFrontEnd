@@ -46,7 +46,7 @@ const Partner = () => {
         <a className="w-[200px] text-center rounded-xl font-semibold py-2  text-white bg-[#1136ff] text-xl">
           Global Partners
         </a>
-        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl leading-loose  xl:text-4xl ">
+        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl leading-loose  2xl:text-4xl ">
           We’ve <span className="text-[#1136ff]">200+</span> Global Clients Meet
           With Our Clients
         </p>
@@ -63,7 +63,7 @@ const Partner = () => {
             Become a Partners &gt;&gt;
           </a>
         </div>
-        <div className="w-full xl:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex gap-5">
+        <div className="w-full sm:w-[80%] 2xl:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex sm:justify-between gap-5">
           <div className="stat flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <svg
@@ -116,7 +116,7 @@ const Partner = () => {
                   left: `${partner.left}`,
                   // top: `${index + 20}%`,
                 }}
-                className="w-full lg:w-[50%] xl:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white py-4  xl:py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
+                className="w-full sm:w-[45%] 2xl:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white py-4  2xl:py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
               >
                 <img src={partner.src} alt="partner1" />
               </div>

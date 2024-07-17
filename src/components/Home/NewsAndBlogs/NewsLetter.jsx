@@ -12,7 +12,7 @@ const NewsLetter = () => {
         <p className="lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl">
           Our NewsLetter
         </p>
-        <p className="lg:w-[95%] font-bold text-[#000] text-4xl leading-normal">
+        <p className="lg:w-[95%] font-bold text-[#000] text-xl 2xl:text-4xl leading-normal">
           Get Every Single Updates Newsletter Subscribe.
         </p>
       </div>
@@ -25,12 +25,12 @@ const NewsLetter = () => {
             <input
               type="email"
               id="email"
-              className="lg:w-[75%] p-2 outline-none border-none"
+              className="lg:w-[70%] p-2 outline-none border-none"
               placeholder="Enter Email Address"
             />
             <button
               type="submit "
-              className="lg:w-[25%] text-white text-xl rounded-sm bg-[#000] hover:bg-slate-900 py-2 px-4 hover:shadow-2xl hover:shadow-[#1136ff]"
+              className="lg:w-[30%] text-white text-xl rounded-sm bg-[#000] hover:bg-slate-900 py-2 px-4 hover:shadow-2xl hover:shadow-[#1136ff]"
               htmlFor="email"
             >
               Sign Up

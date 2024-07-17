@@ -11,10 +11,10 @@ const HeroSlider = ({ data }) => {
       }}
     >
       <div className="content py-10 lg:w-2/5 w-[100%] flex lg:pl-10 gap-2 flex-col justify-center lg:gap-4">
-        <p className="text-white max-sm:text-sm sm:text-lg xl:text-xl lg:w-[90%] bg-[#1136FF] py-2 rounded-lg  mt-3 text-center">
+        <p className="text-white max-sm:text-sm sm:text-lg 2xl:text-xl lg:w-[90%] bg-[#1136FF] py-2 px-2 rounded-lg  mt-3 text-center">
           {data.title}
         </p>
-        <h1 className="text-[#00234B] text-lg sm:text-xl xl:text-5xl  font-bold uppercase max-sm:text-center leading-relaxed">
+        <h1 className="text-[#00234B] text-lg sm:text-2xl 2xl:text-5xl  font-bold uppercase max-sm:text-center  leading-loose">
           {data.main}
         </h1>
         <p className="text-[#00234B] max-sm:w-[90%] max-sm:text-center max-sm:text-lg sm:text-lg xl:text-xl max-sm:mx-auto">
@@ -29,7 +29,7 @@ const HeroSlider = ({ data }) => {
           </NavLink>
       </div>
       <div className="imageContainer lg:w-2/5 w-[100%] max-sm:py-5">
-        <img className="w-1/4 h-full" src={data.src} alt="slider" />
+        <img className="w-1/4 h-full mt-2" src={data.src} alt="slider" />
       </div>
     </div>
   );

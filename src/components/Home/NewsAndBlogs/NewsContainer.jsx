@@ -29,7 +29,7 @@ const NewsContainer = () => {
     }}>
     <div className='hnews_content flex flex-col gap-12 items-center'>
        <p className='lg:w-[20%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#1136ff] text-xl'>News & Blogs</p>
-       <p className='w-[50%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl sm:text-2xl xl:text-5xl leading-loose  '>Get Every Single Updates Articles Recent News & Blogs</p>
+       <p className='w-[50%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl sm:text-2xl 2xl:text-5xl leading-loose  '>Get Every Single Updates Articles Recent News & Blogs</p>
     </div>
     <div className='w-full flex flex-col gap-2 lg:flex-row justify-around items-center'>
     {newsData.map((data,index) => {
