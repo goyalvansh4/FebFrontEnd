@@ -9,7 +9,7 @@ const Service = () => {
           <p className="text-center text-2xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-[190px]">
             Our Services
           </p>
-          <p className="text-center max-sm:text-xl text-4xl w-2/4 leading-relaxed font-semibold text-[#000]">
+          <p className="text-center max-sm:text-xl sm:text-2xl xl:text-4xl w-2/4 leading-relaxed font-semibold text-[#000]">
             We believe in delivering quality services that exceed our clients'
             expectations
           </p>

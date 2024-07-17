@@ -27,7 +27,7 @@ const Growing = () => {
         <h3 className="w-[220px] text-center rounded-xl font-semibold py-2 px-3 text-white bg-[#1136ff] text-xl">
           Quality Service
         </h3>
-        <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl text-5xl font-semibold text-[#000] leading-normal">
+        <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl sm:text-2xl xl:text-5xl font-semibold text-[#000] leading-normal">
           Feb Tech is incredibly htmlFor Your Business.
         </p>
         <p className="lg:w-3/4 max-lg:text-center">

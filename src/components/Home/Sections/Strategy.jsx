@@ -54,7 +54,7 @@ const Strategy = () => {
     {
       id: 2,
       title: "Step 02",
-      subTitle: "The second meeting Designing effective solutions",
+      subTitle: "The second meeting design effective solution",
       description:
         "Our team of experts uses the latest technologies and best practices.",
       left: "34%",
@@ -64,9 +64,9 @@ const Strategy = () => {
     {
       id: 3,
       title: "Step 03",
-      subTitle: "The final meeting Delivering exceptional results",
+      subTitle: "The final meeting delivering exceptional results",
       description:
-        "We are committed to delivering exceptional results htmlFor our clients within the budget.",
+        "We are committed to delivering exceptional results within the budget.",
       right: "2%",
       top: "-25px",
       src: "process3.png",
@@ -85,7 +85,7 @@ const Strategy = () => {
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
           Working Process
         </p>
-        <p className="max-sm:text-2xl text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
+        <p className="max-sm:text-2xl sm:text-2xl xl:text-[40px] w-4/5 text-gray-950 font-semibold leading-relaxed">
           We are committed to providing the best strategic guidance available
         </p>
         <div className="arrow mt w-full flex flex-col gap-5 lg:relative z-0">

@@ -46,7 +46,7 @@ const Partner = () => {
         <a className="w-[200px] text-center rounded-xl font-semibold py-2  text-white bg-[#1136ff] text-xl">
           Global Partners
         </a>
-        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl text-4xl ">
+        <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl  xl:text-4xl ">
           We’ve <span className="text-[#1136ff]">200+</span> Global Clients Meet
           With Our Clients
         </p>
