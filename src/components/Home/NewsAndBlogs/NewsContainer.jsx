@@ -32,8 +32,8 @@ const NewsContainer = () => {
        <p className='w-[50%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl lg:text-5xl leading-normal  '>Get Every Single Updates Articles Recent News & Blogs</p>
     </div>
     <div className='w-full flex flex-col gap-2 lg:flex-row justify-around items-center'>
-    {newsData.map((data) => {
-        return <News data={data} />
+    {newsData.map((data,index) => {
+        return <News key={index} data={data} />
     })}
     </div>
   </div>

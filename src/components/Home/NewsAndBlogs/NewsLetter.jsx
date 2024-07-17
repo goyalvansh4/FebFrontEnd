@@ -18,7 +18,7 @@ const NewsLetter = () => {
       </div>
       <div className="lg:w-1/2 flex flex-col gap-5">
         <div className="flex flex-col gap-2 lg:flex-row lg:bg-white lg:w-[90%] py-2">
-          <htmlForm
+          <form
             action=""
             className="w-full flex flex-col gap-2 lg:flex-row px-2"
           >
@@ -35,7 +35,7 @@ const NewsLetter = () => {
             >
               Sign Up
             </button>
-          </htmlForm>
+          </form>
         </div>
         <div className="relative  px-5">
           <p className="hletter text-base max-lg:text-center font-light text-gray-600 pl-4">

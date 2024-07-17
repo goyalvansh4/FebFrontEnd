@@ -68,7 +68,7 @@ export const Header = () => {
                 }
               />
               {isServicesDropdownOpen && (
-                <div className="absolute hidden lg:flex gap-5 top-full left-0 w-[700px] bg-white shadow-lg rounded mt-2 p-4 z-50">
+                <div className="absolute hidden lg:flex gap-5 top-9 left-0 w-[700px] bg-white shadow-lg rounded mt-2 p-4 z-50">
                   <div>
                     <h6 className="text-base text-[#007bff] font-bold">
                       Web Development

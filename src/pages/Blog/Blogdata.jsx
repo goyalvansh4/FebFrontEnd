@@ -1,35 +1,38 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import GlobalAxios from "../../../GlobalAxios/GlobalAxios";
+import { TailSpin, ThreeDots } from "react-loader-spinner";
 
 const Blogdata = () => {
-  const [htmlFormData, sethtmlFormData] = useState({
+  const [formData, setFormData] = useState({
     title: "",
     subtitle: "",
     description: "",
     image: null,
   });
 
-  const [blogdata, setBlogData] = useState([]);
+  const [blogData, setBlogData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
         const response = await GlobalAxios.get("/blogs");
         if (response.data.message === "success") {
-          setBlogData(response.data.data);
-          let newDescription = response.data.data.description.substring(0, 20);
           console.log(response.data.data);
+          setBlogData(response.data.data);
         }
       } catch (error) {
         console.log(
           "Error fetching blog:",
           error.response ? error.response.data : error.message
         );
+      } finally {
+        setLoading(false);
       }
     };
     fetchBlog();
@@ -37,7 +40,7 @@ const Blogdata = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    sethtmlFormData((prevData) => ({
+    setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
@@ -45,7 +48,7 @@ const Blogdata = () => {
 
   const handleDescriptionChange = (event, editor) => {
     const data = editor.getData();
-    sethtmlFormData((prevData) => ({
+    setFormData((prevData) => ({
       ...prevData,
       description: data,
     }));
@@ -53,7 +56,7 @@ const Blogdata = () => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    sethtmlFormData((prevData) => ({
+    setFormData((prevData) => ({
       ...prevData,
       image: file,
     }));
@@ -61,20 +64,27 @@ const Blogdata = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = new htmlFormData();
-    data.append("title", htmlFormData.title);
-    data.append("subtitle", htmlFormData.subtitle);
-    data.append("description", htmlFormData.description);
-    data.append("image", htmlFormData.image);
+    setUploading(true);
+    const data = new FormData();
+    data.append("title", formData.title);
+    data.append("subtitle", formData.subtitle);
+    data.append("description", formData.description);
+    data.append("image", formData.image);
 
     try {
       const response = await GlobalAxios.post("/blogs/create", data, {
         headers: {
-          "Content-Type": "multipart/htmlForm-data",
+          "Content-Type": "multipart/form-data",
         },
       });
       if (response.data.message === "success") {
         toast.success("Blog submitted successfully!");
+        setFormData({
+          title: "",
+          subtitle: "",
+          description: "",
+          image: null,
+        });
         window.location.reload();
       }
     } catch (error) {
@@ -82,153 +92,159 @@ const Blogdata = () => {
         "Error submitting blog:",
         error.response ? error.response.data : error.message
       );
+    } finally {
+      setUploading(false);
     }
-
-    sethtmlFormData({
-      title: "",
-      subtitle: "",
-      description: "",
-      image: null,
-    });
   };
 
   return (
     <>
       <ToastContainer />
-      <div className="py-16">
-        <div className="blog flex flex-wrap justify-center items-center gap-4 rounded-xl mx-2">
-          {blogdata.map((blog) => (
-            <div key={blog._id} className="w-[48%] h-[500px]">
-              <div className="w-full h-[70%]">
-                <img
-                  src={`https://febtech-backend.onrender.com/${blog.image}`}
-                  className="w-full h-full"
-                  alt="Blog"
-                />
-              </div>
-              <div className="w-full flex flex-col gap-4 p-5">
-                <p className="text-2xl font-semibold text-black">
-                  {blog.title}
-                </p>
-                <p className="text-xl font-medium text-black">
-                  {blog.subtitle}
-                </p>
-
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: blog.description.substring(0, 40) + "...",
-                  }}
-                />
-              </div>
+      <div className="py-16 bg-gray-100 min-h-screen">
+        <div className="container px-5  mx-auto">
+          {loading ? (
+            <div className="flex justify-center items-center h-screen">
+              <TailSpin color="#00BFFF" height={80} width={80} />
             </div>
-          ))}
-        </div>
-        <div className="container mx-auto p-6">
-          <htmlForm
-            onSubmit={handleSubmit}
-            className="max-w-xl mx-auto bg-white shadow-md rounded overflow-hidden"
-          >
-            {htmlFormData.image && (
-              <img
-                src={URL.createObjectURL(htmlFormData.image)}
-                alt="Uploaded"
-                className="w-full h-48 object-cover"
-              />
-            )}
-            {!htmlFormData.image && (
-              <div className="bg-gray-200 w-full h-48 flex items-center justify-center">
-                <label
-                  htmlhtmlFor="image"
-                  className="cursor-pointer text-gray-500 hover:text-gray-700"
-                >
-                  <span className="flex items-center">
-                    <svg
-                      className="w-8 h-8 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+          ) : (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                {blogData.map((blog) => (
+                  <div key={blog._id} className="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img
+                      src={`https://febtech-backend.onrender.com/${blog.image}`}
+                      className="w-full h-48 object-cover"
+                      alt="Blog"
+                    />
+                    <div className="p-5">
+                      <h2 className="text-2xl font-semibold text-black mb-2">
+                        {blog.title}
+                      </h2>
+                      <h3 className="text-xl font-medium text-gray-700 mb-2">
+                        {blog.subtitle}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: blog.description.substring(0, 40) + "...",
+                        }}
                       />
-                    </svg>
-                    Upload an image
-                  </span>
-                </label>
-                <input
-                  className="hidden"
-                  id="image"
-                  type="file"
-                  accept="image/*"
-                  onChange={handleImageChange}
-                  required
-                />
+                    </div>
+                  </div>
+                ))}
               </div>
-            )}
-            <div className="p-4">
-              <div className="mb-4">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlhtmlFor="title"
+              <div className="container mx-auto p-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="max-w-xl mx-auto bg-white shadow-md rounded overflow-hidden"
                 >
-                  Title
-                </label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="title"
-                  type="text"
-                  placeholder="Enter title"
-                  name="title"
-                  value={htmlFormData.title}
-                  onChange={handleChange}
-                  required
-                />
+                  {formData.image && (
+                    <img
+                      src={URL.createObjectURL(formData.image)}
+                      alt="Uploaded"
+                      className="w-full h-48 object-cover"
+                    />
+                  )}
+                  {!formData.image && (
+                    <div className="bg-gray-200 w-full h-48 flex items-center justify-center">
+                      <label
+                        htmlFor="image"
+                        className="cursor-pointer text-gray-500 hover:text-gray-700"
+                      >
+                        <span className="flex items-center">
+                          <svg
+                            className="w-8 h-8 mr-2"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                            />
+                          </svg>
+                          Upload an image
+                        </span>
+                      </label>
+                      <input
+                        className="hidden"
+                        id="image"
+                        type="file"
+                        accept="image/*"
+                        onChange={handleImageChange}
+                        required
+                      />
+                    </div>
+                  )}
+                  <div className="p-4">
+                    <div className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="title"
+                      >
+                        Title
+                      </label>
+                      <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="title"
+                        type="text"
+                        placeholder="Enter title"
+                        name="title"
+                        value={formData.title}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="subtitle"
+                      >
+                        Subtitle
+                      </label>
+                      <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="subtitle"
+                        type="text"
+                        placeholder="Enter subtitle"
+                        name="subtitle"
+                        value={formData.subtitle}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-bold mb-2"
+                        htmlFor="description"
+                      >
+                        Description
+                      </label>
+                      <CKEditor
+                        editor={ClassicEditor}
+                        data={formData.description}
+                        onChange={handleDescriptionChange}
+                      />
+                    </div>
+                    <div className="flex items-center justify-between">
+                      <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="submit"
+                      >
+                        {uploading ? (
+                          <ThreeDots color="#FFFFFF" height={20} width={20} />
+                        ) : (
+                          "Add Blog Post"
+                        )}
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div className="mb-4">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlhtmlFor="subtitle"
-                >
-                  Subtitle
-                </label>
-                <input
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="subtitle"
-                  type="text"
-                  placeholder="Enter subtitle"
-                  name="subtitle"
-                  value={htmlFormData.subtitle}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  className="block text-gray-700 text-sm font-bold mb-2"
-                  htmlhtmlFor="description"
-                >
-                  Description
-                </label>
-                <CKEditor
-                  editor={ClassicEditor}
-                  data={htmlFormData.description}
-                  onChange={handleDescriptionChange}
-                />
-              </div>
-              <div className="flex items-center justify-between">
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                  type="submit"
-                >
-                  Add Blog Post
-                </button>
-              </div>
-            </div>
-          </htmlForm>
+            </>
+          )}
         </div>
       </div>
     </>

@@ -93,6 +93,7 @@ const Strategy = () => {
           {strategyData.map((data, index) => {
             return (
               <div
+                key={index}
                 className={`flex flex-col justify-center items-center gap-1 px-2 w-[100%] lg:absolute  lg:w-[15vw] lg:h-[280px] `}
                 style={{
                   left: `${data.left}`,
@@ -128,6 +129,7 @@ const Strategy = () => {
           {client.map((item, index) => {
             return (
               <div
+              key={index}
                 className={`clientlogo w-[60px] h-[60px]  lg:w-[90px] lg:h-[90px]  rounded-full lg:absolute`}
                 style={{
                   backgroundImage: `url(${item.src})`,
