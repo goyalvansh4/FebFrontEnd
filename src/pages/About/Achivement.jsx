@@ -34,7 +34,7 @@ const Achivement = () => {
     <>
       <div className='lg:h-64 w-full lg:flex justify-evenly items-center bg-black py-5'>
         {s4data.map((item,index)=>{
-            return <div className='flex justify-center items-center bg-[#1136FF] text-white gap-4 px-6 py-4 yellow-shadow-sm lg:w-1/5 w-[95%] mx-auto my-5'>
+            return <div key={index} className='flex justify-center items-center bg-[#1136FF] text-white gap-4 px-6 py-4 yellow-shadow-sm lg:w-1/5 w-[95%] mx-auto my-5'>
               <div >
                 {item.icon}
               {/* <IoIosPerson className='text-5xl' /> */}

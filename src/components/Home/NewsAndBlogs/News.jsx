@@ -3,18 +3,18 @@ import { NavLink } from "react-router-dom";
 
 const News = ({ data }) => {
   return (
-    <div key={data.id} className="lg:w-[1/3] md:w-[400px] sm:w-full mx-auto hblog_card hover:bg-white  rounded-3xl hover:shadow-xl  overflow-hidden flex flex-col flex-wrap md:justify-center">
-      <div className="hblogcard_img w-full">
-        <img src={data.src} alt="" />
+    <div key={data.id} className="w-full sm:w-[48%] md:w-[31%] mb-8 p-4 rounded-3xl hover:bg-gray-100 hover:shadow-xl overflow-hidden flex flex-col items-center md:items-start">
+      <div className="w-full mb-4">
+        <img src={data.src} alt="Blog" className="w-full h-auto rounded-2xl" />
       </div>
-      <div className="hblog_cont w-full  px-3 py-5   flex flex-col gap-2">
-        <p className="hb_date  text-base text-[#1136ff] font-normal">
+      <div className="w-full px-3 py-5 flex flex-col gap-2">
+        <p className="text-base text-[#1136ff] font-normal">
           {data.date}
         </p>
-        <p className="hb_title w-[90%] text-xl xl:text-2xl font-semibold text-[#000] hover:text-[#1136ff]">
+        <p className="text-xl xl:text-2xl font-semibold text-[#000] hover:text-[#1136ff]">
           {data.title}
         </p>
-        <NavLink to="/blog" className="text-lg flex gap-4 items-center font-medium underline">
+        <NavLink to="/" className="text-lg flex gap-4 items-center font-medium underline">
           Read More
           <svg
             width="31"

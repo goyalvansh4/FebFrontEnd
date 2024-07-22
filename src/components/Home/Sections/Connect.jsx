@@ -20,10 +20,10 @@ const Connect = () => {
   ];
 
   return (
-    <div className="max-w-[99.9%] hconnect flex flex-col lg:flex-row  justify-around gap-2 my-14 border-b border-gray-700">
+    <div className="w-[100%] hconnect flex flex-col lg:flex-row  justify-between gap-2 my-1 xl:my-8 lg:py-5 box-border border-b border-gray-700">
       {connectData.map((item, index) => {
         return (
-          <div key={index} className="w-[99%] lg:w-1/3 hspinner flex justify-center py-16 gap-3 border-r border-gray-700 mx-auto">
+          <div key={index} className="w-[100%] lg:w-1/3 hspinner flex justify-center py-5 gap-3 border-r border-gray-700">
             <div className="hspinImage">
               <svg
                 width="49"
@@ -40,7 +40,7 @@ const Connect = () => {
                 ></path>
               </svg>
             </div>
-            <div className="content">
+            <div className="content max-sm:w-[55%]">
               <p className="text-lg text-gray-700">{item.title}</p>
               {item.desc === "phone" ? (
                 <a
@@ -59,7 +59,7 @@ const Connect = () => {
               ) : (
                 <a href="https://www.google.com/maps/place/FEBTECH+IT+SOLUTIONS+Pvt.+Ltd/@29.8845467,77.8633216,15z/data=!4m6!3m5!1s0x390eb51d58bca643:0x35e3e1db1d8a7707!8m2!3d29.8917664!4d77.8681671!16s%2Fg%2F11ppzl_txm?entry=ttu" 
                 target="_blank"
-                className="text-2xl medium text-gray-900">{item.info}</a>
+                className="text-xl 2xl:text-2xl medium text-gray-900">{item.info}</a>
               )}
             </div>
           </div>

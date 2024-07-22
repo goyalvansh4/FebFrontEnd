@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 const Project = ({src,title}) => {
   return (
-    <div className="w-[90%] h-[400px]  mx-auto flex relative  flex-col items-center">
-      <img src={src} className="h-[80%] w-full rounded-2xl shadow-xl" alt="project" />
-      <div className="bg-[#1136ff] absolute bottom-[25px] px-8 py-2 flex flex-col gap-2 rounded-xl">
-        <p className="text-white text-2xl font-semibold">{title}</p>
-        <NavLink to="/project" className="flex justify-center items-center gap-2 text-white text-lg underline px-1 mb-6">
+    <div className="w-[95%]  flex relative  flex-col gap-3 items-center">
+      <img src={src} className="h-full w-full rounded-2xl shadow-xl" alt="project" />
+      <div className="bg-[#1136ff] relative top-[-45px] px-5 py-2 flex flex-col  rounded-xl">
+        <p className="text-white text-lg 2xl:text-2xl font-semibold">{title}</p>
+        <NavLink to="/project" className="flex justify-center items-center gap-2 text-white text-sm xl:text-lg underline px-1 py-1">
           Read More
           <svg
             width="31"

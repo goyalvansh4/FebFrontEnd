@@ -2,22 +2,22 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const HeroSlider = ({ data }) => {
-
   return (
     <div
-      className="hero  max-w-[99.3vw] h-[100%] py-5 flex flex-col lg:flex-row lg:justify-center lg:items-center mx-auto gap-5 lg:gap-2"
+      className="hero w-[100%] md:h-auto lg:h-[90vh] lg:py-10  h-[100%] py-5 flex flex-col lg:flex-row lg:justify-center lg:items-center  gap-5 lg:gap-2"
       style={{
         background: `url(headerBg.png) no-repeat center center/cover`,
       }}
     >
-      <div className="content py-10 lg:w-2/5 w-[100%] flex lg:pl-10 gap-2 flex-col justify-center lg:gap-4">
-        <p className="text-white max-sm:text-sm sm:text-lg 2xl:text-xl lg:w-[90%] bg-[#1136FF] py-2 px-2 rounded-lg  mt-3 text-center">
+      <div className="content py-10 lg:w-[45%] w-[100%] flex lg:pl-10 gap-2 flex-col justify-center sm:items-center lg:items-start lg:text-left lg:gap-4 2xl:gap-4 px-2">
+
+        <p className="w-full sm:w-[50%] text-white max-sm:text-sm sm:text-lg  2xl:text-xl lg:w-[95%] bg-[#1136FF] py-2 px-2  rounded-lg  mt-3 text-center">
           {data.title}
         </p>
-        <h1 className="text-[#00234B] text-lg sm:text-2xl 2xl:text-5xl  font-bold uppercase max-sm:text-center  leading-loose">
+        <h1 className="text-[#00234B] text-xl sm:text-2xl 2xl:text-7xl  font-bold uppercase text-center lg:text-left  leading-loose">
           {data.main}
         </h1>
-        <p className="text-[#00234B] max-sm:w-[90%] max-sm:text-center max-sm:text-lg sm:text-lg xl:text-xl max-sm:mx-auto">
+        <p className="text-[#00234B] max-sm:w-[90%] max-sm:text-center max-sm:text-lg sm:text-lg xl:text-xl max-sm:mx-auto xl:leading-relaxed">
           {data.para}
         </p>
         <NavLink
@@ -28,8 +28,8 @@ const HeroSlider = ({ data }) => {
             Discover More &gt;&gt;
           </NavLink>
       </div>
-      <div className="imageContainer lg:w-2/5 w-[100%] max-sm:py-5">
-        <img className="w-1/4 h-full mt-2" src={data.src} alt="slider" />
+      <div className="imageContainer md:w-[80%]  lg:w-2/5 w-[99%] max-sm:py-5">
+        <img className="max-md:w-[10%] w-1/4 xl:h-full mt-2" src={data.src} alt="slider" />
       </div>
     </div>
   );

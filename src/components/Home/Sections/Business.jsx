@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Business = () => {
   return (
-    <div className="flex flex-col lg:flex-row max-w-[99.9%] mx-auto gap-4 border-b-2 justify-between my-16 ">
-      <div className="flex w-full lg:w-1/2 items-center border-r-2 px-2">
+    <div className="flex flex-col lg:flex-row w-[100%] mx-auto gap-4 border-b-2 justify-between my-5 xl:my-16 ">
+      <div className="flex w-full lg:w-1/2 max-sm:justify-center items-center border-r-2 px-2">
         <img
           id="heroImg1"
           className="w-[90%]"
@@ -12,7 +12,7 @@ const Business = () => {
           alt="Awesome hero page image"
         />
       </div>
-      <div className="lg:w-1/2 flex flex-col gap-8 px-10 py-4 justify-center">
+      <div className="lg:w-1/2 flex flex-col gap-8 px-10 py-4 justify-center items-center lg:items-start">
         <h3 className="w-[290px] text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
           Knowledge and Numbers
         </h3>
@@ -20,7 +20,7 @@ const Business = () => {
           There are several reasons to choose Feb tech for your business
           needs.
         </p>
-        <p className="lg:w-3/4">
+        <p className="lg:w-3/4 lg:text-lg text-center">
           We believe that by fostering a culture of collaboration and creativity
           within our team, we can continue to stay ahead of the curve in the
           rapidly-evolving IT industry.
@@ -42,7 +42,7 @@ const Business = () => {
             <span className="mr-1 lg:mr-5 bg-[#1136ff] text-white rounded-full py-2 px-3">
               &#10003;
             </span>{" "}
-            AfhtmlFordable Pricing
+            Afordable Pricing
           </li>
         </ul>
         <div className="w-full py-2 max-lg:flex max-sm:py-4 justify-center">

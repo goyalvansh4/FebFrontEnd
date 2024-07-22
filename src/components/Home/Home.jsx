@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <>
+    <div className="home  w-[100%]">
       <AHero />
       <Connect />
       <Service />
@@ -15,7 +15,7 @@ const Home = () => {
       <TestimonialContainer />
       <NewsContainer />
       <NewsLetter />
-    </>
+    </div>
   );
 };
 

@@ -59,6 +59,9 @@
   height: 8px;
   background-color: #000;
 }
+.mySwiper{
+  margin: 0 !important;
+}
 
 .swiper-pagination-bullet-active {
   background: transparent;

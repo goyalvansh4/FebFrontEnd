@@ -38,10 +38,10 @@ const AHero = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         centeredSlides={true}
         autoplay={{
-          delay: 3500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -49,10 +49,10 @@ const AHero = () => {
         }}
         modules={[Autoplay, Pagination, Navigation]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper lg:relative  lg:h-screen w-full"
+        className="lg:relative md:h-auto  lg:h-screen w-[99.9%]"
       >
         {data.map((item, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide className="w-[100%]" key={index}>
             <HeroSlider data={item} />
           </SwiperSlide>
         ))}

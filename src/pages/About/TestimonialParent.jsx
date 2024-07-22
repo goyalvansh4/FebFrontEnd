@@ -16,7 +16,7 @@ const TestimonialParent = () => {
 
           </div>
 
-          <div className='md:w-2/3 md:flex items-center relative'>
+          <div className='md:w-2/3 w-full pl-2 md:flex justify-center items-center relative'>
            <Testimonial/>
 
            <div className='flex absolute right-20 bottom-20 '>

@@ -16,28 +16,23 @@ import { Pagination, Navigation } from "swiper/modules";
 export default function Slider() {
   const data = [
     {
-      name: "Shakuntala Paul",
+      name: "Rohit Kumar",
       profile: "Web Developer",
       image: "team-1.jpg",
     },
     {
-      name: "Shakuntala Paul",
-      profile: "Web Developer",
+      name: "Saransh Kumar",
+      profile: "App Developer",
       image: "team-1.jpg",
     },
     {
-      name: "Shakuntala Paul",
-      profile: "Web Developer",
+      name: "Harshit Sharma",
+      profile: "React Developer",
       image: "team-1.jpg",
     },
     {
-      name: "Shakuntala Paul",
-      profile: "Web Developer",
-      image: "team-1.jpg",
-    },
-    {
-      name: "Shakuntala Paul",
-      profile: "Web Developer",
+      name: "Shoaib Malik",
+      profile: "Wordpress Developer",
       image: "team-1.jpg",
     },
   ];
@@ -73,9 +68,9 @@ export default function Slider() {
             <SwiperSlide>
               <div className=" text-center">
                 <div className="">
-                  <div className="a-shadow-slider teamCard relative overflow-hidden object-cover">
+                  <div className="a-shadow-slider teamCard relative overflow-hidden object-cover w-full">
                     <img
-                      className=" transhtmlForm scale-100 hover:scale-125 transition-all duration-700 ease-in "
+                      className=" transhtmlForm scale-100 hover:scale-125 transition-all duration-700 ease-in"
                       src={item.image}
                       alt="team-member"
                     />

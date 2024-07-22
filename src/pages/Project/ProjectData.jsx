@@ -54,16 +54,16 @@ const ProjectData = () => {
                   </p>
                   <p>{item.strategy}</p>
                 </div>
-                <div className="flex justify-center items-center border rounded-full bg-white w-12 h-12 p-shadow">
+                <a href="https://febtech.in/project.html" target="_blank" className="flex justify-center items-center border rounded-full bg-white w-12 h-12 p-shadow">
                   <FaArrowRight />
-                </div>
+                </a>
               </div>
             </div>
           );
         })}
         <div className="flex justify-center items-center w-full mb-10">
           <div className="capitalize bg-yellow-400 flex items-center justify-between px-6 py-3 gap-2 pb-shadow">
-            <span>load more</span>
+            <a href="https://febtech.in/project.html" target="_blank">load more</a>
             <span pl-button>
               <svg
                 width="16px"

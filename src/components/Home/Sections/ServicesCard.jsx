@@ -48,7 +48,7 @@ const ServicesCard = () => {
     {
       icon: "service4.png",
       title: "Trademark Service",
-      para: "Our trademark service helps you protect your intellectual property by registering your trademark.",
+      para: "Our trademark service helps you protect the intellectual property by registering trademark.",
     },
   ];
 
@@ -58,7 +58,7 @@ const ServicesCard = () => {
         loop={true}
         centeredSlides={false}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
         }}
         pagination={{
           clickable: true,
@@ -78,13 +78,13 @@ const ServicesCard = () => {
           },
         }}
         modules={[Autoplay, Pagination]}
-        className="mySwiper  py-8"
+        className="mySwiper py-2 xl:py-8 lg:my-8"
       >
         {/* Loop through the serviceData array and display the data */}
         {serviceData.map((data, index) => {
           return (
-            <SwiperSlide key={index} className="bg-[#fdfdfd] lg:w-1/4 rounded-xl shadow-xl my-16">
-              <div className="serviceCard  lg:flex lg:flex-col p-4 mb-4 gap-10">
+            <SwiperSlide key={index} className="bg-[#fdfdfd] lg:w-1/4 rounded-xl shadow-xl my-8 xl:my-12">
+              <div className="serviceCard  lg:flex lg:flex-col px-6 py-4 mb-4 gap-10">
                 <div className="tech_icon w-[70px]">
                   <img
                     src={data.icon}

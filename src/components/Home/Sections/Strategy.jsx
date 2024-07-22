@@ -22,22 +22,6 @@ const Strategy = () => {
       id: 5,
       src: "./client5.jpg",
     },
-    {
-      id: 6,
-      src: "./client6.jpg",
-    },
-    {
-      id: 7,
-      src: "./client7.jpg",
-    },
-    {
-      id: 8,
-      src: "./client8.jpg",
-    },
-    {
-      id: 9,
-      src: "./client9.jpg",
-    },
   ];
 
   const strategyData = [
@@ -54,11 +38,11 @@ const Strategy = () => {
     {
       id: 2,
       title: "Step 02",
-      subTitle: "The second meeting design effective solution",
+      subTitle: "The second meeting is to design effective solution",
       description:
         "Our team of experts uses the latest technologies and best practices.",
-      left: "34%",
-      top: "15px",
+      left: "33%",
+      top: "20px",
       src: "process2.png",
     },
     {
@@ -75,9 +59,9 @@ const Strategy = () => {
 
   return (
     // <div className="w-full  border-2 border-blue-800 ">
-    <div className="hstrategy  flex flex-col lg:flex-row w-[95%] mx-auto lg:h-screen  gap-2">
+    <div className="hstrategy lg:relative  flex flex-col max-sm:items-center lg:flex-row w-[100%]  md:h-screen  lg:my-5 gap-5">
       <div
-        className="flex flex-col gap-10 w-full lg:w-3/5 px-8 py-8 z-20"
+        className="flex max-md:h-[50%] flex-col gap-2 2xl:gap-10 w-full items-center lg:items-start lg:w-3/5 px-8 py-8 z-20"
         style={{
           background: `url(processBg.jpg) no-repeat center center/cover`,
         }}
@@ -85,16 +69,18 @@ const Strategy = () => {
         <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
           Working Process
         </p>
-        <p className="max-sm:text-2xl sm:text-2xl 2xl:text-[40px] w-4/5 text-gray-950 font-semibold leading-loose">
-          We are committed to providing the best strategic guidance available
+        <p className="max-sm:text-2xl mt-5 sm:text-2xl 2xl:text-[35px] sm:w-4/5 text-gray-950 font-semibold max-sm:text-center leading-loose">
+          We are providing the best  guidance 
         </p>
-        <div className="arrow mt w-full flex flex-col gap-5 lg:relative z-0">
-          <img src="./markr.png" alt="mark" />
+        <div className="arrow mt w-full flex flex-col md:flex-row xl:gap-5 lg:relative max-sm:gap-4
+         top-[40px]
+        2xl:top-[95px] z-0">
+          <img src="./markr.png" alt="mark" className="hidden lg:block" />
           {strategyData.map((data, index) => {
             return (
               <div
                 key={index}
-                className={`flex flex-col justify-center items-center gap-1 px-2 w-[100%] lg:absolute  lg:w-[15vw] lg:h-[280px] `}
+                className={`flex flex-col  justify-center items-center gap-1 px-2 w-[100%] lg:absolute  md:w-[33%]`}
                 style={{
                   left: `${data.left}`,
                   top: `${data.top}`,
@@ -111,7 +97,7 @@ const Strategy = () => {
                   <p className="text-lg font-semibold text-center text-[#000]">
                     {data.subTitle}
                   </p>
-                  <p className="text-sm font-light text-center text-gray-400">
+                  <p className="text-sm font-light text-center text-gray-400 md:hidden xl:block">
                     {data.description}
                   </p>
                 </div>
@@ -120,7 +106,7 @@ const Strategy = () => {
           })}
         </div>
       </div>
-      <div className="right flex flex-col gap-4 w-full lg:w-2/5 p-5 lg:relative">
+      <div className="right sm:h-screen max-md:mt-10 flex flex-col sm:items-center lg:items-start gap-4 w-full lg:w-2/5 p-5 md:relative">
         <p className="text-xl font-normal">Saticfied Clients</p>
         <p className="text-2xl font-semibold">
           We Have Thousands Of Global Clients
@@ -130,13 +116,12 @@ const Strategy = () => {
             return (
               <div
               key={index}
-                className={`clientlogo w-[60px] h-[60px]  lg:w-[90px] lg:h-[90px]  rounded-full lg:absolute`}
+                className={`clientlogo w-[60px] h-[60px]  lg:w-[80px] lg:h-[80px]  rounded-full lg:relative`}
                 style={{
                   backgroundImage: `url(${item.src})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundRepeat: "no-repeat",
-                  left: `${index * 10}%`,
                 }}
               >
                 {/* Hello */}
@@ -144,9 +129,9 @@ const Strategy = () => {
             );
           })}
         </div>
-        <div className="processBg lg:absolute z-0 lg:right-[0] lg:bottom-[-70px] w-full lg:w-[63vw] lg:h-[70vh] ">
+        <div className="w-[350px] md:w-[800px] lg:w-[38vw] hidden md:block processBg lg:relative z-0  lg:left-[-18%] lg:right-0 2xl:left-[-25%] 2xl:top-[8%] 2xl:w-[698px] rounded-md overflow-hidden">
           <img
-            src="https://febtech.in/wp-content/uploads/2024/02/WhatsApp-Image-2024-01-18-at-23.08.19.jpeg.webp"
+            src="company.webp"
             className="w-full h-full"
             alt=""
           />

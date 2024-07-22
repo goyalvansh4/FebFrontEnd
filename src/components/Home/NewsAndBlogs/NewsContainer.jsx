@@ -12,7 +12,7 @@ const NewsContainer = () => {
     {
       id: 2,
       src:"blog2.jpg",
-      title: 'Rethinking Server-Timing As Seen Critical Monitoring Tool',
+      title: 'Rethinking Server-Timing As Seen for Critical Monitoring Tool',
       date: 'September 25, 2023'
     },
     {
@@ -23,15 +23,16 @@ const NewsContainer = () => {
     }
   ]
   return (
-    <div className='hnewsBg w-[99.9%] lg:w-[90%] mx-auto my-16 lg:py-16 flex flex-col gap-5 lg:gap-10'
+
+    <div className='hnewsBg w-[100%]  my-16 lg:py-16 flex flex-col md:items-center  gap-5 lg:gap-10'
     style={{
       background: `url(newsBg.png) no-repeat center cover/center`,
     }}>
     <div className='hnews_content flex flex-col gap-12 items-center'>
        <p className='lg:w-[20%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#1136ff] text-xl'>News & Blogs</p>
-       <p className='w-[50%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl sm:text-2xl 2xl:text-5xl leading-loose  '>Get Every Single Updates Articles Recent News & Blogs</p>
+       <p className='w-[90%] xl:w-[80%] lg:w-full text-center font-bold text-[#000]  max-sm:text-2xl sm:text-2xl 2xl:text-4xl leading-loose  '>Get Every Single Updates Articles Recent News & Blogs</p>
     </div>
-    <div className='w-full flex flex-col gap-2 lg:flex-row justify-around items-center'>
+    <div className='w-full flex flex-col justify-center gap-2 max-sm:pl-2 lg:flex-row lg:justify-around items-center'>
     {newsData.map((data,index) => {
         return <News key={index} data={data} />
     })}

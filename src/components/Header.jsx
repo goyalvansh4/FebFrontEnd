@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SocialIcons from "./Home/Sections/SocialIcons";
 import NavItem from "./NavBar/NavItem";
 import MenuButton from "./NavBar/MenuButton";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,11 +11,14 @@ export const Header = () => {
   const handleClose = () => setIsMenuOpen(false);
 
   return (
-    <header className="border-b border-gray-700 max-w-[98.8vw] lg:w-[98vw] mx-auto tracking-wide lg:absolute z-50">
+    <header className="border-b border-gray-700 w-[100%] tracking-wide  z-50">
       <nav className="flex items-center justify-around min-h-[30px] px-4">
-        <a href="/" className={`${isMenuOpen ? "hidden" : "block"} w-[10%]`}>
+        <NavLink
+          href="/"
+          className={`${isMenuOpen ? "hidden" : "block"} w-[10%]`}
+        >
           <img src="./logo.png" alt="logo" className="max-w-[80px]" />
-        </a>
+        </NavLink>
         <div
           className={`fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40 lg:hidden ${
             isMenuOpen ? "block" : "hidden"
@@ -75,76 +78,103 @@ export const Header = () => {
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          to="/serviceform/domain-registration"
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Domain Registration
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          to="/serviceform/web-design"
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Website Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/web-development"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Website Development
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/software-development"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Software Development
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/e-commerce-website"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           E-commerce Website
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/payment-gateway"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Payment Gateway
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/web-hosting"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Web Hosting
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/professional-emails"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Professional Emails
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/mobile-application"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Mobile Application
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -154,60 +184,81 @@ export const Header = () => {
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/seo-services"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           SEO Services
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/social-media-optimization"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Social Media Optimization
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/pay-per-click"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Pay Per Click
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/social-media-marketing"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Social Media Marketing
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/email-marketing"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Email Marketing
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/whatsapp-marketing"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Whatsapp Marketing
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/sms-marketing"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           SMS Marketing
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -217,68 +268,92 @@ export const Header = () => {
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/business-card-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Business Card Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/social-media-post-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Social Media Post Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/pamphlet-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Pamphlet Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/brochure-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Brochure Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/social-media-ads-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Social Media Ads Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/flyer-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Flyer Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/letter-head-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Letter Head Design
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/product-catalogue-design"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Product Catalogue Design
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -288,44 +363,59 @@ export const Header = () => {
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/facebook-marketing"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Facebook Marketing
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/facebook-ads"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Facebook Ads
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/whtsapp-ads"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           WhatsApp Ads
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/instagram-ads"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Instagram Ads
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/google-ads"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Google Ads
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                     <h6 className="text-base text-[#007bff] font-bold">
@@ -333,20 +423,26 @@ export const Header = () => {
                     </h6>
                     <ul className="mt-3 pt-3 border-t border-1 space-y-3">
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/domestic-trademark"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           Domestic Trademark
-                        </a>
+                        </NavLink>
                       </li>
                       <li>
-                        <a
-                          href=""
+                        <NavLink
+                          onClick={() => {
+                            setIsServicesDropdownOpen(false);
+                          }}
+                          to="/serviceform/international-trademark"
                           className="hover:text-[#007bff] text-gray-500 font-bold text-sm block"
                         >
                           International Trademark
-                        </a>
+                        </NavLink>
                       </li>
                     </ul>
                   </div>
@@ -355,7 +451,11 @@ export const Header = () => {
             </div>
             <NavItem to="/about" label="About" handleClose={handleClose} />
             <NavItem to="/client" label="Clients" handleClose={handleClose} />
-            <NavItem to="/blog" label="Blog" handleClose={handleClose} />
+            <NavItem
+              to="/certificate"
+              label="Certificate"
+              handleClose={handleClose}
+            />
             <NavItem to="/careers" label="Careers" handleClose={handleClose} />
             <NavItem
               to="/contactUs"

@@ -52,7 +52,7 @@ const Testimonial = () => {
           clickable: true,
         }}
         modules={[Pagination, Navigation]}
-        className="mySwiper h-96 w-[85%] mx-auto"
+        className="mySwiper h-96 w-[98%] flex justify-center items-center"
         breakpoints={{
           1024: {
             slidesPerView: 2,
@@ -70,8 +70,7 @@ const Testimonial = () => {
                   </p>
                 </div>
 
-                <div className=" mt-9  left-14">
-                  <div className="flex px-6 lg:px-8 items-center gap-4 mt-5">
+                  <div className="flex relative top-4 left-2 px-6 lg:px-8 items-center gap-4 mt-5">
                     <div>
                       <img
                         className="rounded-full"
@@ -87,7 +86,6 @@ const Testimonial = () => {
                     </div>
                   </div>
                 </div>
-              </div>
             </SwiperSlide>
           );
         })}

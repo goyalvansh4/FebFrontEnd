@@ -4,7 +4,7 @@ import Project from "../Home/Projects/Project";
 import Testimonial from "../Home/Testimonial/Testimonial";
 import ClientCard from "../../pages/Client/ClientCard";
 
-function SlickSlider({project,projectData,test,client,clientsData}) {
+function SlickSlider({project,projectData,test,testData,client,clientsData}) {
 
   const projects = {
     dots: true,
@@ -29,7 +29,7 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         }
       },
@@ -121,16 +121,15 @@ function SlickSlider({project,projectData,test,client,clientsData}) {
   
   return (
     <>
-      {(project) && <Slider {...projects} className="w-[90vw] h-full flex">
+      {(project) && <Slider {...projects} className="w-[90vw]  h-full flex gap-2">
       {
         projectData.map((item,index)=>{
           return <Project key={index} src={item.src} title={item.title} />})}
       </Slider>
     }
-      {(test) && <Slider {...tests} className="w-[80vw] mx-auto flex lg:w-[40vw] bg-transparent h-full gap-5 my-5">
-        <Testimonial />
-        <Testimonial />
-        <Testimonial />
+      {(test) && <Slider {...tests} className="w-[85vw] mx-auto flex lg:w-[45vw] bg-transparent h-full gap-8 my-5">
+        {testData.map((item,index)=>{
+          return <Testimonial key={index} title={item.title} description={item.description} name={item.name} company={item.company} image={item.image} /> })}
       </Slider>}
 
       {(client) && <Slider {...clients} className="w-[80vw] bg-transparent h-full my-5 flex"> {clientsData.map((client)=>{

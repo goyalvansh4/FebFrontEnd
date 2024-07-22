@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Partner = () => {
   const partnerData = [
@@ -56,12 +57,12 @@ const Partner = () => {
           agency that’s helped small-to-midsized businesses generate
         </p>
         <div className="w-full max-lg:flex justify-center">
-          <a
-            href="/"
+          <NavLink
+            to="/contactUs"
             className="bg-transparent border-2 border-blue-300 text-[#000] text-lg myBtn px-8 py-3"
           >
             Become a Partners &gt;&gt;
-          </a>
+          </NavLink>
         </div>
         <div className="w-full sm:w-[80%] 2xl:w-[65%] stats  bg-white py-4 px-6 rounded-xl shadow-xl flex sm:justify-between gap-5">
           <div className="stat flex flex-col gap-2">
@@ -106,8 +107,8 @@ const Partner = () => {
           </div>
         </div>
       </div>
-      <div className="pright lg:w-1/2 flex flex-col lg:flex-row justify-around">
-        <div className="partners flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
+      <div className="pright w-full lg:w-1/2 flex  lg:flex-row justify-around">
+        <div className="partners w-full flex flex-col lg:flex-row flex-wrap  justify-center gap-x-2 gap-y-5 lg:justify-around">
           {partnerData.map((partner, index) => {
             return (
               <div
@@ -116,7 +117,7 @@ const Partner = () => {
                   left: `${partner.left}`,
                   // top: `${index + 20}%`,
                 }}
-                className="w-full sm:w-[45%] 2xl:w-[47%] flex flex-col lg:flex-row justify-center items-center bg-white py-4  2xl:py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
+                className="w-full lg:w-[47%] flex flex-row justify-center items-center bg-white py-4  2xl:py-6 rounded-2xl shadow-xl hover:shadow-md hover:shadow-[#1136ff] lg:relative"
               >
                 <img src={partner.src} alt="partner1" />
               </div>

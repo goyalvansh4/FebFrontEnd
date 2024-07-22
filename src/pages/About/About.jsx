@@ -7,6 +7,7 @@ import TestimonialParent from './TestimonialParent'
 import Ateam from './Ateam'
 import './About.css'
 import Hero from '../../components/Hero/Hero'
+import AboutCEO from './AboutCEO'
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
       <Achivement />
       <div className='bg-white'>
       <Ateam />
+      <AboutCEO />
       </div>
       <TestimonialParent/>
     </>

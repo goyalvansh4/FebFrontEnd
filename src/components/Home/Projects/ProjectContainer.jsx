@@ -30,7 +30,7 @@ const ProjectContainer = () => {
     },
    ]
   return (
-    <div className="w-[90vw] mx-auto py-3  my-8 flex flex-col items-center gap-5">
+    <div className="w-[100%]  py-3  my-8 flex flex-col items-center gap-5">
       <p className="lg:w-1/5 text-center  rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
         Recent Project
       </p>
@@ -38,7 +38,7 @@ const ProjectContainer = () => {
         We’ve Done <span className="text-[#1136ff]">2560+</span> Global Projects
         Take a Looks Work Gallery
       </p>
-      <div className="h-[400px] ">
+      <div className="w-[full]">
         <SlickSlider project={true} projectData={projectData} />
       </div>
     </div>

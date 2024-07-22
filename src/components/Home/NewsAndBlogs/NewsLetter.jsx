@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetter = () => {
   return (
     <div
-      className="relative top-8 lg:w-[80%] mx-auto px-10 py-16  flex flex-col lg:flex-row justify-center gap-5 rounded-lg "
+      className="relative w-[80%] mx-auto xl:top-8   px-10 py-16  flex flex-col lg:flex-row items-center justify-center gap-5 rounded-lg "
       style={{
         background: `url(newsletterBg.jpg) no-repeat center center/cover`,
       }}

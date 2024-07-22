@@ -12,7 +12,8 @@ import ContactUs from "./pages/ContactUs/ContactUs.jsx";
 import { Client } from "./pages/Client/Client.jsx";
 import Career from "./pages/Careers/Career.jsx";
 import Services from "./pages/Services/Services.jsx";
-import Blog from "./pages/Blog/Blog.jsx";
+import ServicesForm from "./components/ServicesForm.jsx";
+import Certificate from "./pages/Certificate/Certificate.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
+        path: "/serviceform/:service",
+        element: <ServicesForm />,
+      },
+      {
         path: "/project",
         element: <Project />,
       },
@@ -48,8 +53,8 @@ const router = createBrowserRouter([
         element: <Career />,
       },
       {
-        path: "/blog",
-        element: <Blog />,
+        path: "/certificate",
+        element: <Certificate />,
       },
     ],
   },
