@@ -15,28 +15,28 @@ const Testimonial = () => {
     {
       name: "Ayush",
       review:
-        "I recently had the pleasure of working with FebTech htmlFor my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
+        "I recently had the pleasure of working with FebTech for my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
       position: "Outreach impress",
       profile: "./testimonial-img1.jpg",
     },
     {
       name: "Ayush",
       review:
-        "I recently had the pleasure of working with FebTech htmlFor my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
+        "I recently had the pleasure of working with FebTech for my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
       position: "Outreach impress",
       profile: "./testimonial-img1.jpg",
     },
     {
       name: "Ayush",
       review:
-        "I recently had the pleasure of working with FebTech htmlFor my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
+        "I recently had the pleasure of working with FebTech for my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
       position: "Outreach impress",
       profile: "./testimonial-img1.jpg",
     },
     {
       name: "Ayush",
       review:
-        "I recently had the pleasure of working with FebTech htmlFor my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
+        "I recently had the pleasure of working with FebTech for my website design and development needs, and I couldn't be happier with the results. From start to finish, the team was professional, communicative, and dedicated to bringing my vision to life. They listened to my needs and preferences, and incorporated them seamlessly into the final product.",
       position: "Outreach impress",
       profile: "./testimonial-img1.jpg",
     },
@@ -70,22 +70,20 @@ const Testimonial = () => {
                   </p>
                 </div>
 
-                  <div className="flex relative top-4 left-2 px-6 lg:px-8 items-center gap-4 mt-5">
-                    <div>
-                      <img
-                        className="rounded-full"
-                        src={item.profile}
-                        alt="testimonial-img"
-                      />
-                    </div>
-                    <div>
-                      <p className="text-2xl font-bold text-white">
-                        {item.name}
-                      </p>
-                      <p className="font-medium text-white">{item.position}</p>
-                    </div>
+                <div className="flex relative top-4 left-2 px-6 lg:px-8 items-center gap-4 mt-5">
+                  <div>
+                    <img
+                      className="rounded-full"
+                      src={item.profile}
+                      alt="testimonial-img"
+                    />
+                  </div>
+                  <div>
+                    <p className="text-2xl font-bold text-white">{item.name}</p>
+                    <p className="font-medium text-white">{item.position}</p>
                   </div>
                 </div>
+              </div>
             </SwiperSlide>
           );
         })}

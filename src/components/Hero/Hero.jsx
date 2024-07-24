@@ -1,7 +1,8 @@
 import React from 'react'
 import './Hero.css'
+// import { ReactComponent as MySvg } from './about.svg';
 
-const Hero = ({title,subtitle}) => {
+const Hero = ({title,subtitle,path}) => {
   return (
     <>
       <div className='w-full md:h-screen h-[80%] flex md:flex-row flex-col justify-center box-border mb-10' style={{ backgroundImage: "url('about-banner.jpg')" }}>
@@ -29,7 +30,7 @@ const Hero = ({title,subtitle}) => {
 
         <div className='lg:w-1/2 w-full md:h-full h-[25%] flex justify-center items-center lg:my-1 my-10'>
           <div className='lg:w-[80%] w-[85%] flex items-center justify-center '>
-            <img src="about-img1.png" className='hero_sliding' alt="about image-1" />
+            <img src={path} className='hero_sliding' alt={path} />
           </div>
         </div>
 

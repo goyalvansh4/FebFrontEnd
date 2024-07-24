@@ -7,7 +7,7 @@ import CurrentOpenings from "./CurrentOpenings";
 const Career = () => {
   return (
     <>
-      <Hero title={"Careers"} subtitle={"Careers"} />
+      <Hero title={"Careers"} subtitle={"Careers"} path={"career.png"}/>
       <Opportunity />
       <CareerForm />
       <CurrentOpenings />

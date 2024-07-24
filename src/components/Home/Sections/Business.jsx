@@ -13,7 +13,7 @@ const Business = () => {
         />
       </div>
       <div className="lg:w-1/2 flex flex-col gap-8 px-10 py-4 justify-center items-center lg:items-start">
-        <h3 className="w-[290px] text-center rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
+        <h3 className="w-[290px] text-center rounded-md a-shadow-sm font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
           Knowledge and Numbers
         </h3>
         <p className="lg:w-4/5  max-lg:text-center lg:text-3xl font-semibold text-[#000] max-sm:text-2xl leading-normal">

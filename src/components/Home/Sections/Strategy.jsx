@@ -66,7 +66,7 @@ const Strategy = () => {
           background: `url(processBg.jpg) no-repeat center center/cover`,
         }}
       >
-        <p className="text-center text-xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
+        <p className="text-center text-xl rounded-md a-shadow-sm font-semibold bg-[#1136FF] py-2 text-white  w-[220px]">
           Working Process
         </p>
         <p className="max-sm:text-2xl mt-5 sm:text-2xl 2xl:text-[35px] sm:w-4/5 text-gray-950 font-semibold max-sm:text-center leading-loose">
@@ -107,7 +107,7 @@ const Strategy = () => {
         </div>
       </div>
       <div className="right sm:h-screen max-md:mt-10 flex flex-col sm:items-center lg:items-start gap-4 w-full lg:w-2/5 p-5 md:relative">
-        <p className="text-xl font-normal">Saticfied Clients</p>
+        <p className="text-xl font-normal">Satisfied Clients</p>
         <p className="text-2xl font-semibold">
           We Have Thousands Of Global Clients
         </p>

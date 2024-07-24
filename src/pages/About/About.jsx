@@ -8,11 +8,12 @@ import Ateam from './Ateam'
 import './About.css'
 import Hero from '../../components/Hero/Hero'
 import AboutCEO from './AboutCEO'
+import Gallery from './Gallery'
 
 const About = () => {
   return (
     <>
-      <Hero title={"About Us"} subtitle={"About Us"}/>
+      <Hero title={"About Us"} subtitle={"About Us"} path={"about-us.png"}/>
       <Acompany/>
       <Aprogress/>
       <Achivement />
@@ -20,6 +21,7 @@ const About = () => {
       <Ateam />
       <AboutCEO />
       </div>
+      <Gallery />
       <TestimonialParent/>
     </>
   )

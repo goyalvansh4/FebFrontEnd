@@ -15,7 +15,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <Hero title={"Contact Us"} subtitle={"Contact Us"}/>
+      <Hero title={"Contact Us"} subtitle={"Contact Us"} path={"contact.png"}/>
       <CbelowHero />
       <MapComponent />
       <GetInTouch />

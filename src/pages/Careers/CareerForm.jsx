@@ -20,7 +20,6 @@ const CareerForm = () => {
     const fetchRoles = async () => {
       try {
         let response = await GlobalAxios.get("/user/career_options");
-        // console.log(response.data.data);
         if (response.data.status === "success") {
           setRoles(response.data.data);
         } else {
@@ -58,8 +57,9 @@ const CareerForm = () => {
           "Content-Type": "multipart/form-data",
         },
       });
-      // console.log(response);
+      console.log(response);
       // console.log("Form Data", careerData);
+      return;
       toast.success("Your Application Has Been Submitted Successfully!");
       setCareerData({
         full_name: "",
@@ -109,12 +109,13 @@ const CareerForm = () => {
             <input
               type="tel"
               onChange={handleChange}
+              id="phone"
               name="mobile_number"
-              id="tel"
-              required
+              placeholder="9800000080"
+              pattern="[0-9]{10}"
               value={careerData.mobile_number}
               className="cclick p-4 border border-black md:w-1/2 w-full"
-              placeholder="Phone Number"
+              required
             />
           </div>
           <div className="w-full flex flex-col md:flex-row gap-10">

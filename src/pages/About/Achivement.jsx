@@ -15,7 +15,7 @@ const Achivement = () => {
         },
         {
         numbers:15,
-        text: 'Years In Busines',
+        text: 'Years In Business',
         icon: <FaAward className='text-5xl ' />,
         },
         {

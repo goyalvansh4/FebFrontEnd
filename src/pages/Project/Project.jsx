@@ -11,7 +11,7 @@ const Project = () => {
   }, []);
   return (
     <>
-       <Hero title={"Latest Project"} subtitle={"Project"}/>
+       <Hero title={"Latest Project"} subtitle={"Project"} path={"project.png"}/>
       <LatestProject />
       <NewsLetter />
     </>

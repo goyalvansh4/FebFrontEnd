@@ -10,7 +10,7 @@ export const Client = () => {
   }, []);
   return (
     <>
-     <Hero title={"Our Client"} subtitle={"Client"}/>
+     <Hero title={"Our Client"} subtitle={"Client"} path={"client.png"}/>
      <OurClients/>
      <div className='lg:max-w-[90vw] mx-auto'>
      <Aprogress/>

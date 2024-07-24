@@ -6,7 +6,7 @@ const Service = () => {
     <>
       <div className="w-[100%]  pt-10 pb-2 hservice_bg">
         <div className="flex flex-col  justify-center items-center gap-4">
-          <p className="text-center text-2xl rounded-lg font-semibold bg-[#1136FF] py-2 text-white px-5 w-[190px]">
+          <p className="text-center text-2xl rounded-md a-shadow-sm font-semibold bg-[#1136FF] py-2 text-white px-5 w-[190px]">
             Our Services
           </p>
           <p className="text-center max-sm:text-xl sm:text-3xl 2xl:text-4xl sm:w-3/4 leading-loose font-semibold text-[#000] px-2">

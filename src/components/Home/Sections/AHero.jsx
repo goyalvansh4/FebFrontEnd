@@ -41,7 +41,7 @@ const AHero = () => {
         spaceBetween={20}
         centeredSlides={true}
         autoplay={{
-          delay: 4500,
+          delay: 1500,
           disableOnInteraction: false,
         }}
         pagination={{

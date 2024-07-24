@@ -31,7 +31,7 @@ const ProjectContainer = () => {
    ]
   return (
     <div className="w-[100%]  py-3  my-8 flex flex-col items-center gap-5">
-      <p className="lg:w-1/5 text-center  rounded-xl font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
+      <p className="lg:w-1/5 text-center  rounded-md a-shadow-sm font-semibold py-2 px-3  text-white bg-[#1136ff] text-xl">
         Recent Project
       </p>
       <p className="lg:w-2/4 text-center font-semibold py-2 px-3  text-[#000] max-sm:text-2xl sm:text-3xl 2xl:text-4xl ">

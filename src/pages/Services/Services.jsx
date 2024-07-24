@@ -14,7 +14,7 @@ const Services = () => {
   
   return (
     <>
-      <Hero title={"Our Services"} subtitle={"Our Services"}/>
+      <Hero title={"Our Services"} subtitle={"Our Services"} path={"service.png"}/>
       <BelowSHero />
       <PopularService />
        <div className='my-20'>

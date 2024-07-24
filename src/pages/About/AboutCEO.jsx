@@ -15,10 +15,10 @@ const AboutCEO = () => {
           </div>
         </div>
         <div className="mt-6">
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-justify">
             I founded Feb Tech with the vision to provide innovative and technology-driven solutions to our clients. My passion for technology and my entrepreneurial spirit drove me to start this company and I am proud of how far we have come.
           </p>
-          <p className="mt-4 text-gray-700 leading-relaxed">
+          <p className="mt-4 text-gray-700 leading-relaxed text-justify">
             I am committed to leading Feb Tech towards success and growth by providing our clients with exceptional services and experiences. We have a dedicated team of professionals who share my vision and work tirelessly to bring our clients' ideas to life. My background in Information Technology from Graphic Era Hill University Dehradun has given me a unique perspective on the challenges and opportunities that businesses face today. I believe that technology is the key to success in today's fast-paced world and that's why we are constantly striving to innovate and stay ahead of the curve. At Feb Tech, we believe that every client is unique and we work closely with them to understand their business needs and goals. Our goal is to deliver tailored solutions that drive their success and growth.
           </p>
           <p className="mt-4 text-gray-700 leading-relaxed">

@@ -11,29 +11,60 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Slider() {
   const data = [
     {
-      name: "Rohit Kumar",
-      profile: "Web Developer",
-      image: "team-1.jpg",
-    },
-    {
-      name: "Saransh Kumar",
-      profile: "App Developer",
-      image: "team-1.jpg",
-    },
-    {
-      name: "Harshit Sharma",
-      profile: "React Developer",
-      image: "team-1.jpg",
+      name: "Khurram Malik",
+      profile: "Project Manager",
+      image: "manager.png",
     },
     {
       name: "Shoaib Malik",
       profile: "Wordpress Developer",
-      image: "team-1.jpg",
+      image: "avaatar7.png",
+    },
+    {
+      name: "Aryan Gupta",
+      profile: "React Developer",
+      image: "avaatar1.png",
+    },
+    {
+      name: "Anshul Saini",
+      profile: "Backend Developer",
+      image: "avaatar2.png",
+    },
+    {
+      name: "Vansh Gupta",
+      profile: "React Developer",
+      image: "avaatar5.png",
+    },
+    {
+      name: "Kaushal Singlay",
+      profile: "SEO Trainee",
+      image: "avaatar8.png",
+    },
+    {
+      name: "Uday Kumar",
+      profile: "FullStack Developer",
+      image: "avaatar4.png",
+    },
+    
+    {
+      name: "Ayushi",
+      profile: "Designer",
+      image: "avaatar11.png",
+    },
+    {
+      name: "Annu Choudhary",
+      profile: "SEO Expert",
+      image: "avataar12.png",
+    },
+    {
+      name: "Saba Malik",
+      profile: "Graphic Designer",
+      image: "saba.png",
     },
   ];
 
@@ -46,7 +77,11 @@ export default function Slider() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination, Navigation]}
+        autoplay={{
+          delay: 4500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper lg:h-96 w-[85%] mx-auto box-border"
         breakpoints={{
           640: {
@@ -66,11 +101,11 @@ export default function Slider() {
         {data.map((item) => {
           return (
             <SwiperSlide>
-              <div className=" text-center">
+              <div className="pb-8 bg-slate-50 shadow-xl text-center">
                 <div className="">
                   <div className="a-shadow-slider teamCard relative overflow-hidden object-cover w-full">
                     <img
-                      className=" transhtmlForm scale-100 hover:scale-125 transition-all duration-700 ease-in"
+                      className=" transform scale-100 hover:scale-125 transition-all duration-700 ease-in w-full h-[250px]"
                       src={item.image}
                       alt="team-member"
                     />

@@ -9,7 +9,7 @@ const NewsLetter = () => {
       }}
     >
       <div className="hnewslt flex flex-col gap-2 lg:w-1/2">
-        <p className="lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white bg-[#5C28CA] text-xl">
+        <p className="lg:w-[40%] text-center px-3 rounded-md font-semibold py-2  text-white a-shadow-sm bg-[#1136ff] text-xl">
           Our NewsLetter
         </p>
         <p className="lg:w-[95%] font-bold text-[#000] text-xl 2xl:text-4xl leading-normal">

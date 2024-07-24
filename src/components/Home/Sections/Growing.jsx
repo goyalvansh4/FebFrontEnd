@@ -13,7 +13,7 @@ const Growing = () => {
         />
       </div>
       <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start gap-10 py-3 px-5 max-sm:justify-center">
-        <h3 className="w-[220px] text-center rounded-xl font-semibold py-2 px-3 text-white bg-[#1136ff] text-xl">
+        <h3 className="w-[220px] text-center rounded-md a-shadow-sm font-semibold py-2 px-3 text-white bg-[#1136ff] text-xl">
           Quality Service
         </h3>
         <p className="lg:w-4/5 max-lg:text-center max-sm:text-2xl sm:text-2xl 2xl:text-3xl font-semibold text-[#000] leading-normal">

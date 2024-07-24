@@ -44,7 +44,7 @@ const Partner = () => {
       }}
     >
       <div className="pleft w-full lg:w-2/5 flex flex-col items-center lg:items-start gap-8">
-        <a className="w-[200px] text-center rounded-xl font-semibold py-2  text-white bg-[#1136ff] text-xl">
+        <a className="w-[200px] text-center rounded-md a-shadow-sm font-semibold py-2  text-white bg-[#1136ff] text-xl">
           Global Partners
         </a>
         <p className="lg:w-4/5 max-lg:text-center font-semibold py-2   text-[#000] max-sm:text-2xl sm:text-xl leading-loose  2xl:text-4xl ">

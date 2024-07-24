@@ -46,7 +46,7 @@ const Footer = () => {
             <NavLink to="/">
               <img src="./logo.png" alt="logo" className="w-44 mb-2" />
             </NavLink>
-            <p className="lg:w-3/4 max-lg:text-center text-gray-800 text-md">
+            <p className="lg:w-3/4 max-lg:text-center text-justify text-gray-800 text-md">
               We are passionate about providing innovative IT solutions to
               businesses of all sizes. Our team of experienced professionals
               works tirelessly to create custom solutions tailored to meet the

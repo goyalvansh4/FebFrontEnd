@@ -13,8 +13,8 @@ const Certificate = () => {
 
 
   return (
-    <>
-      <Hero title={"Certificate"}  subtitle={"verify certificate"} />
+    <> 
+      <Hero title={"Certificate"}  subtitle={"verify certificate"} path={"certificate.png"} />
       <CertificateData />
       
     </>
