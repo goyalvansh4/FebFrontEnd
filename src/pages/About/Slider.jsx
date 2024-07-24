@@ -21,6 +21,11 @@ export default function Slider() {
       image: "manager.png",
     },
     {
+      name: "Annu Choudhary",
+      profile: "SEO Expert",
+      image: "avataar12.png",
+    },
+    {
       name: "Shoaib Malik",
       profile: "Wordpress Developer",
       image: "avaatar7.png",
@@ -49,17 +54,11 @@ export default function Slider() {
       name: "Uday Kumar",
       profile: "FullStack Developer",
       image: "avaatar4.png",
-    },
-    
+    },   
     {
       name: "Ayushi",
       profile: "Designer",
       image: "avaatar11.png",
-    },
-    {
-      name: "Annu Choudhary",
-      profile: "SEO Expert",
-      image: "avataar12.png",
     },
     {
       name: "Saba Malik",
