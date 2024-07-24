@@ -81,7 +81,7 @@ export default function Slider() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper lg:h-96 w-[85%] mx-auto box-border"
+        className="mySwiper mb-1 pb-4  lg:h-[100%] w-[85%] mx-auto box-border"
         breakpoints={{
           640: {
             slidesPerView: 2,
@@ -100,15 +100,15 @@ export default function Slider() {
         {data.map((item) => {
           return (
             <SwiperSlide>
-              <div className="pb-8 bg-slate-50 shadow-xl text-center">
+              <div className="bg-slate-50 mb-10 shadow-md text-center xl:shadow-xl py-4">
                 <div className="">
                   <div className="a-shadow-slider teamCard relative overflow-hidden object-cover w-full">
                     <img
-                      className=" transform scale-100 hover:scale-125 transition-all duration-700 ease-in w-full h-[250px]"
+                      className=" transform scale-100 hover:scale-125 transition-all duration-700 ease-in w-full  xl:h-[250px]"
                       src={item.image}
                       alt="team-member"
                     />
-                    <div className="w-[80%] overlay left-0 bottom-4 p-2 right-0 mx-auto absolute opacity-0  flex justify-around bg-white items-center">
+                    <div className="w-[80%] overlay left-0 bottom-4 px-2 right-0 mx-auto absolute opacity-0  flex justify-around bg-white items-center">
                       <div className="rounded-full bg-yellow-400 hover:bg-[#1136FF] tname p-3 border t-shadow">
                         <FaLinkedinIn className="iconStyle " />
                       </div>
@@ -120,7 +120,7 @@ export default function Slider() {
                       </div>
                     </div>
                   </div>
-                  <p className="font-bold text-xl pt-4 tmname">{item.name}</p>
+                  <p className="font-bold text-xl tmname">{item.name}</p>
                   <p>{item.profile}</p>
                 </div>
               </div>

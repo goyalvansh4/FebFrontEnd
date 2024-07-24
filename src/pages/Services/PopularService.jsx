@@ -71,7 +71,6 @@ const PopularService = () => {
     { icon: <AiFillProduct />, technology: "Product Catalogue Design", para: "Design product catalogs that highlight your offerings.",url:"/serviceform/product-catalogue-design" },
     { icon: <FaBusinessTime />, technology: "Social Media Marketing", para: "Boost your social media presence and engagement.",url:"/serviceform/social-media-marketing" },
     { icon: <SiGoogleads />, technology: "Google Ads", para: "Advertise effectively on Google with our services.",  url:"/serviceform/google-ads" },
-    { icon: <RiLock2Line />, technology: "Legal Services", para: "Comprehensive legal services for your business needs.",url:"/serviceform/legal-services" },
     { icon: <FaTrademark />, technology: "Domestic Trademark", para: "Register and protect your trademark domestically.",url:"/serviceform/domestic-trademark" },
     { icon: <FaTrademark />, technology: "International Trademark", para: "Secure your trademark internationally.",url:"/serviceform/international-trademark" },
   ];
@@ -97,8 +96,8 @@ const PopularService = () => {
         </div>
         <div className='mt-16 flex gap-5 flex-wrap justify-center'>
           {serviceData.map((item, index) => (
-            <div key={index} className='card w-[100%] xl:w-[23%] lg:w-[360px] sm:[360px] bg-white flex flex-col items-center p-4 mb-10 gap-4 a-shadow-slider'>
-              <div className='rounded-full text-6xl p-2 bg-[#1136FF] text-white my-3 a-shadow-sm z-10 '>
+            <div key={index} className='card w-[100%] xl:w-[23%] lg:w-[360px] sm:[360px] bg-white flex flex-col items-center p-4 mb-10 gap-4 hover:shadow-2xl hover:shadow-slate-500 rounded-md'>
+              <div className='service_icon rounded-full text-6xl p-2 bg-[#1136FF] text-white my-3 a-shadow-sm z-10 '>
                 {item.icon}
               </div>
               <p className='text-lg font-semibold z-10 '>{item.technology}</p>

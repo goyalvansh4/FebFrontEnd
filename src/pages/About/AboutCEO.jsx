@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutCEO = () => {
   return (
-    <div className="bg-gray-100 p-8">
+    <div className="bg-gray-100 mt-8 p-8">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8">
         <div className="flex items-center space-x-6">
           <div className="w-32 h-32 bg-gray-200 rounded-full overflow-hidden">

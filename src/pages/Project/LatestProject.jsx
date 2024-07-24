@@ -11,7 +11,7 @@ const LatestProject = () => {
           <div className='text-center px-2'>We’ve Done 2560+ Global Projects Take a <br />
           Looks Work Gallery</div>
           </p>
-          <div className='capitalize text-lg 2xl:text-xl text-center' >Our passionate professionals are committed to delivering exceptional services to our clients.
+          <div className='capitalize text-lg font-medium 2xl:text-xl text-center' >Our passionate professionals are committed to delivering exceptional services to our clients.
           </div>
 
           <ProjectData />

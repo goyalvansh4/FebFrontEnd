@@ -46,7 +46,7 @@
   animation: spin 2s linear infinite;
 }
 .hconnect .hspinner:first-child:hover .hspinner:first-child{
-  background-color: #e7fbe7;
+  background-color: #070bf4;
 }
 
 
@@ -62,12 +62,18 @@
 .mySwiper{
   margin: 0 !important;
 }
-
+.swiper-pagination-bullet{
+  background: #1135ff27;
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
 .swiper-pagination-bullet-active {
-  background: transparent;
+  background: #1136ff;
   padding: 5px;
   border-radius: 50%;
-  border: .2px solid #0105fd;
+  border: .2px solid #fff;
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }

@@ -7,8 +7,8 @@ const Acompany = () => {
 
               {/* section-2 left part */}
               <div className='lg:w-1/2 w-[98%] flex justify-center items-center'>
-                  <div className='lg:w-5/6 w-[90%] mx-auto py-4 lg:py-0'>
-                      <img src="about-img2.png" alt="about image-2" />
+                  <div className='lg:w-[95%] w-[90%] mx-auto py-4 lg:py-0'>
+                      <img src="gallery1.jpg" alt="about image-2" />
                   </div>
               </div>
 

@@ -46,3 +46,8 @@
     color: white;
     background-color: white;
   }
+
+  .card:hover .service_icon{
+    color:#1136FF;
+    background-color: white;
+  }

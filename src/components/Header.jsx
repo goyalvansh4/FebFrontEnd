@@ -14,7 +14,7 @@ export const Header = () => {
     <header className="border-b border-gray-700 w-[100%] tracking-wide  z-50">
       <nav className="flex items-center justify-around min-h-[30px] px-4">
         <NavLink
-          href="/"
+          to="/"
           className={`${isMenuOpen ? "hidden" : "block"} w-[10%]`}
         >
           <img src="./logo.png" alt="logo" className="max-w-[80px]" />
@@ -45,7 +45,7 @@ export const Header = () => {
             </svg>
           </button>
           <ul className="flex flex-col lg:flex-row lg:items-center lg:space-x-2 space-y-4 lg:space-y-0">
-            <NavItem to="/" label="Home" handleClose={handleClose} />
+            <NavItem to="/"  label="Home" handleClose={handleClose} />
             <div
               className="relative group"
               onMouseEnter={() => setIsServicesDropdownOpen(true)}
